@@ -12,7 +12,6 @@
     <body class="font-display">
         <div class="max-w-screen min-h-full">
             <x-navbar></x-navbar>
-            {{-- <x-header>{{ $title }}</x-header> --}}
             <main>
                 <div class="mx-auto">
                     {{ $slot }}
