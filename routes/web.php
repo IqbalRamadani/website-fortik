@@ -14,3 +14,11 @@ Route::get('/news', function () {
     return view('news', ['title' => 'News']);
 });
 
+Route::get('/gallery', function () {
+    return view('gallery', ['title' => 'Galeri']);
+});
+
+Route::get('/contact', function () {
+    return view('contact', ['title' => 'Kontak']);
+});
+
