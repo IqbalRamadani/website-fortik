@@ -80,7 +80,7 @@
 
     // Initialize counters
     const counter1 = new CounterAnimation('counter1', 6, 2000, 'progress1');
-    const counter2 = new CounterAnimation('counter2', 21, 2500, 'progress2');
+    const counter2 = new CounterAnimation('counter2', 27, 2500, 'progress2');
 
     // Start animations with delays
     function startAnimations() {
