@@ -1,4 +1,4 @@
-<div class="grid h-screen mt-8 mx-auto justify-items-center items-center px-12 py-6 lg:gap-8 xl:gap-0 lg:px-16 lg:py-8 lg:grid-cols-12 bg-cover"
+<div class="grid h-screen mx-auto justify-items-center items-center px-12 py-6 lg:gap-8 xl:gap-0 lg:px-16 lg:py-8 lg:grid-cols-12 bg-cover"
 style="background-image: url({{ asset('images/hero-bg2.png') }})"
 >
     <div class="mt-16 lg:m-auto lg:col-span-4">
