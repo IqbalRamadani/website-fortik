@@ -4,15 +4,15 @@
         <div class="text-left space-y-6">
             <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
                 <h3 class="text-xl font-semibold text-white mb-2">Kapan FORTIK membuka pendaftaran anggota baru?</h3>
-                <p class="text-white/90">Anda dapat mendaftar melalui website kami atau datang langsung ke sekretariat FORTIK di kampus STDI Imam Syafi'i Jember.</p>
+                <p class="text-white/90">Kabar gembira nih! FORTIK Insya Allah bakal buka pendaftaran tanggal 1-7 September!! Siap siap yaa!</p>
             </div>
             <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
                 <h3 class="text-xl font-semibold text-white mb-2">FORTIK itu ngapain sih?</h3>
-                <p class="text-white/90">Tidak ada biaya pendaftaran. FORTIK terbuka untuk semua mahasiswa yang memiliki minat di bidang teknologi informasi.</p>
+                <p class="text-white/90">FORTIK adalah UKM yang berfokus pada teknologi informasi, kerjaannya? tentu berkaitan dengan Teknologi Informasi dong.</p>
             </div>
             <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
                 <h3 class="text-xl font-semibold text-white mb-2">Apa keuntungan masuk FORTIK?</h3>
-                <p class="text-white/90">Kami mengadakan workshop programming, seminar teknologi, kompetisi coding, dan berbagai kegiatan pengembangan skill lainnya.</p>
+                <p class="text-white/90">Kamu bakal dapet relasi yang solid, pengalaman berorganisasi, skill yang terarah dan terasah, dan tentunya SAKTIFA dong.</p>
             </div>
         </div>
     </div>
