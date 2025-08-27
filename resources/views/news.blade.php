@@ -1,3 +1,6 @@
 <x-layout>
-  <h1 class="w-full h-screen flex justify-center items-center font-bold text-3xl mx-auto p-20 text-center bg-gradient-to-r from-koamaru to-matcha text-gray-200">Halaman sedang dalam proses pengembangan</h1>
+  <div class="w-full h-screen flex flex-col justify-center items-center bg-gradient-to-r from-koamaru to-matcha lg:flex-row">
+    <h1 class="font-bold text-2xl md:text-3xl p-8 text-center text-gray-200">Halaman sedang dalam proses pengembangan</h1>
+    <img src="{{ asset('images/img-bot-1.png') }}" alt="bot fortik" class="size-20 md:size-24">
+  </div>
 </x-layout>
