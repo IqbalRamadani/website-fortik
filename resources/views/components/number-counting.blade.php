@@ -111,7 +111,7 @@
                 // Start animation after 3 second delay
                 setTimeout(() => {
                     startAnimations();
-                }, 2000);
+                }, 1800);
             }
         });
     }, observerOptions);
