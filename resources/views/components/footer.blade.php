@@ -10,10 +10,10 @@
                 <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Narahubung</h2>
                 <ul class="text-gray-500 font-medium">
                     <li class="mb-2">
-                        Ketua FORTIK<br>+62812345678
+                        Ketua FORTIK<br>+6285641194204
                     </li>
                     <li class="mb-4">
-                        Sekretaris<br>+62898765431
+                        Public Relation<br>+6281212820632
                     </li>
                 </ul>
             </div>
