@@ -2,7 +2,7 @@
     <div class="mx-auto max-w-7xl px-12 py-6 lg:px-16 lg:py-8">
         <div class="grid grid-cols-1 md:gap-10 md:justify-items-start md:grid-cols-4">
             <div class="hidden mt-3 mb-6 md:mb-0 md:block">
-                <a href="https://flowbite.com/" class="flex items-center">
+                <a href="/" class="flex items-center">
                     <img src="{{ asset('images/logo-fortik-1b.png') }}" alt="Logo Fortik" class="w-[102px] h-[140px]">
                 </a>
             </div>
