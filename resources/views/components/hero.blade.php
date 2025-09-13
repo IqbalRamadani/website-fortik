@@ -1,5 +1,5 @@
 <div class="grid mx-auto h-full justify-items-center items-center px-12 py-6 md:mt-16 lg:gap-8 xl:gap-0 lg:px-16 lg:py-28 lg:grid-cols-12 bg-cover"
-style="background-image: url({{ asset('images/bg-hero.png') }})"
+style="background-image: url({{ asset('images/bg-hero-c.png') }})"
 >
     <div class="mt-16 sm:mt-12 py-6 lg:m-auto lg:col-span-4">
     <img src="{{ asset('images/logo-fortik-1w.png') }}" alt="Logo Fortik" class="w-[145px] h-[200px] lg:w-[203px] lg:h-[280px]">
