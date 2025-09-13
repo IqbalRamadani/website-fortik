@@ -5,34 +5,34 @@
     <div id="default-carousel" class="relative w-full -mt-16 md:-mt-4" data-carousel="slide">
         
         <!-- Carousel wrapper -->
-        <div class="relative h-screen overflow-hidden rounded-lg md:h-[270px] lg:h-[460px]">
+        <div class="relative h-screen overflow-hidden rounded-lg md:h-[360px] lg:h-[520px]">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/g-volunteer-1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="volunteer">
+                <img src="{{ asset('images/g-volunteer-1-c.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="volunteer">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/g-pemilu-1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="pemilu FORTIK">
+                <img src="{{ asset('images/g-pemilu-1-c.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="pemilu FORTIK">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/g-opening-1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="opening & sharing session">
+                <img src="{{ asset('images/g-opening-1-c.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="opening & sharing session">
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/g-mubes-1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="mubes 1">
+                <img src="{{ asset('images/g-mubes-1-c.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="mubes 1">
             </div>
             <!-- Item 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/g-makrab-1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="makrab">
+                <img src="{{ asset('images/g-makrab-1-c.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="makrab">
             </div>
             <!-- Item 6 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/g-libre-1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="libre training">
+                <img src="{{ asset('images/g-libre-1-c.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="libre training">
             </div>
             <!-- Item 7 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/g-mubes-2.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="mubes 2">
+                <img src="{{ asset('images/g-mubes-2-c.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="mubes 2">
             </div>
         </div>
         <!-- Slider indicators -->
