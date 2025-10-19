@@ -34,7 +34,7 @@
                     <x-nav-link href="/" :active="request()->is('/')">Beranda</x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link href="/about" :active="request()->is('about')">Tentang</x-nav-link>
+                    <x-nav-link href="/tentang" :active="request()->is('about')">Tentang</x-nav-link>
                 </li>
                 {{-- deactivate dropdown menu --}}
                 {{-- <li>
@@ -64,13 +64,16 @@
                     </div>
                 </li> --}}
                 <li>
-                    <x-nav-link href="/news" :active="request()->is('news')">Berita</x-nav-link>
+                    <x-nav-link href="/berita" :active="request()->is('news')">Berita</x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link href="/gallery" :active="request()->is('gallery')">Galeri</x-nav-link>
+                    <x-nav-link href="/galeri" :active="request()->is('gallery')">Galeri</x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link href="/contact" :active="request()->is('contact')">Kontak</x-nav-link>
+                    <x-nav-link href="/pengumuman" :active="request()->is('announcement')">Pengumuman</x-nav-link>
+                </li>
+                <li>
+                    <x-nav-link href="/kontak" :active="request()->is('contact')">Kontak</x-nav-link>
                 </li>
             </ul>
         </div>

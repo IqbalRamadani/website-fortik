@@ -3,22 +3,26 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home', ['title' => 'Home']);
+    return view('home', ['title' => 'Beranda']);
 });
 
-Route::get('/about', function () {
-    return view('about', ['title' => 'About Us']);
+Route::get('/tentang', function () {
+    return view('about', ['title' => 'Tentang']);
 });
 
-Route::get('/news', function () {
-    return view('news', ['title' => 'News']);
+Route::get('/berita', function () {
+    return view('news', ['title' => 'Berita']);
 });
 
-Route::get('/gallery', function () {
+Route::get('/galeri', function () {
     return view('gallery', ['title' => 'Galeri']);
 });
 
-Route::get('/contact', function () {
+Route::get('/pengumuman', function () {
+    return view('announcement', ['title' => 'Pengumuman']);
+});
+
+Route::get('/kontak', function () {
     return view('contact', ['title' => 'Kontak']);
 });
 
