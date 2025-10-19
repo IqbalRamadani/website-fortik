@@ -2,7 +2,7 @@
 style="background-image: url({{ asset('images/bg-hero-c.png') }})"
 >
     <div class="mt-16 sm:mt-12 py-6 lg:m-auto lg:col-span-4">
-    <img src="{{ asset('images/logo-fortik-1w.png') }}" alt="Logo Fortik" class="w-[145px] h-[200px] lg:w-[203px] lg:h-[280px]">
+    <img src="{{ asset('images/logo-fortik-1w.png') }}" alt="Logo Fortik" loading="lazy" class="w-[145px] h-[200px] lg:w-[203px] lg:h-[280px]">
     </div>
     <div class="mx-auto mb-12 md:mb-4 text-center lg:col-span-8">
         <h1 class="max-w-3xl mb-4 text-2xl font-extrabold tracking-tight leading-none text-white md:text-5xl xl:text-6xl">Forum Teknologi Informasi dan Komunikasi</h1>
