@@ -1,8 +1,6 @@
-<div class="grid mx-auto h-full justify-items-center items-center px-12 py-6 md:mt-16 lg:gap-8 xl:gap-0 lg:px-16 lg:py-28 lg:grid-cols-12 bg-cover"
-style="background-image: url({{ asset('images/bg-hero.png') }})"
->
-    <div class="mt-16 sm:mt-12 py-6 lg:m-auto lg:col-span-4">
-    <img src="{{ asset('images/logo-fortik-1w.png') }}" alt="Logo Fortik" loading="lazy" class="w-[145px] h-[200px] lg:w-[203px] lg:h-[280px]">
+<div class="flex mx-auto min-h-screen justify-items-center items-center px-6 py-6 md:px-16 lg:py-8 bg-gradient-to-br from-lkoamaru to-koamaru">
+    {{-- <div class="mt-16 sm:mt-12 py-6 lg:m-auto lg:col-span-4">
+        <img src="{{ asset('images/logo-fortik-1w.png') }}" alt="Logo Fortik" loading="lazy" class="w-[145px] h-[200px] lg:w-[203px] lg:h-[280px]">
     </div>
     <div class="mx-auto mb-12 md:mb-4 text-center lg:col-span-8">
         <h1 class="max-w-3xl mb-4 text-2xl font-extrabold tracking-tight leading-none text-white md:text-5xl xl:text-6xl">Forum Teknologi Informasi dan Komunikasi</h1>
@@ -16,5 +14,5 @@ style="background-image: url({{ asset('images/bg-hero.png') }})"
         <a href="/about" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
             Baca Selengkapnya
         </a> 
-    </div> 
+    </div>  --}}
 </div>
