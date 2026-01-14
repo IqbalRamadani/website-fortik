@@ -11,7 +11,7 @@ Route::get('/tentang', function () {
 });
 
 Route::get('/berita', function () {
-    return view('news', ['title' => 'Berita']);
+    return view('post', ['title' => 'Berita']);
 });
 
 Route::get('/galeri', function () {
