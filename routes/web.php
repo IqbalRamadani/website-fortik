@@ -11,7 +11,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/post', function () {
-    return view('post', ['title' => 'Berita']);
+    return view('post', ['title' => 'ForNews']);
 });
 
 Route::get('/gallery', function () {
