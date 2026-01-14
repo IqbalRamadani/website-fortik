@@ -64,7 +64,7 @@
                     </div>
                 </li> --}}
                 <li>
-                    <x-nav-link href="/post" :active="request()->is('post')">Berita</x-nav-link>
+                    <x-nav-link href="/post" :active="request()->is('post')">ForNews</x-nav-link>
                 </li>
                 <li>
                     <x-nav-link href="/gallery" :active="request()->is('gallery')">Galeri</x-nav-link>
