@@ -72,9 +72,9 @@
                 <li>
                     <x-nav-link href="/bulletin" :active="request()->is('bulletin')">ForSight</x-nav-link>
                 </li>
-                <li>
+                {{-- <li> 
                     <x-nav-link href="/announcement" :active="request()->is('announcement')">Pengumuman</x-nav-link>
-                </li>
+                </li> deactivate announcement link --}} 
                 <li>
                     <x-nav-link href="/contact" :active="request()->is('contact')">Kontak</x-nav-link>
                 </li>
