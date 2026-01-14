@@ -75,9 +75,9 @@
                 {{-- <li> 
                     <x-nav-link href="/announcement" :active="request()->is('announcement')">Pengumuman</x-nav-link>
                 </li> deactivate announcement link --}} 
-                <li>
+                {{-- <li>
                     <x-nav-link href="/contact" :active="request()->is('contact')">Kontak</x-nav-link>
-                </li>
+                </li> deactivate contact link --}} 
             </ul>
         </div>
     </div>
