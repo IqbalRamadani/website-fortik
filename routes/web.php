@@ -18,6 +18,10 @@ Route::get('/galeri', function () {
     return view('gallery', ['title' => 'Galeri']);
 });
 
+Route::get('/bulletin', function () {
+    return view('bulletin', ['title' => 'ForSight']);
+});
+
 Route::get('/pengumuman', function () {
     return view('announcement', ['title' => 'Pengumuman']);
 });

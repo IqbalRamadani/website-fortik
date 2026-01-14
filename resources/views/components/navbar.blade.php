@@ -70,6 +70,9 @@
                     <x-nav-link href="/galeri" :active="request()->is('gallery')">Galeri</x-nav-link>
                 </li>
                 <li>
+                    <x-nav-link href="/bulletin" :active="request()->is('bulletin')">ForSight</x-nav-link>
+                </li>
+                <li>
                     <x-nav-link href="/pengumuman" :active="request()->is('announcement')">Pengumuman</x-nav-link>
                 </li>
                 <li>
