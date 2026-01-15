@@ -1,20 +1,32 @@
 <div class="bg-white py-8 md:py-12 lg:py-16">
-    <div class="max-w-7xl mx-auto px-12 py-6 lg:px-8 lg:py-16 text-center">
+    <div class="w-full max-w-6xl mx-auto px-12 py-6 lg:px-8 lg:py-16 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-koamaru mb-8">FAQ</h2>
-        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 rounded-none mb-2 shadow-lg">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title font-semibold">How do I create an account?</div>
-            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+            <div class="collapse-title font-semibold bg-koamaru text-white">How do I create an account?</div>
+            <div class="collapse-content text-sm bg-white text-koamaru">
+                <div class="py-4">
+                Click the "Sign Up" button in the top right corner and follow the registration process.
+                </div>
+            </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 rounded-none mb-2 shadow-lg">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+            <div class="collapse-title font-semibold bg-koamaru text-white">I forgot my password. What should I do?</div>
+            <div class="collapse-content text-sm bg-white text-koamaru">
+                <div class="py-4">
+                Click on "Forgot Password" on the login page and follow the instructions sent to your email.
+                </div>
+            </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 rounded-none mb-2 shadow-lg">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">How do I update my profile information?</div>
-            <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+            <div class="collapse-title font-semibold bg-koamaru text-white">How do I update my profile information?</div>
+            <div class="collapse-content text-sm bg-white text-koamaru">
+                <div class="py-4">
+                Go to "My Account" settings and select "Edit Profile" to make changes.
+                </div>
+            </div>
         </div>
         {{-- <div class="text-left space-y-6">
             <div class="bg-lkoamaru/10 backdrop-blur-sm rounded-lg p-6">
