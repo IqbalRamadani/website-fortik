@@ -1,11 +1,11 @@
-<div class="bg-gradient-to-r from-koamaru to-matcha">
-    <div class="max-w-7xl mx-auto p-12 lg:px-8 lg:py-12 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Our Gallery</h2>
+<div class="bg-white py-8 md:py-12 lg:py-16">
+    <div class="mx-auto -mt-4 p-2 text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-koamaru mb-4 md:mb-6 lg:mb-8">Galeri</h2>
     </div>
-    <div id="default-carousel" class="relative w-full -mt-16 md:-mt-4" data-carousel="slide">
+    <div id="default-carousel" class="relative max-w-sm md:max-w-2xl lg:max-w-6xl mx-auto" data-carousel="slide">
         
         <!-- Carousel wrapper -->
-        <div class="relative h-screen overflow-hidden rounded-lg md:h-[360px] lg:h-[520px]">
+        <div class="relative h-48 overflow-hidden rounded-lg md:h-[360px] lg:h-[520px]">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="{{ asset('images/g-volunteer-1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="volunteer" loading="lazy">
