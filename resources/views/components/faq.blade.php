@@ -1,5 +1,5 @@
-<div class="bg-white py-8 md:py-12 lg:py-16">
-    <div class="w-full max-w-6xl mx-auto px-12 py-6 lg:px-8 lg:py-16 text-center">
+<div class="bg-white px-6 py-8 md:py-12 lg:py-16">
+    <div class="w-full max-w-7xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-koamaru mb-8">FAQ</h2>
         <div class="collapse collapse-arrow bg-base-100 border border-base-300 rounded-none mb-2 shadow-lg">
             <input type="radio" name="my-accordion-2" checked="checked" />

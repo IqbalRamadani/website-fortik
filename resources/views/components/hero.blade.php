@@ -1,4 +1,4 @@
-<div class="flex mx-auto min-h-screen justify-items-center items-center px-6 py-6 md:px-16 lg:py-8 bg-gradient-to-br from-lkoamaru to-koamaru">
+<div class="flex mx-auto min-h-screen justify-items-center items-center px-6 py-8 md:px-16 lg:py-8 bg-gradient-to-br from-lkoamaru to-koamaru">
     {{-- <div class="mt-16 sm:mt-12 py-6 lg:m-auto lg:col-span-4">
         <img src="{{ asset('images/logo-fortik-1w.png') }}" alt="Logo Fortik" loading="lazy" class="w-[145px] h-[200px] lg:w-[203px] lg:h-[280px]">
     </div>

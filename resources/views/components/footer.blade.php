@@ -1,5 +1,5 @@
-<footer class="bg-white">
-    <div class="mx-auto max-w-7xl px-12 py-6 lg:px-16 lg:py-8">
+<footer class="bg-white px-6 py-8 md:py-12 lg:py-16">
+    <div class="mx-auto w-full max-w-7xl">
         <div class="grid grid-cols-1 md:gap-10 md:justify-items-start md:grid-cols-4">
             <div class="hidden mt-3 mb-6 md:mb-0 md:block">
                 <a href="/" class="flex items-center">

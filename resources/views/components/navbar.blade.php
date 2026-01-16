@@ -1,5 +1,5 @@
-<nav class="bg-linear-to-br from-lkoamaru to-koamaru fixed w-full z-100 top-0 start-0 shadow-lg overflow-hidden">
-    <div class="flex max-w-2xl md:max-w-3xl lg:max-w-7xl flex-wrap items-center justify-between mx-auto px-6 py-4">
+<nav class="bg-linear-to-br from-lkoamaru to-koamaru fixed w-full z-100 top-0 start-0 shadow-lg overflow-hidden px-6 py-4">
+    <div class="flex max-w-2xl md:max-w-3xl lg:max-w-7xl flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo-navbar.png') }}" class="w-[93px] h-[30px] lg:w-[124px] lg:h-[40px]" alt="Logo Fortik" />
         </a>
