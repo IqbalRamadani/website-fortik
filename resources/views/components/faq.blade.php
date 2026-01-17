@@ -1,4 +1,4 @@
-<div class="bg-white px-6 py-8 md:py-12 lg:py-16">
+<div class="px-6 py-8 md:py-12 lg:py-16 bg-white bg-faq-mobile md:bg-faq bg-cover bg-center border-none">
     <div class="w-full max-w-7xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-center text-koamaru mb-8">FAQ</h2>
         <div class="collapse collapse-arrow bg-base-100 rounded-none mb-2 shadow-xl">
