@@ -1,7 +1,4 @@
-<div 
-    class="flex mx-auto h-fit max-h-screen bg-cover bg-center justify-items-center items-center px-6 py-12 hidden-overflow" 
-    style="background-image: url('{{ asset('images/bg-tentang.png') }}');"
->
+<div class="flex mx-auto h-fit max-h-screen bg-white bg-about-us-mobile md:bg-about-us bg-cover bg-center justify-items-center items-center px-6 py-12 hidden-overflow">
     <div class="mx-auto">
         <div>
             <img src="{{ asset('images/logo-fortik-3b.png') }}" alt="Logo Fortik" loading="lazy" class="w-[200px] h-[65px] md:w-[375px] md:h-[117px] lg:w-[500px] lg:h-[156px] mx-auto mb-4">
