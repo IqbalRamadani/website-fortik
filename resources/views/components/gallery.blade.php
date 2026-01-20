@@ -1,5 +1,5 @@
 <div class="bg-white px-6 py-8 md:py-12 lg:py-16">
-    <div class="w-full max-w-7xl mx-auto">
+    <div class="w-full max-w-6xl mx-auto">
         <h2 class="mx-auto -mt-4 p-2 text-center text-3xl md:text-4xl lg:text-5xl font-bold text-koamaru mb-4 md:mb-6 lg:mb-8">Galeri</h2>
         <div class="flex justify-center w-full max-w-sm md:max-w-4xl lg:max-w-7xl overflow-x-hidden">
             <div class="carousel">
@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const carouselButtons = document.querySelectorAll('.carousel .btn');

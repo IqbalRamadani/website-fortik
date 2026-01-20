@@ -1,5 +1,5 @@
 <div class="px-6 py-12 md:py-16 lg:py-36 bg-white bg-faq-mobile md:bg-faq bg-cover bg-top border-none">
-    <div class="w-full max-w-7xl mx-auto">
+    <div class="w-full max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-koamaru -mt-8 md:-mt-12 lg:-mt-24 mb-8 md:mb-12 lg:mb-24">FAQ</h2>
         <div class="w-full md:max-w-xl lg:max-w-4xl">
             <div class="collapse collapse-arrow bg-white rounded-none mb-2 shadow-xl">
