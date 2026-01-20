@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Response;
 
 Route::get('/', function () {
     return view('home', ['title' => 'Beranda']);
@@ -29,4 +31,15 @@ Route::get('/announcement', function () {
 Route::get('/contact', function () {
     return view('contact', ['title' => 'Kontak']);
 });
+
+Route::get('/post-image/{filename}', function ($filename) {
+    $path = storage_path('app/private/post-image/' . $filename);
+
+    if (!file_exists($path)) {
+        abort(404);
+    }
+
+    // Mengirim file ke browser dengan header yang benar otomatis
+    return response()->file($path);
+})->name('post.image');
 
