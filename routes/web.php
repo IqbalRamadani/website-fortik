@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Response;
 
 Route::get('/', function () {
     return view('home', ['title' => 'Beranda']);
@@ -39,7 +37,6 @@ Route::get('/post-image/{filename}', function ($filename) {
         abort(404);
     }
 
-    // Mengirim file ke browser dengan header yang benar otomatis
     return response()->file($path);
 })->name('post.image');
 
