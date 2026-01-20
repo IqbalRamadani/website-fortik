@@ -7,63 +7,63 @@
                     <img
                     src="{{ asset('images/g-volunteer-1.jpg') }}"
                     class="w-full" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide7" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 bg-transparent text-black hover:text-white hover:bg-gray-900">&lang;</a>
-                        <a href="#slide2" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&rang;</a>
+                    <div class="absolute left-2 right-2 md:left-4 md:right-4 lg:left-8 lg:right-8 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide7" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&lang;</a>
+                        <a href="#slide2" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&rang;</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <img
                     src="{{ asset('images/g-pemilu-1.jpg') }}"
                     class="w-full" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide1" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&lang;</a>
-                        <a href="#slide3" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&rang;</a>
+                    <div class="absolute left-2 right-2 md:left-4 md:right-4 lg:left-8 lg:right-8 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&lang;</a>
+                        <a href="#slide3" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&rang;</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
                     <img
                     src="{{ asset('images/g-opening-1.jpg') }}"
                     class="w-full" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide2" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&lang;</a>
-                        <a href="#slide4" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&rang;</a>
+                    <div class="absolute left-2 right-2 md:left-4 md:right-4 lg:left-8 lg:right-8 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&lang;</a>
+                        <a href="#slide4" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&rang;</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
                     <img
                     src="{{ asset('images/g-mubes-1.jpg') }}"
                     class="w-full" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide3" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&lang;</a>
-                        <a href="#slide5" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&rang;</a>
+                    <div class="absolute left-2 right-2 md:left-4 md:right-4 lg:left-8 lg:right-8 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&lang;</a>
+                        <a href="#slide5" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&rang;</a>
                     </div>
                 </div>
                 <div id="slide5" class="carousel-item relative w-full">
                     <img
                     src="{{ asset('images/g-makrab-1.jpg') }}"
                     class="w-full" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide4" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&lang;</a>
-                        <a href="#slide6" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&rang;</a>
+                    <div class="absolute left-2 right-2 md:left-4 md:right-4 lg:left-8 lg:right-8 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&lang;</a>
+                        <a href="#slide6" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&rang;</a>
                     </div>
                 </div>
                 <div id="slide6" class="carousel-item relative w-full">
                     <img
                     src="{{ asset('images/g-libre-1.jpg') }}"
                     class="w-full" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide5" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&lang;</a>
-                        <a href="#slide7" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&rang;</a>
+                    <div class="absolute left-2 right-2 md:left-4 md:right-4 lg:left-8 lg:right-8 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide5" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&lang;</a>
+                        <a href="#slide7" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&rang;</a>
                     </div>
                 </div>
                 <div id="slide7" class="carousel-item relative w-full">
                     <img
                     src="{{ asset('images/g-mubes-2.jpg') }}"
                     class="w-full" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide6" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&lang;</a>
-                        <a href="#slide1" class="btn btn-circle w-8 h-8 lg:w-10 lg:h-10 text-black hover:text-white bg-transparent hover:bg-gray-900">&rang;</a>
+                    <div class="absolute left-2 right-2 md:left-4 md:right-4 lg:left-8 lg:right-8 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide6" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&lang;</a>
+                        <a href="#slide1" class="btn btn-rectangle w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white/45 text-black text-sm md:text-lg lg:text-xl hover:text-white hover:bg-gray-900">&rang;</a>
                     </div>
                 </div>
             </div>
