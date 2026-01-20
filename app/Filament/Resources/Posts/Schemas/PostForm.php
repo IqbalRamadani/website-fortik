@@ -36,13 +36,6 @@ class PostForm
                     ->required()
                     // ->default(now())
                     ->native(false),
-                Select::make('status')
-                    ->options([
-                        'berhasil' => 'Berhasil',
-                        'gagal' => 'Gagal',
-                    ])
-                    ->required()
-                    ->default('berhasil'),
                 RichEditor::make('content')
                     ->required()
                     ->columnSpanFull(),
