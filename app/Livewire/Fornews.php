@@ -29,7 +29,7 @@ class Fornews extends Component
                     'slug' => $post->slug,
                     'author' => $author,
                     'published_at' => $post->published_at->format('d F Y'),
-                    'content_preview' => \Illuminate\Support\Str::limit(strip_tags($post->content), 100, '...'),
+                    'content_preview' => \Illuminate\Support\Str::limit(strip_tags($post->content), 150, '...'),
                     'image' => $post->image ? route('post.image', ['filename' => basename($post->image)]) : null,
                 ];
             });
