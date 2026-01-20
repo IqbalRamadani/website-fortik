@@ -13,7 +13,7 @@
     </div>
   </div> --}}
   <x-about-us></x-about-us>
-  <x-post></x-post>
+  <livewire:fornews />
   <x-gallery></x-gallery>
   <x-faq></x-faq>
 </x-layout>
