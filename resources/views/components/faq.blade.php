@@ -1,6 +1,6 @@
 <div class="px-6 py-8 md:py-12 lg:py-16 bg-white bg-faq-mobile md:bg-faq bg-cover bg-top border-none">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-koamaru -mt-8 md:-mt-12 mb-8">FAQ</h2>
     <div class="w-full md:max-w-xl lg:max-w-3xl">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-koamaru mb-8">FAQ</h2>
         <div class="collapse collapse-arrow bg-base-100 rounded-none mb-2 shadow-xl">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title font-semibold text-sm bg-linear-to-br from-lkoamaru to-koamaru text-white">Kapan FORTIK membuka pendaftaran anggota baru?</div>
