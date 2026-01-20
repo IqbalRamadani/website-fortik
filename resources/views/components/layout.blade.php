@@ -10,6 +10,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         @vite('resources/css/app.css')
+        @livewireStyles
         <style>
             .swiper-button-next::after,
             .swiper-button-prev::after {
@@ -24,6 +25,7 @@
                 <div class="mx-auto">
                     {{ $slot }}
                 </div>
+                @livewireScripts
             </main>
             <x-footer></x-footer>
         </div>
