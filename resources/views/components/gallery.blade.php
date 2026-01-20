@@ -2,8 +2,8 @@
     <div class="mx-auto -mt-4 p-2 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-koamaru mb-4 md:mb-6 lg:mb-8">Galeri</h2>
     </div>
-    <div class="flex justify-center w-full">
-        <div class="carousel max-w-sm md:max-w-2xl lg:max-w-6xl">
+    <div class="flex justify-center w-full max-w-sm md:max-w-4xl lg:max-w-7xl overflow-x-hidden">
+        <div class="carousel">
             <div id="slide1" class="carousel-item relative w-full">
                 <img
                 src="{{ asset('images/g-volunteer-1.jpg') }}"
