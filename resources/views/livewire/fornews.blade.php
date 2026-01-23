@@ -1,4 +1,4 @@
-<div class="bg-linear-to-br from-lkoamaru px-6 py-8 md:py-12 lg:py-20">
+<div class="bg-linear-to-br from-lkoamaru to-koamaru px-6 py-8 md:py-12 lg:py-20">
     <div class="max-w-5xl mx-auto">
         <!-- Title -->
         <h2 class="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center lg:-mt-4 mb-10">ForNews</h2>

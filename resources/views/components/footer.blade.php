@@ -1,4 +1,4 @@
-<footer class="bg-linear-to-br from-lkoamaru px-6 py-8 md:py-12 lg:py-16">
+<footer class="bg-linear-to-br from-lkoamaru to-koamaru px-6 py-8 md:py-12 lg:py-16">
     <div class="mx-auto w-full max-w-6xl">
         <div class="grid grid-cols-1 md:gap-10 md:justify-items-start md:grid-cols-4">
             <div class="mt-3 mb-4">
