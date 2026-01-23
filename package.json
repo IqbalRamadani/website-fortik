@@ -15,6 +15,7 @@
         "vite": "^7.0.4"
     },
     "dependencies": {
+        "flowbite": "^4.0.1",
         "vercel-php": "^0.7.4"
     }
 }
