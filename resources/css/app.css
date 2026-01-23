@@ -13,6 +13,7 @@
     --font-sans: 'Inter', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
     
+    --color-body: var(--color-gray-800);
     --color-hover: #1E40AF;
     --color-secondary: #005253;
     --color-koamaru: #11296b;
