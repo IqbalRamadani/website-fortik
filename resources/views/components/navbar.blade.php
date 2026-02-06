@@ -1,25 +1,9 @@
-<nav class="bg-linear-to-br from-lkoamaru to-koamaru fixed w-full z-100 top-0 start-0 shadow-lg overflow-hidden px-6 py-4">
+<nav class="bg-linear-to-br from-lkoamaru to-koamaru fixed w-full z-20 top-0 start-0 shadow-lg px-6 py-4">
     <div class="flex max-w-2xl md:max-w-3xl lg:max-w-6xl flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo-navbar.png') }}" class="w-[93px] h-[30px] lg:w-[124px] lg:h-[40px]" alt="Logo Fortik" />
         </a>
         <div>
-            {{-- Search deactivate --}}
-            {{-- <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="lg:hidden text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 me-1">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                </svg>
-                <span class="sr-only">Search</span>
-            </button>
-            <div class="relative hidden lg:block">
-                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                    </svg>
-                    <span class="sr-only">Search icon</span>
-                </div>
-                <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search...">
-            </div> --}}
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg cursor-pointer md:hidden hover:bg-supernova hover:text-koamaru" aria-controls="navbar-dropdown" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -34,35 +18,31 @@
                     <x-nav-link href="/" :active="request()->is('/')">BERANDA</x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link href="/about" :active="request()->is('about')">TENTANG</x-nav-link>
-                </li>
-                {{-- deactivate dropdown menu --}}
-                {{-- <li>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Tentang <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                    </svg></button>
+                    <button id="nav-dropdown-trigger" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                    TENTANG
+                        <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                    </button>
                     <!-- Dropdown menu -->
-                    <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                    <div id="nav-dropdown-menu" class="z-10 hidden bg-transparent border-none w-full md:w-60 md:shadow-lg md:absolute md:top-full md:left-62 lg:left-180 md:mt-2">
+                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="nav-dropdown-trigger">
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sejarah</a>
+                                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">SEJARAH</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Makna Lambang</a>
+                                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">VISI MISI DAN TUJUAN</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Visi, Misi & Tujuan</a>
+                                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">MAKNA LAMBANG</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kabinet</a>
+                                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">STRUKTUR ORGANISASI</a>
                             </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Struktur Organisasi</a>
-                            </li>
-                            
                         </ul>
                     </div>
-                </li> --}}
+                </li>
+                <li>
+                    <x-nav-link href="/about" :active="request()->is('about')">TENTANG</x-nav-link>
+                </li>
                 <li>
                     <x-nav-link href="/post" :active="request()->is('post')">FORNEWS</x-nav-link>
                 </li>
@@ -81,4 +61,34 @@
             </ul>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Definisi Elemen
+            const triggerBtn = document.getElementById('nav-dropdown-trigger');
+            const targetMenu = document.getElementById('nav-dropdown-menu');
+
+            // 1. Logic Toggle Utama
+            triggerBtn.addEventListener('click', function(e) {
+                // Mencegah event bubbling (agar tidak langsung trigger event window click)
+                e.stopPropagation(); 
+                targetMenu.classList.toggle('hidden');
+                
+                // Opsional: Rotasi panah chevron jika ada
+                // ini contoh jika kamu mau nambah interaksi visual
+                triggerBtn.querySelector('svg').classList.toggle('rotate-180');
+            });
+
+            // 2. Logic "Click Outside" (UX Wajib)
+            // Jika user klik di mana saja pada layar...
+            window.addEventListener('click', function(e) {
+                // ...cek apakah klik tersebut BUKAN di dalam menu DAN BUKAN di tombol trigger
+                if (!targetMenu.contains(e.target) && !triggerBtn.contains(e.target)) {
+                    // Jika benar, paksa tutup (tambah hidden)
+                    if (!targetMenu.classList.contains('hidden')) {
+                        targetMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
 </nav>
