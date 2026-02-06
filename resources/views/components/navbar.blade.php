@@ -26,31 +26,28 @@
                     <div id="nav-dropdown-menu" class="z-10 hidden bg-transparent border-none w-full md:w-60 md:shadow-lg md:absolute md:top-full md:left-62 lg:left-180 md:mt-2">
                         <ul class="p-2 text-sm text-body font-medium" aria-labelledby="nav-dropdown-trigger">
                             <li>
-                                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">SEJARAH</a>
+                                <x-navdrop-link href="/sejarah" :active="request()->is('sejarah')">SEJARAH</x-navdrop-link>
                             </li>
                             <li>
-                                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">VISI MISI DAN TUJUAN</a>
+                                <x-navdrop-link href="/visi-misi-tujuan" :active="request()->is('visi-misi-tujuan')">VISI MISI DAN TUJUAN</x-navdrop-link>
                             </li>
                             <li>
-                                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">MAKNA LAMBANG</a>
+                                <x-navdrop-link href="/lambang" :active="request()->is('lambang')">LAMBANG</x-navdrop-link>
                             </li>
                             <li>
-                                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">STRUKTUR ORGANISASI</a>
+                                <x-navdrop-link href="/struktur-organisasi" :active="request()->is('struktur-organisasi')">STRUKTUR ORGANISASI</x-navdrop-link>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <x-nav-link href="/about" :active="request()->is('about')">TENTANG</x-nav-link>
+                    <x-nav-link href="/fornews" :active="request()->is('fornews')">FORNEWS</x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link href="/post" :active="request()->is('post')">FORNEWS</x-nav-link>
+                    <x-nav-link href="/galeri" :active="request()->is('galeri')">GALERI</x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link href="/gallery" :active="request()->is('gallery')">GALERI</x-nav-link>
-                </li>
-                <li>
-                    <x-nav-link href="/bulletin" :active="request()->is('bulletin')">FORSIGHT</x-nav-link>
+                    <x-nav-link href="/forsight" :active="request()->is('forsight')">FORSIGHT</x-nav-link>
                 </li>
                 {{-- <li> 
                     <x-nav-link href="/announcement" :active="request()->is('announcement')">Pengumuman</x-nav-link>
