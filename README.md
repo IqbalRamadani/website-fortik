@@ -35,7 +35,7 @@ cp .env.example .env
  ```php
 php artisan key:generate
 ```
-7. Atur **database** ke **mysql** di file .env dan sesuaikan dengan konfigurasi masing-masing
+7. Atur **database** ke **mysql** di file .env dan sesuaikan dengan konfigurasi masing-masing dengan catatan untuk nama db-nya **project_arya**
 
 8. Jalankan **database** di **DBngin**
 
