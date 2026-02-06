@@ -18,23 +18,23 @@
                     <x-nav-link href="/" :active="request()->is('/')">BERANDA</x-nav-link>
                 </li>
                 <li>
-                    <button id="nav-dropdown-trigger" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                    <button id="nav-dropdown-trigger" class="flex items-center justify-between w-full py-2 px-3 rounded text-white md:w-auto hover:text-supernova md:border-0 md:p-0">
                     TENTANG
                         <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
                     </button>
                     <!-- Dropdown menu -->
                     <div id="nav-dropdown-menu" class="z-10 hidden bg-transparent border-none w-full md:w-60 md:shadow-lg md:absolute md:top-full md:left-62 lg:left-180 md:mt-2">
                         <ul class="p-2 text-sm text-body font-medium" aria-labelledby="nav-dropdown-trigger">
-                            <li>
+                            <li class="ml-2 mb-2">
                                 <x-navdrop-link href="/sejarah" :active="request()->is('sejarah')">SEJARAH</x-navdrop-link>
                             </li>
-                            <li>
+                            <li class="ml-2 mb-2">
                                 <x-navdrop-link href="/visi-misi-tujuan" :active="request()->is('visi-misi-tujuan')">VISI MISI DAN TUJUAN</x-navdrop-link>
                             </li>
-                            <li>
+                            <li class="ml-2 mb-2">
                                 <x-navdrop-link href="/lambang" :active="request()->is('lambang')">LAMBANG</x-navdrop-link>
                             </li>
-                            <li>
+                            <li class="ml-2">
                                 <x-navdrop-link href="/struktur-organisasi" :active="request()->is('struktur-organisasi')">STRUKTUR ORGANISASI</x-navdrop-link>
                             </li>
                         </ul>
