@@ -25,16 +25,16 @@
                     <!-- Dropdown menu -->
                     <div id="nav-dropdown-menu" class="z-10 hidden bg-transparent border-none w-full md:w-60 md:shadow-lg md:absolute md:top-full md:left-62 lg:left-180 md:mt-2">
                         <ul class="p-2 text-sm text-body font-medium" aria-labelledby="nav-dropdown-trigger">
-                            <li class="ml-2 mb-2">
+                            <li class="ml-2 md:mb-2">
                                 <x-navdrop-link href="/sejarah" :active="request()->is('sejarah')">SEJARAH</x-navdrop-link>
                             </li>
-                            <li class="ml-2 mb-2">
+                            <li class="ml-2 md:mb-2">
                                 <x-navdrop-link href="/visi-misi-tujuan" :active="request()->is('visi-misi-tujuan')">VISI MISI DAN TUJUAN</x-navdrop-link>
                             </li>
-                            <li class="ml-2 mb-2">
+                            <li class="ml-2 md:mb-2">
                                 <x-navdrop-link href="/lambang" :active="request()->is('lambang')">LAMBANG</x-navdrop-link>
                             </li>
-                            <li class="ml-2">
+                            <li class="ml-2 md:mb-2">
                                 <x-navdrop-link href="/struktur-organisasi" :active="request()->is('struktur-organisasi')">STRUKTUR ORGANISASI</x-navdrop-link>
                             </li>
                         </ul>
