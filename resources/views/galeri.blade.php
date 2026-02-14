@@ -52,9 +52,9 @@
     <div class="grid grid-cols-4 gap-2">
         <?php foreach ($albums as $album) : ?>
         <a href="<?= $album["link"] ?>" class="block group">
-            <div class="flex flex-col place-items-center hover:bg-gray-200 p-5 w-70 overflow-hidden group">
-              <img src="<?= $album["image"] ?>" alt="" class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-102 mb-3">
-              <p class="font-bold text-koamaru text-xl"><?= $album["nama"] ?></p>
+            <div class="flex flex-col place-items-center transition-all duration-300 ease-in-out hover:bg-gray-200 p-5 w-70 overflow-hidden group">
+              <img src="<?= $album["image"] ?>" alt="" class="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-102 mb-3">
+              <p class="font-bold text-koamaru text-2xl"><?= $album["nama"] ?></p>
             </div>
           <?php endforeach ?>
       </div>
