@@ -49,11 +49,11 @@
         ]
     ];
     ?>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-5 md:gap-10">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2">
         <?php foreach ($albums as $album) : ?>
         <a href="<?= $album["link"] ?>" class=" place-items-center">
-            <div class="flex flex-col place-items-center transition-all duration-300 ease-in-out hover:bg-gray-200 p-2 lg:p-5 sm:w-40 md:w-47 lg:w-70 overflow-hidden group">
-              <img src="<?= $album["image"] ?>" alt="" class="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-102 mb-3">
+            <div class="flex flex-col place-items-center transition-all duration-300 ease-in-out hover:bg-gray-200 p-3 lg:p-5 overflow-hidden group">
+              <img src="<?= $album["image"] ?>" alt="" class="w-full object-contain transition-transform duration-300 ease-in-out group-hover:scale-102 mb-3">
               <p class="font-bold text-koamaru text-sm lg:text-2xl"><?= $album["nama"] ?></p>
             </div>
         </a>
