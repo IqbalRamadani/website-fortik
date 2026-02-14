@@ -11,7 +11,7 @@
             <section class="mb-16">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-6">VISI</h1>
                 <p class="text-sm md:text-lg lg:text-xl leading-relaxed text-justify">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    Menjadi wadah bagi mahasiswa untuk mewujudkan generasi muslim ahlussunnah yang terampil di bidang teknologi, informasi, dan komunikasi.
                 </p>
                 <hr class="w-full h-1 bg-koamaru mt-8"></hr>
             </section>
@@ -19,12 +19,12 @@
             <!-- MISI Section -->
             <section class="mb-16">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-6">MISI</h2>
-                <ol class="text-sm md:text-lg lg:text-xl list-decimal list-inside space-y-2">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Quisque eu libero sit amet eros lobortis faucibus ut vitae justo.</li>
-                    <li>Nullam eleifend risus at nulla tempus venenatis.</li>
-                    <li>Vestibulum ut nisl a risus commodo ullamcorper sit amet a leo.</li>
-                    <li>Vivamus pretium dui quis felis dignissim, in eleifend libero placerat.</li>
+                <ol class="text-sm md:text-lg lg:text-xl list-decimal list-outside space-y-2 ml-6">
+                    <li>Mengembangkan potensi dan kemampuan teknologi, informasi, dan komunikasi mahasiswa STDI Imam Syafi’i Jember.</li>
+                    <li>Menyelenggarakan pendidikan dan pengajaran di bidang teknologi, informasi dan komunikasi.</li>
+                    <li>Menyediakan sarana dan prasarana teknologi, informasi, dan komunikasi yang dibutuhkan mahasiswa STDI Imam Syafi’i Jember.</li>
+                    <li>Menyediakan sumber daya manusia yang siap membantu di bidang teknologi, informasi, dan komunikasi di lingkungan STDI Imam Syafi’i Jember.</li>
+                    <li>Mengenalkan, mempropagandakan dan menerapkan penggunaan teknologi, informasi, dan komunikasi yang berbasis open source sebagai media yang dapat bersaing di dunia kerja digita.</li>
                 </ol>
                 <hr class="w-full h-1 bg-koamaru mt-8"></hr>
             </section>
@@ -32,18 +32,9 @@
             <!-- TUJUAN Section -->
             <section class="mb-16">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-6">TUJUAN</h2>
-                <ol class="text-sm md:text-lg lg:text-xl list-decimal list-inside space-y-2">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Quisque eu libero sit amet eros lobortis faucibus ut vitae justo.</li>
-                    <li>Nullam eleifend risus at nulla tempus venenatis.</li>
-                    <li>Vestibulum ut nisl a risus commodo ullamcorper sit amet a leo.</li>
-                    <li>Vivamus pretium dui quis felis dignissim, in eleifend libero placerat.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Quisque eu libero sit amet eros lobortis faucibus ut vitae justo.</li>
-                    <li>Nullam eleifend risus at nulla tempus venenatis.</li>
-                    <li>Vestibulum ut nisl a risus commodo ullamcorper sit amet a leo.</li>
-                    <li>Vivamus pretium dui quis felis dignissim, in eleifend libero placerat.</li>
-                </ol>
+                    <p class="text-sm md:text-lg lg:text-xl leading-relaxed text-justify">
+                            Menjadi wadah bagi mahasiswa untuk mewujudkan generasi muslim ahlussunnah yang terampil di bidang teknologi, informasi, dan komunikasi.
+                    </p>
             </section>
     </div>
   </div>
