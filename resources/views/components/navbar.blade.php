@@ -23,7 +23,7 @@
                         <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
                     </button>
                     <!-- Dropdown menu -->
-                    <div id="nav-dropdown-menu" class="z-10 hidden bg-transparent border-none w-full md:w-60 md:shadow-lg md:absolute md:top-full md:left-62 lg:left-180 md:mt-2">
+                    <div id="nav-dropdown-menu" class="z-10 hidden bg-linear-to-br from-lkoamaru to-koamaru border-none w-full md:w-60 md:shadow-lg md:absolute md:top-full md:left-62 lg:left-180 md:mt-2">
                         <ul class="p-2 text-sm text-body font-medium" aria-labelledby="nav-dropdown-trigger">
                             <li class="ml-2 md:mb-2">
                                 <x-navdrop-link href="/sejarah" :active="request()->is('sejarah')">SEJARAH</x-navdrop-link>
