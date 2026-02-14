@@ -41,7 +41,9 @@ class PostForm
                     ->columnSpanFull(),
                 FileUpload::make('image')
                     ->image()
-                    ->directory('post-image')
+                    ->disk('public')
+                    ->directory('post-images')
+                    ->visibility('public')
                     ->maxSize(512)
                     ->imageEditor()
                     ->columnSpanFull(),

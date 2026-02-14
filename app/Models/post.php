@@ -18,7 +18,6 @@ class post extends Model
         'published_at', 
         'content', 
         'image',
-        'status',
     ];
 
     protected $casts = [
