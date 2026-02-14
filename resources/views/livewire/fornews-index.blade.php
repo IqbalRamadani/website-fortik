@@ -1,0 +1,52 @@
+<div class="px-6 py-12 md:py-16 lg:py-36 bg-white border-none">
+    <div class="w-full max-w-6xl mx-auto">
+        {{-- header section --}}
+        <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-koamaru mb-10">ForNews</h2>
+        {{-- grid layout --}}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            @foreach($posts as $post)
+            <div class="bg-white overflow-hidden shadow-lg">
+                <div class="p-4">
+                    {{-- image thumbnail --}}
+                    <div class="w-full aspect-video relative overflow-hidden">
+                        @if($post->image)
+                            <img src="{{ asset('storage/' . $post->image) }}" 
+                            alt="{{ $post->title }}" 
+                            class="w-full h-full object-cover">
+                        @else
+                        {{-- Fallback jika tidak ada gambar --}}
+                            <div class="w-full h-full flex items-center justify-center bg-supernova text-yellow-800">
+                                <span class="font-bold">No Image</span>
+                            </div>
+                        @endif
+                    </div>
+                    {{-- card content --}}
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-blue-900 mb-2 leading-tight line-clamp-2">
+                            <a href="{{ route('news.show', $post->slug) }}" class="hover:underline">
+                                {{ $post->title }}
+                            </a>
+                        </h2>
+                    
+                    <div class="text-xs text-blue-500 font-semibold mb-3">
+                        {{ $post['published_at'] }} | {{ $post['author'] }}
+                    </div>
+
+                    {{-- Excerpt / Cuplikan manual dari content --}}
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3 flex-grow">
+                        {{ Str::limit(strip_tags($post->content), 150) }}
+                    </p>
+
+                    <div class="mt-auto text-right">
+                        <a href="{{ route('fornews.show', $post->slug) }}" 
+                            class="inline-block bg-blue-900 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-800 transition-colors">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
