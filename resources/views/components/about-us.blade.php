@@ -1,30 +1,11 @@
-<div class="bg-gradient-to-r from-koamaru to-matcha">
-    <div class="max-w-7xl mx-auto px-12 py-6 lg:px-8 lg:py-16">
-        <div class="text-center mb-16">
-            <h2 class="text-2xl md:text-4xl font-bold text-white mb-4">About Us</h2>
-            <p class="text-white/90 text-base md:text-lg max-w-3xl mx-auto">
-                FORTIK adalah singkatan dari &lpar;Forum Teknologi Informasi dan Komunikasi&rpar;. Forum ini adalah forum yang dibentuk untuk menjadi wadah mahasiswa yang memiliki minat dan bakat di bidang teknologi agar mereka lebih terarah, bukan untuk membatasi. Kedepannya forum ini akan bekerja sama dengan UPT TIK STDI Imam Syafi'i Jember.
+<div class="flex mx-auto h-fit max-h-screen bg-white bg-about-us-mobile md:bg-about-us bg-cover bg-center justify-items-center items-center px-6 py-12 md:py-20 lg:px-36 hidden-overflow">
+    <div class="w-full max-w-6xl mx-auto">
+        <div class="">
+            <img src="{{ asset('images/logo-fortik-3b.png') }}" alt="Logo Fortik" loading="lazy" class="w-[200px] h-[65px] md:w-[375px] md:h-[117px] lg:w-[500px] lg:h-[156px] mx-auto mb-4 lg:mb-8">
+            <h2 class="font-semibold text-lg text-center italic underline text-koamaru mb-6 lg:mb-12 md:text-2xl lg:text-4xl">#Develop Your Creativity</h2>
+            <p class="font-normal text-sm text-center text-koamaru md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto">
+                FORTIK adalah singkatan dari Forum Teknologi Informasi dan Komunikasi. Forum ini dibentuk untuk menjadi wadah mahasiswa yang memiliki minat dan bakat di bidang teknologi. FORTIK berdiri pada tanggal 10 Oktober 2022 di Sekolah Tinggi Dirasat Islamiyyah Imam Syafi'i &lpar;STDIIS&rpar; Jember, Jawa Timur.
             </p>
-        </div>
-    
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-endeavour/95 backdrop-blur-sm rounded-xl p-6 text-center">
-                <i data-lucide="users" class="w-16 h-16 text-white mx-auto mb-4"></i>
-                <h3 class="text-xl font-semibold text-white mb-2">Berdiri Sejak 2022</h3>
-                <p class="text-white/80">Cocok untuk kamu yang peduli terhadap perkembangan teknologi dan kegunaannya untuk kampus.</p>
-            </div>
-    
-            <div class="bg-endeavour/95 backdrop-blur-sm rounded-xl p-6 text-center">
-                <i data-lucide="award" class="w-16 h-16 text-white mx-auto mb-4"></i>
-                <h3 class="text-xl font-semibold text-white mb-2">Kabinet Caksanarawata</h3>
-                <p class="text-white/80">Wadah inovasi dan kreativitas dalam bidang teknologi</p>
-            </div>
-    
-            <div class="bg-endeavour/95 backdrop-blur-sm rounded-xl p-6 text-center">
-                <i data-lucide="book-open" class="w-16 h-16 text-white mx-auto mb-4"></i>
-                <h3 class="text-xl font-semibold text-white mb-2">UKM Teknologi & Inovasi</h3>
-                <p class="text-white/80">Workshop, seminar, dan pelatihan teknologi terkini</p>
-            </div>
         </div>
     </div>
 </div>

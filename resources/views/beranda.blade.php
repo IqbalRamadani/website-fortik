@@ -13,9 +13,7 @@
     </div>
   </div> --}}
   <x-about-us></x-about-us>
-  <x-number-counting></x-number-counting>
-  {{-- <hr class="h-px bg-gray-500 border-0 text-shadow-supernova-xl/50"> --}}
-  <x-team></x-team>
+  <livewire:fornews />
   <x-gallery></x-gallery>
   <x-faq></x-faq>
 </x-layout>
