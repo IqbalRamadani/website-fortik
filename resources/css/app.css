@@ -30,6 +30,7 @@
     --background-image-faq-mobile: url('../images/bg-faq-m.png');
     --background-image-about-us: url('../images/bg-tentang.png');
     --background-image-about-us-mobile: url('../images/bg-tentang-m.png');
+    --background-image-hero: url('../images/bg-hero.png');
 }
 
 @keyframes fadeInUp {
