@@ -10,7 +10,7 @@
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-16">MAKNA LAMBANG</h1>
 
                 <div class="place-items-center mb-16">
-                  <img src="../images/logo-fortik-1b.png" class="w-40 lg:w-60" alt="Logo-FORTIK">
+                  <img src="images/logo-fortik-1b.png" class="w-40 lg:w-60" alt="Logo-FORTIK">
                 </div>
 
                 <div class="flex flex-col align-items-center justify-content-center gap-5">
