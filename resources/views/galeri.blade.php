@@ -2,7 +2,7 @@
   <div class="px-6 py-12 md:py-16 lg:py-36 bg-white border-none">
     <div class="w-full max-w-6xl mx-auto">
     <section class="place-items-center">
-      <img src="images/AlbumFORTIK.svg" class="w-70 place-items-center mb-16" alt="judul">
+      <img src="images/AlbumFORTIK.svg" class="w-80 place-items-center mb-16 mt-16 lg:mt-0" alt="judul">
     </section>
 
     <?php
@@ -49,12 +49,12 @@
         ]
     ];
     ?>
-    <div class="grid grid-cols-4 gap-2">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-5 md:gap-10">
         <?php foreach ($albums as $album) : ?>
-        <a href="<?= $album["link"] ?>" class="block group">
-            <div class="flex flex-col place-items-center transition-all duration-300 ease-in-out hover:bg-gray-200 p-5 w-70 overflow-hidden group">
+        <a href="<?= $album["link"] ?>" class=" place-items-center">
+            <div class="flex flex-col place-items-center transition-all duration-300 ease-in-out hover:bg-gray-200 p-2 lg:p-5 sm:w-40 md:w-47 lg:w-70 overflow-hidden group">
               <img src="<?= $album["image"] ?>" alt="" class="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-102 mb-3">
-              <p class="font-bold text-koamaru text-2xl"><?= $album["nama"] ?></p>
+              <p class="font-bold text-koamaru text-sm lg:text-2xl"><?= $album["nama"] ?></p>
             </div>
           <?php endforeach ?>
       </div>
