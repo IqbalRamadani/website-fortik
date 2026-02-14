@@ -1,6 +1,10 @@
 <x-layout>
-  <div class="w-full h-screen flex flex-col justify-center items-center bg-gradient-to-r from-koamaru to-matcha lg:flex-row">
-    <h1 class="font-bold text-2xl md:text-3xl p-8 text-center text-gray-200">Halaman sedang dalam proses pengembangan</h1>
-    <img src="{{ asset('images/img-bot-1.png') }}" alt="bot fortik" class="size-20 md:size-24">
+  <div class="px-6 py-12 md:py-16 lg:py-36 bg-white border-none">
+    <div class="w-full max-w-6xl mx-auto">
+    <section>
+      <img src="../images/AlbumFORTIK.svg" class="w-60" alt="judul">
+    </section>
+
+    </div>    
   </div>
 </x-layout>
