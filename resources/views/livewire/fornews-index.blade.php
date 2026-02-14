@@ -1,11 +1,11 @@
-<div class="px-6 py-12 md:py-16 lg:py-36 bg-white border-none">
-    <div class="w-full max-w-6xl mx-auto">
+<div class="px-6 pt-28 md:pt-32 bg-white border-none">
+    <div class="w-full max-w-6xl mx-auto mb-12">
         {{-- header section --}}
-        <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-koamaru mb-10">ForNews</h2>
+        <h2 class="text-3xl md:text-4xl lg:text-6xl font-extrabold text-center text-koamaru mb-10">FORNEWS</h2>
         {{-- grid layout --}}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             @foreach($posts as $post)
-            <div class="bg-white overflow-hidden shadow-lg">
+            <div class="bg-white border border-solid border-koamaru/15 overflow-hidden shadow-lg">
                 <div class="p-4">
                     {{-- image thumbnail --}}
                     <div class="w-full aspect-video relative overflow-hidden">

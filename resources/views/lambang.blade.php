@@ -1,13 +1,9 @@
 <x-layout>
-  <div class="px-6 py-12 md:py-16 lg:py-36 bg-white border-none">
+  <div class="px-6 pt-28 md:pt-32 bg-white border-none">
     <div class="w-full max-w-6xl mx-auto">
   
-            <section class="mt-16 md:mt-10 lg:mt-0 mb-10 lg:mb-16">
-              <p class="font-bold text-sm md:text-md lg:text-lg">TENTANG > MAKNA LAMBANG</p>
-            </section>
-
             <section class="mb-16">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-24">MAKNA LAMBANG</h1>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-12 md:mb-20">MAKNA LAMBANG</h1>
 
                 <div class="place-items-center mb-16">
                   <img src="images/logo-fortik-1b.png" class="w-40 lg:w-60" alt="Logo-FORTIK">
@@ -33,8 +29,6 @@
                     <p class="text-xl"><?= $text ?></p>
                   </div>
                 <?php endforeach ?>
-
-                <hr class="w-full h-1 bg-koamaru mt-8"></hr>
             </section>
   
 

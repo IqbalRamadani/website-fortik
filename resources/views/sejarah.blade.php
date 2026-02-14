@@ -51,7 +51,7 @@
     ];
     @endphp
 
-    <div class="px-6 pt-32">
+    <div class="px-6 pt-28 md:pt-32 bg-white border-none">
 
         <div class="w-full max-w-6xl mx-auto">
 
@@ -65,7 +65,7 @@
                     alt="sejarah-fortik"
                     class="hidden lg:block w-20 h-full object-contain">
 
-                <div class="relative border border-transparent">
+                <div class="relative">
 
                     <!-- Garis kiri -->
                     <div class="absolute left-2.5 top-5 h-full w-1 bg-lkoamaru"></div>
@@ -78,7 +78,7 @@
 
                         <!-- Card -->
                         <div>
-                            <h3 class="text-lg bg-koamaru font-bold inline-block p-1 text-white">
+                            <h3 class="text-lg bg-koamaru font-bold inline-block px-2 py-1 text-white">
                                 {{ $item['date'] }}
                             </h3>
                             <h1 class="text-3xl font-bold uppercase mt-2">

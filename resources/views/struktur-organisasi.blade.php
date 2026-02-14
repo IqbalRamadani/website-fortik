@@ -1,5 +1,5 @@
 <x-layout>
-  <div class="px-6 pt-24 flex mx-auto h-fit bg-white ">
+  <div class="px-6 pt-28 md:pt-32 bg-white border-none flex mx-auto h-fit">
 
     <div class="w-full max-w-6xl mx-auto">
 
@@ -86,7 +86,7 @@
 
 
       @foreach($categories as $category)
-      <div class="mb-14">
+      <div class="mb-16">
 
         <h2 class="inline-block text-3xl md:text-4xl font-extrabold mb-6 text-koamaru border-b-8 border-koamaru py-2">
            {{ $category['name'] }}
@@ -100,7 +100,7 @@
                     gap-4
                 ">
           @foreach($category['photos'] as $photo)
-          <div class="overflow-hidden rounded-md shadow-md">
+          <div class="overflow-hidden shadow-md">
             <img
               src="{{ asset($photo['image']) }}"
               alt="{{ $photo['title'] }}"
