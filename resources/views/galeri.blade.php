@@ -56,12 +56,7 @@
               <img src="<?= $album["image"] ?>" alt="" class="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-102 mb-3">
               <p class="font-bold text-koamaru text-sm lg:text-2xl"><?= $album["nama"] ?></p>
             </div>
-          <?php endforeach ?>
-      </div>
         </a>
-
-
-
-    </div>    
-  </div>
+        <?php endforeach ?>
+    </div>
 </x-layout>
