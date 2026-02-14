@@ -6,7 +6,7 @@
                     <img src="{{ asset('images/logo-navbar.png') }}" alt="Logo Fortik" class="w-[124px] h-[40px] lg:w-[233px] lg:h-[75px]">
                 </a>
             </div>
-            <hr class="mb-8 md:hidden">
+            <hr class="mb-8 border-gray-200 md:hidden">
             <div class="mb-4">
                 <h2 class="mb-4 text-sm font-semibold text-white uppercase">Narahubung</h2>
                 <ul class="text-gray-200 font-medium">
