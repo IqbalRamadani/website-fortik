@@ -7,7 +7,7 @@
             </section>
 
             <section class="mb-16">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-16">MAKNA LAMBANG</h1>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-24">MAKNA LAMBANG</h1>
 
                 <div class="place-items-center mb-16">
                   <img src="images/logo-fortik-1b.png" class="w-40 lg:w-60" alt="Logo-FORTIK">
@@ -30,7 +30,7 @@
                     <p class="px-4 py-2 bg-koamaru text-white ">
                       <?= $index + 1 ?>
                     </p>
-                    <p><?= $text ?></p>
+                    <p class="text-xl"><?= $text ?></p>
                   </div>
                 <?php endforeach ?>
 
