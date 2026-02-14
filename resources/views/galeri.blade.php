@@ -1,6 +1,62 @@
 <x-layout>
-  <div class="w-full h-screen flex flex-col justify-center items-center bg-gradient-to-r from-koamaru to-matcha lg:flex-row">
-    <h1 class="font-bold text-2xl md:text-3xl p-8 text-center text-gray-200">Halaman sedang dalam proses pengembangan</h1>
-    <img src="{{ asset('images/img-bot-1.png') }}" alt="bot fortik" class="size-20 md:size-24">
-  </div>
+  <div class="px-6 py-12 md:py-16 lg:py-36 bg-white border-none">
+    <div class="w-full max-w-6xl mx-auto">
+    <section class="place-items-center">
+      <img src="images/AlbumFORTIK.svg" class="w-80 place-items-center mb-16 mt-16 lg:mt-0" alt="judul">
+    </section>
+
+    <?php
+    $albums = [
+        [
+            "nama"  => "Open Recruitment",
+            "image" => "images/img-0.png",
+            "link"  => "album/open-recruitment.php"
+        ],
+        [
+            "nama"  => "Training",
+            "image" => "images/img-0.png",
+            "link"  => "album/training.php"
+        ],
+        [
+            "nama"  => "Tataran Arutala",
+            "image" => "images/img-0.png",
+            "link"  => "album/tataran-arutala.php"
+        ],
+        [
+            "nama"  => "Mubes",
+            "image" => "images/img-0.png",
+            "link"  => "album/mubes.php"
+        ],
+        [
+            "nama"  => "Makrab",
+            "image" => "images/img-0.png",
+            "link"  => "album/makrab.php"
+        ],
+        [
+            "nama"  => "Pelatihan",
+            "image" => "images/img-0.png",
+            "link"  => "album/pelatihan.php"
+        ],
+        [
+            "nama"  => "Fortik's Fair",
+            "image" => "images/img-0.png",
+            "link"  => "album/fortiks-fair.php"
+        ],
+        [
+            "nama"  => "Reorganisasi",
+            "image" => "images/img-0.png",
+            "link"  => "album/reorganisasi.php"
+        ]
+    ];
+    ?>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2">
+        <?php foreach ($albums as $album) : ?>
+        <a href="<?= $album["link"] ?>" class=" place-items-center">
+            <div class="flex flex-col place-items-center transition-all duration-300 ease-in-out hover:bg-gray-200 p-3 lg:p-5 overflow-hidden group">
+              <img src="<?= $album["image"] ?>" alt="" class="w-full object-contain transition-transform duration-300 ease-in-out group-hover:scale-102 mb-3">
+              <p class="font-bold text-koamaru text-sm lg:text-2xl"><?= $album["nama"] ?></p>
+            </div>
+        </a>
+        <?php endforeach ?>
+    </div>
 </x-layout>
