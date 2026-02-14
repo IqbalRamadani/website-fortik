@@ -10,7 +10,7 @@
                     {{-- image thumbnail --}}
                     <div class="w-full aspect-video relative overflow-hidden">
                         @if($post->image)
-                            <img src="{{ asset('storage/' . $post->image) }}" 
+                        <img src="{{ asset('storage/' . $post->image) }}" 
                             alt="{{ $post->title }}" 
                             class="w-full h-full object-cover">
                         @else
@@ -23,22 +23,22 @@
                     {{-- card content --}}
                     <div class="p-5 flex flex-col flex-grow">
                         <h2 class="text-xl font-bold text-blue-900 mb-2 leading-tight line-clamp-2">
-                            <a href="{{ route('news.show', $post->slug) }}" class="hover:underline">
-                                {{ $post->title }}
+                            <a href="{{ route('fornews.show', $post['slug']) }}" class="hover:underline">
+                                {{ $post['title'] }}
                             </a>
                         </h2>
                     
                     <div class="text-xs text-blue-500 font-semibold mb-3">
-                        {{ $post['published_at'] }} | {{ $post['author'] }}
+                        {{ \Carbon\Carbon::parse($post->published_at)->format('d F Y') }} | {{ $post->author->name ?? 'Admin' }}
                     </div>
 
                     {{-- Excerpt / Cuplikan manual dari content --}}
                     <p class="text-gray-600 text-sm mb-4 line-clamp-3 flex-grow">
-                        {{ Str::limit(strip_tags($post->content), 150) }}
+                        {{ $post['content_preview'] }}
                     </p>
 
                     <div class="mt-auto text-right">
-                        <a href="{{ route('fornews.show', $post->slug) }}" 
+                        <a href="{{ route('fornews.show', $post['slug']) }}" 
                             class="inline-block bg-blue-900 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-800 transition-colors">
                             Selengkapnya
                         </a>

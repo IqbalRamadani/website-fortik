@@ -2,9 +2,11 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Layout;
 use App\Models\Post;
 use Livewire\Component;
 
+#[Layout('components.layout')]
 class FornewsShow extends Component
 {
     public $slug;

@@ -16,15 +16,15 @@
                 </h1>
 
                 <div class="text-blue-500 font-medium text-sm mb-6">
-                    {{ $post['published_at'] }} | {{ $post['author'] }}
+                    {{ \Carbon\Carbon::parse($post->published_at)->format('d F Y') }} | {{ $post->author->name ?? 'Admin' }}
                 </div>
 
                 {{-- Featured Image 16:9 --}}
                 <div class="aspect-video w-full bg-supernova mb-8 overflow-hidden rounded-sm">
                     @if($post->image)
-                        <img src="{{ asset('storage/' . $post->image) }}" 
-                            alt="{{ $post->title }}" 
-                            class="w-full h-full object-cover">
+                    <img src="{{ asset('storage/' . $post->image) }}" 
+                        alt="{{ $post->title }}" 
+                        class="w-full h-full object-cover">
                     @else
                         <div class="w-full h-full flex items-center justify-center text-yellow-800 text-4xl font-bold">
                             16:9
@@ -62,7 +62,7 @@
                         @foreach ($recentPosts as $recent)
                             <div class="pt-4 first:pt-0">
                                 <h4 class="font-bold text-gray-900 hover:text-blue-800 text-lg leading-snug mb-2">
-                                    <a href="{{ route('news.show', $recent->slug) }}">
+                                    <a href="{{ route('fornews.show', $recent->slug) }}">
                                         {{ $recent->title }}
                                     </a>
                                 </h4>
