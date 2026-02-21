@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('bulletins', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('file_path');
+            $table->string('slug')->unique();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->date('published_at');
-            $table->boolean('is_active')->default(true);
+            $table->longText('content');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
