@@ -2,13 +2,15 @@
 
 namespace App\Filament\Resources\Bulletins\Schemas;
 
-use Illuminate\Support\Str;
-use Filament\Schemas\Schema;
-use Filament\Forms\Components\Toggle;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Utilities\Set;
+use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class BulletinForm
 {
@@ -21,21 +23,30 @@ class BulletinForm
                     ->maxLength(255)
                     ->live(onBlur: true)
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                TextInput::make('slug')
+                    ->required()
+                    ->unique(ignoreRecord: true)
+                    ->maxLength(255),
+                Select::make('user_id')
+                    ->label('author')
+                    ->relationship('author', 'name')
+                    ->default(fn () => Auth::id())
+                    ->required(),
                 DatePicker::make('published_at')
                     ->required()
                     // ->default(now())
                     ->native(false),
-                FileUpload::make('file_path')
-                    ->label('Bulletin File (PDF)')
-                    ->acceptedFileTypes(['application/pdf'])
-                    ->directory('bulletins')
-                    ->storeFileNamesIn('file_name')
-                    ->maxSize(10240)
+                RichEditor::make('content')
                     ->required()
                     ->columnSpanFull(),
-                Toggle::make('is_active')
-                    ->label('Published')
-                    ->default(true)
-            ]);
+                FileUpload::make('image')
+                    ->image()
+                    ->disk('public')
+                    ->directory('bulletin-images')
+                    ->visibility('public')
+                    ->maxSize(512)
+                    ->imageEditor()
+                    ->columnSpanFull(),
+            ])->columns(2);
     }
 }
