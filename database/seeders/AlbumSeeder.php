@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Album;
+use App\Models\Photo;
 use Illuminate\Database\Seeder;
 
 class AlbumSeeder extends Seeder
@@ -12,6 +13,13 @@ class AlbumSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Album::factory(8)->create()->each(function ($album) {
+        for ($i = 0; $i < rand(5, 12); $i++) {
+            Photo::create([
+                'album_id' => $album->id,
+                'image_path' => 'album-images/sample-' . rand(1, 5) . '.webp',
+            ]);
+        }
+    });
     }
 }
