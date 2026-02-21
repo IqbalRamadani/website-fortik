@@ -22,6 +22,10 @@ class UsersTable
                 TextColumn::make('email')
                 ->label('Email')
                 ->searchable(),
+                textColumn::make('roles.name')
+                ->label('Peran')
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('created_at')
                 ->label('Dibuat Pada')
                 ->dateTime('d M Y, H:i')

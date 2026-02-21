@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Users\Schemas;
 
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\CreateRecord;
 use Filament\Schemas\Schema;
@@ -31,6 +32,13 @@ class UserForm
                 ->dehydrated(fn ($state) => filled($state))
                 ->required(fn ($livewire) => $livewire instanceof CreateRecord)
                 ->maxLength(255),
+                Select::make('roles')
+                ->label('Peran / Divisi')
+                ->relationship('roles', 'name')
+                ->multiple()
+                ->preload()
+                ->searchable()
+                ->required(),
             ]);
     }
 }
