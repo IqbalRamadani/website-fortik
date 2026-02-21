@@ -2,39 +2,25 @@
 
 namespace Database\Seeders;
 
+use App\Models\Post;
+use App\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
-use Faker\Factory as Faker;
-use App\Models\User; 
 
 class PostSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        $faker = Faker::create('id_ID');
+        // Skenario 1: Membuat 10 Post acak (otomatis membuat 10 User baru juga)
+        // Post::factory(10)->create();
 
-        // Mengatasi blind spot relasi: Pastikan minimal ada 1 user di database
-        $userId = User::first()->id ?? User::factory()->create()->id;
+        // Skenario 2 (Lebih Realistis): Membuat 1 User spesifik yang memiliki 10 Post
+        $user = User::factory()->create([
+            'name'  => 'Admin Arya',
+            'email' => 'admin@arya.test',
+        ]);
 
-        $posts = [];
-        for ($i = 0; $i < 10; $i++) {
-            $title = $faker->sentence(5);
-            $posts[] = [
-                'title'        => $title,
-                'slug'         => Str::slug($title) . '-' . Str::random(5), // Mencegah duplikasi slug
-                'user_id'      => $userId,
-                'published_at' => $faker->optional()->date(),
-                'content'      => $faker->paragraphs(4, true),
-                'image'        => null,
-                'created_at'   => now(),
-                'updated_at'   => now(),
-            ];
-        }
-
-        DB::table('posts')->insert($posts);
+        Post::factory(10)->create([
+            'user_id' => $user->id,
+        ]);
     }
 }
