@@ -9,9 +9,10 @@ class Fornews extends Component
 {
     public function render()
     {
-        // Ambil 4 post terbaru (4 untuk mobile, 3 untuk desktop)
-        $posts = Post::with('author')
-            ->whereNotNull('published_at')
+        
+        $posts = Post::published()
+            ->with('author') // Eager load relasi author untuk mencegah N+1
+            ->where('published_at', '<=', now())
             ->orderBy('published_at', 'desc')
             ->limit(4)
             ->get()
