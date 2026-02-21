@@ -15,11 +15,11 @@ class PostSeeder extends Seeder
 
         // Skenario 2 (Lebih Realistis): Membuat 1 User spesifik yang memiliki 10 Post
         $user = User::factory()->create([
-            'name'  => 'Admin Arya',
-            'email' => 'admin@arya.test',
+            'name'  => 'Admin FORNEWS',
+            'email' => 'admin@fornews.test',
         ]);
 
-        Post::factory(10)->create([
+        Post::factory(100)->create([
             'user_id' => $user->id,
         ]);
     }
