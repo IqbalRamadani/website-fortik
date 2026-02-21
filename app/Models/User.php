@@ -8,11 +8,12 @@ use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements FilamentUser
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -50,14 +51,8 @@ class User extends Authenticatable implements FilamentUser
 
     public function canAccessPanel(Panel $panel): bool
     {
-        // Daftar email eksklusif yang memegang otoritas penuh
-        $allowedEmails = [
-            'admin@gmail.com', // WAJIB GANTI dengan email riil admin
-            'admin@arya.test',
-            'admin@fornews.test',
-            'admin@forsight.test'
-        ];
-
-        return in_array($this->email, $allowedEmails);
+        // Logika baru: Pengguna HANYA bisa masuk jika mereka memiliki peran (role) apa pun.
+        // Jika akun dibuat tapi belum diberi peran, mereka tetap ditendang.
+        return $this->hasRole('super_admin') || $this->roles->isNotEmpty();
     }
 }
