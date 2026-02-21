@@ -33,8 +33,8 @@ class BulletinForm
                     ->default(fn () => Auth::id())
                     ->required(),
                 DatePicker::make('published_at')
-                    ->required()
-                    // ->default(now())
+                    ->label('Tanggal Terbit')
+                    ->helperText('Biarkan kosong jika ingin menyimpan sebagai Draft.')
                     ->native(false),
                 RichEditor::make('content')
                     ->required()
