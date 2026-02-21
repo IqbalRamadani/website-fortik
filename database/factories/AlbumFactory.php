@@ -17,7 +17,9 @@ class AlbumFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => $this->faker->words(3, true),
+            'slug' => $this->faker->slug(),
+            'cover_image' => 'album-images/sample-cover.webp',
         ];
     }
 }
