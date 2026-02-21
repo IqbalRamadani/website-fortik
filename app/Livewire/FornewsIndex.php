@@ -12,14 +12,12 @@ class FornewsIndex extends Component
 {
     use WithPagination;
 
-    protected $paginationTheme = 'bootstrap';
-
     public function render()
     {
-        $posts = Post::with('author')
-            ->whereNotNull('published_at')
+        $posts = Post::published()
+            ->with('author')
             ->orderBy('published_at', 'desc')
-            ->paginate(9); // 9 untuk desktop, 4 untuk mobile
+            ->paginate(12); // 9 untuk desktop, 4 untuk mobile
 
         return view('livewire.fornews-index', [
             'posts' => $posts
