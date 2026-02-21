@@ -16,21 +16,25 @@ class FornewsShow extends Component
     public function mount($slug)
     {
         $this->slug = $slug;
-        $this->post = Post::with('author')
+
+        // 1. Eksekusi scope published() agar draft DAN artikel terjadwal terblokir mutlak.
+        $this->post = Post::published()
+            ->with('author')
             ->where('slug', $slug)
-            ->whereNotNull('published_at')
             ->firstOrFail();
 
-        $this->recentPosts = Post::query()
+        // 2. Gunakan scope yang sama untuk sidebar, cegah N+1, gunakan helper latest()
+        $this->recentPosts = Post::published()
+            ->with('author')
             ->where('id', '!=', $this->post->id)
-            ->whereNotNull('published_at')
-            ->orderBy('published_at', 'desc')
+            ->latest('published_at') 
             ->limit(5)
             ->get();
     }
 
     public function render()
     {
-        return view('livewire.fornews-show');
+        return view('livewire.fornews-show')
+            ->title($this->post->title . ' - FORNEWS Terkini');
     }
 }
