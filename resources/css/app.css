@@ -7,6 +7,7 @@
 @source '../**/*.js';
 @source "../node_modules/flowbite";
 
+@plugin "@tailwindcss/typography";
 @plugin "flowbite/plugin";
 
 @theme {
