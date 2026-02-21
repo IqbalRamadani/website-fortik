@@ -15,11 +15,11 @@ class BulletinSeeder extends Seeder
 
         // Skenario 2 (Lebih Realistis): Membuat 1 User spesifik yang memiliki 10 Bulletin
         $user = User::factory()->create([
-            'name'  => 'Admin SIIP',
-            'email' => 'admin@siip.test',
+            'name'  => 'Admin FORSIGHT',
+            'email' => 'admin@forsight.test',
         ]);
 
-        Bulletin::factory(10)->create([
+        Bulletin::factory(100)->create([
             'user_id' => $user->id,
         ]);
     }
