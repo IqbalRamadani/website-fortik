@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class bulletin extends Model
 {
@@ -12,13 +13,24 @@ class bulletin extends Model
 
     protected $fillable = [
         'title', 
-        'file_path',
-        'published_at',
-        'is_active',
+        'slug', 
+        'user_id', 
+        'published_at', 
+        'content', 
+        'image',
     ];
 
     protected $casts = [
         'published_at' => 'date',
-        'is_active' => 'boolean',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function author(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
