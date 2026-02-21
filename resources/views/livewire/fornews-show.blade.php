@@ -35,7 +35,7 @@
                 {{-- Post Body --}}
                 <article class="prose prose-lg max-w-none text-justify leading-relaxed">
                     {{-- Gunakan {!! !!} karena Filament biasanya menyimpan HTML dari RichEditor --}}
-                    {!! $post->content !!}
+                    {!! clean($post->content) !!}
                 </article>
 
                 {{-- Navigation Prev/Next (Optional placeholder as per design) --}}
