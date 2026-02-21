@@ -48,5 +48,10 @@
             </div>
             @endforeach
         </div>
+
+        {{-- Render navigasi pagination di sini --}}
+        <div class="mt-10">
+            {{ $posts->links('vendor.livewire.flowbite-pagination') }}
+        </div>
     </div>
 </div>
