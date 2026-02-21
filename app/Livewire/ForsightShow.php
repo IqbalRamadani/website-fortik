@@ -16,21 +16,25 @@ class ForsightShow extends Component
     public function mount($slug)
     {
         $this->slug = $slug;
-        $this->bulletin = Bulletin::with('author')
+
+        // 1. Eksekusi scope published() agar draft DAN artikel terjadwal terblokir mutlak.
+        $this->bulletin = Bulletin::published()
+            ->with('author')
             ->where('slug', $slug)
-            ->whereNotNull('published_at')
             ->firstOrFail();
 
-        $this->recentBulletins = Bulletin::query()
+        // 2. Gunakan scope yang sama untuk sidebar, cegah N+1, gunakan helper latest()
+        $this->recentBulletins = Bulletin::published()
+            ->with('author')
             ->where('id', '!=', $this->bulletin->id)
-            ->whereNotNull('published_at')
-            ->orderBy('published_at', 'desc')
+            ->latest('published_at') 
             ->limit(5)
             ->get();
     }
 
     public function render()
     {
-        return view('livewire.forsight-show');
+        return view('livewire.forsight-show')
+            ->title($this->bulletin->title . ' - FORSIGHT Terkini');
     }
 }
