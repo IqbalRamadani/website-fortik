@@ -1,8 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Livewire\FornewsIndex;
 use App\Livewire\FornewsShow;
+use App\Livewire\ForsightIndex;
+use App\Livewire\ForsightShow;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('beranda', ['title' => 'Beranda']);
@@ -42,4 +44,7 @@ Route::get('/pengumuman', function () {
 
 Route::get('/fornews', FornewsIndex::class)->name('fornews.index');
 Route::get('/fornews/{slug}', FornewsShow::class)->name('fornews.show');
+
+Route::get('/forsight', ForsightIndex::class)->name('forsight.index');
+Route::get('/forsight/{slug}', ForsightShow::class)->name('forsight.show');
 
