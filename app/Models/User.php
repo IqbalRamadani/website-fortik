@@ -50,12 +50,14 @@ class User extends Authenticatable implements FilamentUser
 
     public function canAccessPanel(Panel $panel): bool
     {
-        // PENTING: Untuk environment local, return true saja biar cepat.
-        // Untuk production nanti, ganti logika ini (misal cek email admin).
-        
-        return true; 
-        
-        // Contoh untuk production nanti:
-        // return str_ends_with($this->email, '@yourdomain.com');
+        // Daftar email eksklusif yang memegang otoritas penuh
+        $allowedEmails = [
+            'admin@gmail.com', // WAJIB GANTI dengan email riil admin
+            'admin@arya.test',
+            'admin@fornews.test',
+            'admin@forsight.test'
+        ];
+
+        return in_array($this->email, $allowedEmails);
     }
 }
