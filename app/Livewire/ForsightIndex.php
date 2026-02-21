@@ -12,14 +12,12 @@ class ForsightIndex extends Component
 {
     use WithPagination;
 
-    protected $paginationTheme = 'bootstrap';
-
     public function render()
     {
-        $bulletins = Bulletin::with('author')
-            ->whereNotNull('published_at')
+        $bulletins = Bulletin::published()
+            ->with('author')
             ->orderBy('published_at', 'desc')
-            ->paginate(9); // 9 untuk desktop, 4 untuk mobile
+            ->paginate(12); // 9 untuk desktop, 4 untuk mobile
 
         return view('livewire.forsight-index', [
             'bulletins' => $bulletins
