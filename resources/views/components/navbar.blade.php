@@ -1,10 +1,10 @@
-<nav class="bg-linear-to-br from-lkoamaru to-koamaru fixed w-full z-20 top-0 start-0 shadow-lg px-6 py-4">
+<nav x-data="{ mobileMenuOpen: false }" class="bg-linear-to-br from-lkoamaru to-koamaru fixed w-full z-20 top-0 start-0 shadow-lg px-6 py-4">
     <div class="flex max-w-2xl md:max-w-3xl lg:max-w-6xl flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo-navbar.png') }}" class="w-[93px] h-[30px] lg:w-[124px] lg:h-[40px]" alt="Logo Fortik" />
         </a>
         <div>
-            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg cursor-pointer md:hidden hover:bg-supernova hover:text-koamaru" aria-controls="navbar-dropdown" aria-expanded="false">
+            <button @click.stop="mobileMenuOpen = !mobileMenuOpen" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg cursor-pointer md:hidden hover:bg-supernova hover:text-koamaru" aria-controls="navbar-dropdown" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -12,18 +12,27 @@
             </button>
         </div>
 
-        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <div :class="{'hidden': !mobileMenuOpen, 'block': mobileMenuOpen}" @click.outside="mobileMenuOpen = false" class="hidden w-full md:block md:w-auto">
             <ul class="flex flex-col font-semibold text-sm lg:text-base p-0 mt-4 bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                 <li>
                     <x-nav-link href="/" :active="request()->is('/')">BERANDA</x-nav-link>
                 </li>
-                <li>
-                    <button id="nav-dropdown-trigger" class="flex items-center justify-between w-full py-2 px-3 rounded text-white md:w-auto hover:text-supernova md:border-0 md:p-0">
-                    TENTANG
-                        <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                <li x-data="{ dropdownOpen: false }" @click.outside="dropdownOpen = false" class="relative">
+                    {{-- Tombol Trigger Dropdown --}}
+                    <button @click="dropdownOpen = !dropdownOpen" 
+                            class="flex items-center justify-between w-full py-2 px-3 rounded text-white md:w-auto hover:text-supernova md:border-0 md:p-0 focus:outline-none">
+                        TENTANG
+                        {{-- Ikon Chevron Dinamis --}}
+                        <svg :class="{'rotate-180': dropdownOpen}" 
+                            class="w-4 h-4 ms-1.5 transition-transform duration-200" 
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                        </svg>
                     </button>
                     <!-- Dropdown menu -->
-                    <div id="nav-dropdown-menu" class="z-10 hidden bg-linear-to-br from-lkoamaru to-koamaru border-none w-full md:w-60 md:shadow-lg md:absolute md:top-full md:left-62 lg:left-180 md:mt-2">
+                    <div x-show="dropdownOpen" x-transition.opacity.duration.200ms
+                        class="z-10 bg-linear-to-br from-lkoamaru to-koamaru border-none w-full md:w-60 md:absolute md:top-full md:mt-8"
+                        style="display: none;">
                         <ul class="p-2 text-sm text-body font-medium" aria-labelledby="nav-dropdown-trigger">
                             <li class="ml-2 md:mb-2">
                                 <x-navdrop-link href="/sejarah" :active="request()->is('sejarah')">SEJARAH</x-navdrop-link>
@@ -58,34 +67,4 @@
             </ul>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Definisi Elemen
-            const triggerBtn = document.getElementById('nav-dropdown-trigger');
-            const targetMenu = document.getElementById('nav-dropdown-menu');
-
-            // 1. Logic Toggle Utama
-            triggerBtn.addEventListener('click', function(e) {
-                // Mencegah event bubbling (agar tidak langsung trigger event window click)
-                e.stopPropagation(); 
-                targetMenu.classList.toggle('hidden');
-                
-                // Opsional: Rotasi panah chevron jika ada
-                // ini contoh jika kamu mau nambah interaksi visual
-                triggerBtn.querySelector('svg').classList.toggle('rotate-180');
-            });
-
-            // 2. Logic "Click Outside" (UX Wajib)
-            // Jika user klik di mana saja pada layar...
-            window.addEventListener('click', function(e) {
-                // ...cek apakah klik tersebut BUKAN di dalam menu DAN BUKAN di tombol trigger
-                if (!targetMenu.contains(e.target) && !triggerBtn.contains(e.target)) {
-                    // Jika benar, paksa tutup (tambah hidden)
-                    if (!targetMenu.classList.contains('hidden')) {
-                        targetMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
-    </script>
 </nav>
