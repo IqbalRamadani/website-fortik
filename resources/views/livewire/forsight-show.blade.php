@@ -1,3 +1,23 @@
+@push('meta')
+    <meta name="description" content="{{ Str::limit(strip_tags($bulletin->content), 150) }}">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ $bulletin->title }}">
+    <meta property="og:description" content="{{ Str::limit(strip_tags($bulletin->content), 150) }}">
+    <meta property="og:url" content="{{ request()->url() }}">
+    
+    @if($bulletin->image)
+        <meta property="og:image" content="{{ asset('storage/' . $bulletin->image) }}">
+    @endif
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $bulletin->title }}">
+    <meta name="twitter:description" content="{{ Str::limit(strip_tags($bulletin->content), 150) }}">
+    @if($bulletin->image)
+        <meta name="twitter:image" content="{{ asset('storage/' . $bulletin->image) }}">
+    @endif
+@endpush
+
 <div class="px-6 pt-28 pb-10 md:pt-32 bg-white border-none">
     <div class="w-full max-w-6xl mx-auto">
         {{-- Breadcrumb simpel --}}
