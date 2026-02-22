@@ -23,6 +23,6 @@ class AlbumShow extends Component
         });
 
         return view('livewire.album-show', compact('album'))
-            ->layout('layouts.app');
+            ->layout('components.layout');
     }
 }
