@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\AlbumIndex;
+use App\Livewire\AlbumShow;
 use App\Livewire\FornewsIndex;
 use App\Livewire\FornewsShow;
 use App\Livewire\ForsightIndex;
@@ -30,9 +32,8 @@ Route::get('/fornews', function () {
     return view('fornews', ['title' => 'ForNews']);
 });
 
-Route::get('/galeri', function () {
-    return view('galeri', ['title' => 'Galeri']);
-});
+Route::get('/galeri', AlbumIndex::class)->name('album.index');
+Route::get('/galeri/{slug}', AlbumShow::class)->name('album.show');
 
 Route::get('/forsight', function () {
     return view('forsight', ['title' => 'ForSight']);
