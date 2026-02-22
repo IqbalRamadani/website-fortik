@@ -19,7 +19,7 @@ class AlbumFactory extends Factory
         return [
             'title' => $this->faker->words(3, true),
             'slug' => $this->faker->slug(),
-            'cover_image' => 'album-images/sample-cover.webp',
+            'cover_image' => 'https://picsum.photos/200.webp?random=' . rand(1, 100),
         ];
     }
 }
