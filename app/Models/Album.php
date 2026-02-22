@@ -21,11 +21,13 @@ class Album extends Model
         // Hancurkan cache saat album di-update atau disimpan
         static::saved(function ($album) {
             Cache::forget("album.{$album->slug}");
+            Cache::forget('albums.index');
         });
 
         // Hancurkan cache dan hapus file cover fisik saat album dihapus
         static::deleted(function ($album) {
             Cache::forget("album.{$album->slug}");
+            Cache::forget('albums.index');
             
             if ($album->cover_image && Storage::disk('public')->exists($album->cover_image)) {
                 Storage::disk('public')->delete($album->cover_image);
