@@ -1,7 +1,11 @@
 <div x-data="{ lightboxOpen: false, activeImage: '' }" class="px-6 pt-28 md:pt-32 bg-white border-none">
     <div class="w-full max-w-6xl mx-auto mb-12">
         <div class="mb-8">
-            <a href="/albums" class="text-sm text-blue-600 hover:underline">&larr; Album</a>
+            <div class="text-sm font-bold text-gray-800 mb-6 uppercase">
+                <a href="{{ route('album.index') }}" class="hover:text-lkoamaru">Album</a> 
+                <span class="text-gray-400 mx-2">›</span>
+                <span class="text-gray-600 truncate">{{ ($album->title) }}</span>
+            </div>
             <h1 class="text-3xl font-bold mt-2 text-gray-900">{{ $album->title }}</h1>
         </div>
 
