@@ -30,7 +30,7 @@
                         </p>
 
                         <div class="mt-auto mb-2 mr-2 text-right">
-                            <a href="/fornews/{{ $post['slug'] }}" class="inline-block bg-koamaru text-white px-4 py-2 rounded-md text-xs md:text-sm font-medium hover:bg-opacity-90 transition mt-auto w-max">
+                            <a href="/fornews/{{ $post['slug'] }}" class="inline-block bg-koamaru hover:bg-lkoamaru text-white px-4 py-2 rounded-md text-xs md:text-sm font-medium hover:bg-opacity-90 mt-auto w-max transition delay-150 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
                                 Selengkapnya
                             </a>
                         </div>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="flex justify-center mt-8">
-            <a href="/fornews" class="bg-white text-koamaru px-6 py-2 rounded-md text-sm md:text-base font-semibold hover:bg-gray-200 transition">
+            <a href="/fornews" class="bg-white text-koamaru px-6 py-2 rounded-md text-sm md:text-base font-semibold hover:bg-supernova transition delay-150 duration-300 ease-in-out hover:-translate-x-0 hover:scale-110">
                 ForNews Lainnya
             </a>
         </div>
