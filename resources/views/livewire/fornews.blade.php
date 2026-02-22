@@ -42,7 +42,7 @@
         </div>
 
         <div class="flex justify-center mt-8">
-            <a href="/fornews" class="bg-white text-koamaru px-6 py-2 rounded-md text-sm md:text-base font-semibold hover:bg-supernova transition delay-150 duration-300 ease-in-out hover:-translate-x-0 hover:scale-110">
+            <a href="/fornews" class="bg-white text-koamaru px-6 py-2 rounded-md text-sm md:text-base font-semibold hover:bg-supernova transition delay-150 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
                 ForNews Lainnya
             </a>
         </div>
