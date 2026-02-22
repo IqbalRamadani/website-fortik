@@ -4,8 +4,10 @@ namespace App\Livewire;
 
 use App\Models\Album;
 use Illuminate\Support\Facades\Cache;
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 
+#[Layout('components.layout')]
 class AlbumShow extends Component
 {
     public $slug;
@@ -22,7 +24,6 @@ class AlbumShow extends Component
             ->firstOrFail();
         });
 
-        return view('livewire.album-show', compact('album'))
-            ->layout('components.layout');
+        return view('livewire.album-show', compact('album'));
     }
 }
