@@ -6,10 +6,17 @@ use App\Livewire\FornewsIndex;
 use App\Livewire\FornewsShow;
 use App\Livewire\ForsightIndex;
 use App\Livewire\ForsightShow;
+use App\Models\Photo;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('beranda', ['title' => 'Beranda']);
+    // Tarik 2 foto terbaru dari seluruh album dan kunci di cache selama 24 jam.
+    $sliderPhotos = Cache::remember('beranda.slider_photos', 86400, function () {
+        return Photo::latest()->take(2)->get();
+    });
+
+    return view('beranda', compact('sliderPhotos'))->with('title', 'Beranda');
 });
 
 Route::get('/sejarah', function () {
