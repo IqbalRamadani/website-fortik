@@ -1,7 +1,4 @@
-<x-layout>
-
-
-    @php
+@php
     $timeline = [
     [
         "date" => "Sejak 2014",
@@ -49,12 +46,11 @@
         "description" => "Setelah resmi berdiri, FORTIK terus mengembangkan perannya sebagai pusat pengembangan skill teknologi mahasiswa. Kegiatan meliputi pelatihan Free Open Source Software (FOSS), workshop desain dan pemrograman, partisipasi dalam lomba teknologi, serta produksi karya nyata seperti website, aplikasi, dan desain grafis. FORTIK berkomitmen menjadi wadah pembinaan teknologi yang profesional, berkelanjutan, dan bermanfaat bagi civitas akademika."
     ],
     ];
-    @endphp
+@endphp
 
+<x-layout>
     <div class="px-6 pt-28 md:pt-32 bg-white border-none">
-
         <div class="w-full max-w-6xl mx-auto">
-
             <h2 class="text-4xl font-extrabold text-koamaru mb-12 block lg:hidden">
                 SEJARAH FORTIK
             </h2>
@@ -66,36 +62,31 @@
                     class="hidden lg:block w-20 h-full object-contain">
 
                 <div class="relative">
-
                     <!-- Garis kiri -->
                     <div class="absolute left-2.5 top-5 h-full w-1 bg-lkoamaru"></div>
 
                     @foreach($timeline as $item)
-                    <div class="relative pl-12 mb-12">
+                        <div class="relative pl-12 mb-12">
 
-                        <!-- Titik -->
-                        <div class="absolute left-0 top-1.5 w-6 h-6 bg-koamaru rounded-full shadow"></div>
+                            <!-- Titik -->
+                            <div class="absolute left-0 top-1.5 w-6 h-6 bg-koamaru rounded-full shadow"></div>
 
-                        <!-- Card -->
-                        <div>
-                            <h3 class="text-lg bg-koamaru font-bold inline-block px-2 py-1 text-white">
-                                {{ $item['date'] }}
-                            </h3>
-                            <h1 class="text-3xl font-bold uppercase mt-2">
-                                {{ $item['title'] }}
-                            </h1>
-                            <p class="mt-2 text-justify">
-                                {{ $item['description'] }}
-                            </p>
+                            <!-- Card -->
+                            <div>
+                                <h3 class="text-lg bg-koamaru font-bold inline-block px-2 py-1 text-white">
+                                    {{ $item['date'] }}
+                                </h3>
+                                <h1 class="text-3xl font-bold uppercase mt-2">
+                                    {{ $item['title'] }}
+                                </h1>
+                                <p class="mt-2 text-justify">
+                                    {{ $item['description'] }}
+                                </p>
+                            </div>
                         </div>
-
-                    </div>
                     @endforeach
-
                 </div>
             </div>
-
         </div>
     </div>
-
 </x-layout>

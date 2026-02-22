@@ -1,7 +1,6 @@
 <x-layout>
-  <div class="px-6 pt-28 md:pt-32 bg-white border-none">
-    <div class="w-full max-w-6xl mx-auto">
-
+    <div class="px-6 pt-28 md:pt-32 bg-white border-none">
+        <div class="w-full max-w-6xl mx-auto">
             <!-- VISI Section -->
             <section class="mb-16">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-6">VISI</h1>
@@ -28,9 +27,9 @@
             <section class="mb-16">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-6">TUJUAN</h2>
                     <p class="text-sm md:text-lg lg:text-xl leading-relaxed text-justify">
-                            Membentuk akademisi Islam yang sadar dan paham tentang teknologi, informasi, dan komunikasi dalam rangka mencapai visi dan misi STDI Imam Syafi’i Jember dan tujuan agama Islam.
+                            Membentuk akademisi Islam yang sadar dan paham tentang teknologi, informasi, dan komunikasi dalam rangka mencapai visi dan misi STDI Imam Syafi&apos;i Jember dan tujuan agama Islam.
                     </p>
             </section>
-    </div>
+        </div>
     </div>
 </x-layout>
