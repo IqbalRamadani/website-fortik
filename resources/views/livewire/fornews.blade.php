@@ -16,7 +16,7 @@
                         @endif
                     </div>
 
-                    <div class="p-3 md:p-4 flex flex-col flex-grow">
+                    <div class="mt-2 px-2 flex flex-col flex-grow">
                         <h3 class="text-koamaru font-bold text-sm md:text-lg mb-2 leading-tight line-clamp-2">
                             {{ $post['title'] }}
                         </h3>
@@ -29,9 +29,11 @@
                             {{ $post['content_preview'] }}
                         </p>
 
-                        <a href="/fornews/{{ $post['slug'] }}" class="inline-block bg-koamaru text-white px-4 py-2 rounded-md text-xs md:text-sm font-medium hover:bg-opacity-90 transition mt-auto w-max">
-                            Selengkapnya
-                        </a>
+                        <div class="mt-auto mb-2 mr-2 text-right">
+                            <a href="/fornews/{{ $post['slug'] }}" class="inline-block bg-koamaru text-white px-4 py-2 rounded-md text-xs md:text-sm font-medium hover:bg-opacity-90 transition mt-auto w-max">
+                                Selengkapnya
+                            </a>
+                        </div>
                     </div>
                 </div>
             @endforeach
