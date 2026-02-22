@@ -39,7 +39,7 @@
 
                         <div class="mt-auto mb-2 mr-2 text-right">
                             <a href="{{ route('fornews.show', $post['slug']) }}" 
-                                class="inline-block bg-blue-900 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-800 transition delay-120 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
+                                class="inline-block bg-koamaru text-white text-sm font-medium px-4 py-2 rounded hover:text-supernova transition delay-120 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
                                 Selengkapnya
                             </a>
                         </div>
