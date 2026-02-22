@@ -34,27 +34,20 @@
                     
                     {{-- Wrapper dari Swiper --}}
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide relative">
-                            <img src="{{ asset('images/g-volunteer-1.jpg') }}" class="w-full object-cover" />
-                        </div>
-                        <div class="swiper-slide relative">
-                            <img src="{{ asset('images/g-pemilu-1.jpg') }}" class="w-full object-cover" />
-                        </div>
-                        <div class="swiper-slide relative">
-                            <img src="{{ asset('images/g-opening-1.jpg') }}" class="w-full object-cover" />
-                        </div>
-                        <div class="swiper-slide relative">
-                            <img src="{{ asset('images/g-mubes-1.jpg') }}" class="w-full object-cover" />
-                        </div>
-                        <div class="swiper-slide relative">
-                            <img src="{{ asset('images/g-makrab-1.jpg') }}" class="w-full object-cover" />
-                        </div>
-                        <div class="swiper-slide relative">
-                            <img src="{{ asset('images/g-libre-1.jpg') }}" class="w-full object-cover" />
-                        </div>
-                        <div class="swiper-slide relative">
-                            <img src="{{ asset('images/g-mubes-2.jpg') }}" class="w-full object-cover" />
-                        </div>
+                        @forelse($sliderPhotos as $photo)
+                            <div class="swiper-slide relative">
+                                <img 
+                                    src="{{ asset('storage/' . $photo->image_path) }}" 
+                                    loading="lazy" 
+                                    class="w-full h-full object-cover aspect-[4/3] md:aspect-video" 
+                                    alt="Highlight Kegiatan FORTIK"
+                                >
+                            </div>
+                        @empty
+                            <div class="swiper-slide relative bg-gray-200 flex items-center justify-center aspect-video">
+                                <span class="text-gray-500">Belum ada dokumentasi.</span>
+                            </div>
+                        @endforelse
                     </div>
 
                     {{-- Navigasi dan Pagination (Tetap gunakan class bawaan Swiper) --}}
