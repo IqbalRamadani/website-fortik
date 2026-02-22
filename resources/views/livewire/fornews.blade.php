@@ -18,7 +18,9 @@
 
                     <div class="mt-2 px-2 flex flex-col flex-grow">
                         <h3 class="text-koamaru font-bold text-sm md:text-lg mb-2 leading-tight line-clamp-2">
-                            {{ $post['title'] }}
+                            <a href="{{ route('fornews.show', $post['slug']) }}" class="hover:underline">
+                                {{ $post['title'] }}
+                            </a>
                         </h3>
 
                         <p class="text-koamaru text-xs md:text-sm mb-2">
@@ -30,7 +32,7 @@
                         </p>
 
                         <div class="mt-auto mb-2 mr-2 text-right">
-                            <a href="/fornews/{{ $post['slug'] }}" class="inline-block bg-koamaru hover:bg-lkoamaru text-white px-4 py-2 rounded-md text-xs md:text-sm font-medium hover:bg-opacity-90 mt-auto w-max transition delay-150 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
+                            <a href="/fornews/{{ $post['slug'] }}" class="inline-block bg-koamaru text-white hover:text-supernova px-4 py-2 rounded-md text-xs md:text-sm font-medium hover:bg-opacity-90 mt-auto w-max transition delay-150 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
                                 Selengkapnya
                             </a>
                         </div>
