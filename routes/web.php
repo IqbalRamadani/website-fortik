@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    // Tarik 2 foto terbaru dari seluruh album dan kunci di cache selama 24 jam.
+    // Tarik 4 foto terbaru dari seluruh album dan kunci di cache selama 24 jam.
     $sliderPhotos = Cache::remember('beranda.slider_photos', 86400, function () {
-        return Photo::latest()->take(2)->get();
+        return Photo::latest()->take(4)->get();
     });
 
     return view('beranda', compact('sliderPhotos'))->with('title', 'Beranda');
