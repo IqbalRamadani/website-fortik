@@ -12,13 +12,15 @@
         <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
             @foreach($album->photos as $photo)
                 <div 
-                    x-data="{ loaded: false }" 
+                    x-data="{ loaded: false }"
+                    x-init="if ($refs.myImage.complete) loaded = true" 
                     class="relative break-inside-avoid overflow-hidden rounded-xl bg-gray-200 cursor-pointer transform transition duration-300 hover:scale-[1.02] hover:shadow-xl"
                     @click="lightboxOpen = true; activeImage = '{{ asset('storage/' . $photo->image_path) }}'"
                 >
                     <div x-show="!loaded" class="absolute inset-0 animate-pulse bg-gray-300"></div>
                     
                     <img 
+                        x-ref="myImage"
                         src="{{ asset('storage/' . $photo->image_path) }}" 
                         alt="Album Photo" 
                         loading="lazy"

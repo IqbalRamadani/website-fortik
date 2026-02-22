@@ -12,11 +12,13 @@
                     
                     <div 
                         x-data="{ loaded: false }" 
+                        x-init="if ($refs.myImage.complete) loaded = true"
                         class="relative w-full aspect-square overflow-hidden bg-gray-200 rounded-sm shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1"
                     >
                         <div x-show="!loaded" class="absolute inset-0 animate-pulse bg-gray-300"></div>
                         
                         <img 
+                            x-ref="myImage"    
                             src="{{ asset('storage/' . $album->cover_image) }}" 
                             alt="Cover {{ $album->title }}" 
                             loading="lazy"
