@@ -1,9 +1,9 @@
 <footer class="bg-linear-to-br from-lkoamaru to-koamaru px-6 py-8 md:py-12 lg:py-16">
     <div class="mx-auto w-full max-w-6xl">
         <div class="grid grid-cols-1 md:gap-10 md:justify-items-start md:grid-cols-4">
-            <div class="mt-3 mb-4">
+            <div class="mb-8 md:mb-0">
                 <a href="/" class="flex items-center">
-                    <img src="{{ asset('images/logo-navbar.webp') }}" alt="Logo Fortik" class="w-80 md:w-140" loading="lazy">
+                    <img src="{{ asset('images/logo-navbar.webp') }}" alt="Logo Fortik" class="w-40 md:w-140" loading="lazy">
                 </a>
             </div>
             <hr class="mb-8 border-gray-200 md:hidden">
