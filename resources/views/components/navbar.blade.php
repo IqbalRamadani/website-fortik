@@ -20,7 +20,7 @@
                 <li x-data="{ dropdownOpen: false }" @click.outside="dropdownOpen = false" class="relative">
                     {{-- Tombol Trigger Dropdown --}}
                     <button @click="dropdownOpen = !dropdownOpen" 
-                            class="flex items-center justify-between w-full py-2 px-3 rounded text-white md:w-auto hover:text-supernova md:border-0 md:p-0 focus:outline-none">
+                            class="flex items-center justify-between w-full py-2 px-3 rounded cursor-pointer text-white md:w-auto hover:text-supernova md:border-0 md:p-0 focus:outline-none">
                         TENTANG
                         {{-- Ikon Chevron Dinamis --}}
                         <svg :class="{'rotate-180': dropdownOpen}" 
