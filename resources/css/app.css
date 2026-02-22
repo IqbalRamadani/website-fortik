@@ -27,11 +27,11 @@
     --animate-fadeInUp: fadeInUp 0.6s ease-out;
     --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
-    --background-image-faq: url('../images/bg-faq.png');
-    --background-image-faq-mobile: url('../images/bg-faq-m.png');
-    --background-image-about-us: url('../images/bg-tentang.png');
-    --background-image-about-us-mobile: url('../images/bg-tentang-m.png');
-    --background-image-hero: url('../images/bg-hero.png');
+    --background-image-faq: url('../images/bg-faq.webp');
+    --background-image-faq-mobile: url('../images/bg-faq-m.webp');
+    --background-image-about-us: url('../images/bg-tentang.webp');
+    --background-image-about-us-mobile: url('../images/bg-tentang-m.webp');
+    --background-image-hero: url('../images/bg-hero.webp');
 }
 
 @keyframes fadeInUp {
