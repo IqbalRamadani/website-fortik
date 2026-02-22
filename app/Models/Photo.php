@@ -20,6 +20,7 @@ class Photo extends Model
             if ($photo->album) {
                 Cache::forget("album.{$photo->album->slug}");
             }
+            Cache::forget('beranda.slider_photos');
         });
 
         // Hapus file fisik dan hancurkan cache saat foto dihapus dari Filament
@@ -27,6 +28,7 @@ class Photo extends Model
             if ($photo->album) {
                 Cache::forget("album.{$photo->album->slug}");
             }
+            Cache::forget('beranda.slider_photos');
             
             if ($photo->image_path && Storage::disk('public')->exists($photo->image_path)) {
                 Storage::disk('public')->delete($photo->image_path);
