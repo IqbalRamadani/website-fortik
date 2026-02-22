@@ -17,7 +17,7 @@ class AlbumSeeder extends Seeder
         for ($i = 0; $i < rand(5, 12); $i++) {
             Photo::create([
                 'album_id' => $album->id,
-                'image_path' => 'album-images/sample-' . rand(1, 5) . '.webp',
+                'image_path' => 'https://picsum.photos/200.webp?random=' . rand(1, 100),
             ]);
         }
     });
