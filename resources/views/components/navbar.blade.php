@@ -1,7 +1,7 @@
 <nav x-data="{ mobileMenuOpen: false }" class="bg-linear-to-br from-lkoamaru to-koamaru fixed w-full z-20 top-0 start-0 shadow-lg px-6 py-4">
     <div class="flex max-w-2xl md:max-w-3xl lg:max-w-6xl flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="{{ asset('images/logo-navbar.png') }}" class="w-[93px] h-[30px] lg:w-[124px] lg:h-[40px]" alt="Logo Fortik" />
+            <img src="{{ asset('images/logo-navbar.webp') }}" class="w-30 md:w-40" alt="Logo Fortik"/>
         </a>
         <div>
             <button @click.stop="mobileMenuOpen = !mobileMenuOpen" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg cursor-pointer md:hidden hover:bg-supernova hover:text-koamaru" aria-controls="navbar-dropdown" aria-expanded="false">
