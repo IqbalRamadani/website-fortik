@@ -14,6 +14,6 @@
   </div> --}}
   <x-about-us></x-about-us>
   <livewire:fornews />
-  <x-gallery></x-gallery>
+  <x-gallery :sliderPhotos="$sliderPhotos"></x-gallery>
   <x-faq></x-faq>
 </x-layout>
