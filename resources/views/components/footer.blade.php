@@ -84,7 +84,7 @@
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div>
             <span class="text-sm text-gray-200">
-                © 2025 Divisi SIIP. All Rights Reserved.
+                © 2025 <a href=""><span class="hover:text-supernova">Arya Team</span></a>. All Rights Reserved.
             </span>
         </div>
     </div>
