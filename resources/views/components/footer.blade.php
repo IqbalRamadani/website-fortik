@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 md:gap-10 md:justify-items-start md:grid-cols-4">
             <div class="mt-3 mb-4">
                 <a href="/" class="flex items-center">
-                    <img src="{{ asset('images/logo-navbar.png') }}" alt="Logo Fortik" class="w-[124px] h-[40px] lg:w-[233px] lg:h-[75px]">
+                    <img src="{{ asset('images/logo-navbar.webp') }}" alt="Logo Fortik" class="w-[124px] h-[40px] lg:w-[233px] lg:h-[75px]">
                 </a>
             </div>
             <hr class="mb-8 border-gray-200 md:hidden">
