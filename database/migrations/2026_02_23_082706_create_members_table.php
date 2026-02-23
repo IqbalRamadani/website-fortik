@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('division_id')->constrained()->cascadeOnDelete();
+            $table->string('name');
+            $table->string('image');
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
     }
