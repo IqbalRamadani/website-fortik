@@ -1,4 +1,4 @@
-@php
+{{-- @php
     $categories = [
         [
             'name' => 'BPH',
@@ -77,13 +77,13 @@
             ]
         ]
     ];
-@endphp
+@endphp --}}
 
 <x-layout>
     <div class="px-6 pt-28 md:pt-32 bg-white border-none flex mx-auto h-fit">
         <div class="w-full max-w-6xl mx-auto">
-
-            @foreach($categories as $category)
+            
+            {{-- @foreach($categories as $category)
                 <div class="mb-16">
                     <h2 class="inline-block text-3xl md:text-4xl font-extrabold mb-6 text-koamaru border-b-8 border-koamaru py-2">
                         {{ $category['name'] }}
@@ -106,7 +106,7 @@
                         @endforeach
                     </div>
                 </div>
-            @endforeach
+            @endforeach --}}
         </div>
     </div>
 </x-layout>
