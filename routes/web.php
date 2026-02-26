@@ -6,6 +6,7 @@ use App\Livewire\FornewsIndex;
 use App\Livewire\FornewsShow;
 use App\Livewire\ForsightIndex;
 use App\Livewire\ForsightShow;
+use App\Livewire\Setup;
 use App\Livewire\StrukturOrganisasi;
 use App\Models\Photo;
 use Illuminate\Support\Facades\Cache;
@@ -58,3 +59,4 @@ Route::get('/fornews/{slug}', FornewsShow::class)->name('fornews.show');
 Route::get('/forsight', ForsightIndex::class)->name('forsight.index');
 Route::get('/forsight/{slug}', ForsightShow::class)->name('forsight.show');
 
+Route::get('/setup', Setup::class)->name('setup');
