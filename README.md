@@ -1,49 +1,78 @@
-<p align="center"><a href="https://fortik.stdiis.ac.id/" target="_blank"><img src="/public/images/logo-fortik-3b.png" width="200" alt="Logo Fortik"></a></p>
+<p align="center">
+  <a href="https://fortik.stdiis.ac.id/" target="_blank">
+    <img src="public/images/logo-fortik-2b.webp" width="200" alt="Logo Fortik">
+  </a>
+</p>
 
-## Panduan Gabung Projek
+<h1 align="center">Dokumentasi Kolaborasi FORTIK (Local Development)</h1>
 
-1. Silakan **fork** terlebih dahulu repo ini
-2. Siapkan **site** di herd **tanpa starter kit**
-3. **Clone** repo fork tadi di github masing-masing 
-4. Silakan untuk mengunduh **direktori** berikut:
+Panduan ini dikhususkan untuk tim developer yang akan berkontribusi pada repositori web FORTIK. 
+**PENTING:** Jangan pernah merubah file `composer.lock` atau `package-lock.json` tanpa koordinasi.
+
+---
+
+## 🛠 Panduan Setup Lokal (Herd & DBngin Workflow)
+
+Ikuti langkah ini secara berurutan agar environment lokalmu tersinkronisasi sempurna dengan repositori utama.
+
+### 1. Kloning Repositori
+
+Lakukan fork repositori ini ke akun GitHub masing-masing, lalu clone ke folder lokalmu (sangat disarankan di dalam folder Herd).
+
+```bash
+git clone [https://github.com/](https://github.com/IqbalRamadani/website-fortik.git)
+cd project-arya
+```
+
+### 2. Install Dependency Sistem
 
 - composer
 ```bash
 composer install
-``` 
+```
 
 - npm
 ```bash
 npm install
 ``` 
 
-- flowbite
+### 3. Konfigurasi Environment Lokal
 
-```bash
-npm install flowbite
-```
-- livewire
-```bash
-composer require livewire/livewire
-```
-
-5. Salin file **.env.example** kedalam file **.env** dengan menjalankan perintah berikut:
+Salin file **.env.example** kedalam file **.env** dengan menjalankan perintah berikut:
 ```bash
 cp .env.example .env
 ```
-6. Generate **app key** dengan menjalankan perintah berikut:
- ```php
+Lalu generate **App Key** dengan menjalankan perintah berikut:
+```php
 php artisan key:generate
 ```
-7. Atur **database** ke **mysql** di file .env dan sesuaikan dengan konfigurasi masing-masing dengan catatan untuk nama db-nya **project_arya**
 
-8. Jalankan **database** di **DBngin**
+### 4. Konfigurasi Database (DBngin)
 
-9. **Migrasi** database dengan menjalankan perintah `php artisan migrate`
+1. Atur **database** ke **mysql** di file .env dan sesuaikan dengan konfigurasi masing-masing dengan catatan untuk nama db-nya **project_arya**
 
-10. Jalankan perintah `npm run dev`
+2. Jalankan **database** di **DBngin**
 
-### Developer
+### 5. Migrasi & Storage Link
+
+- Migrasi
+```php
+php artisan migrate
+```
+
+- Storage Link
+```php
+php artisan storage:link
+```
+### 6. Jalankan Server Development
+
+Jalankan Vite untuk mengkompilasi aset Tailwind/Alpine secara real-time. Biarkan terminal ini menyala selama kamu ngoding.
+
+```npm
+npm run dev
+```
+
+### 👨‍💻 Tim Developer (Kontributor Utama)
 
 - **[Iqbal Ramadani](https://github.com/IqbalRamadani)**
 - **[Farhan Syifaul Umam](https://github.com/farhansyflu)**
