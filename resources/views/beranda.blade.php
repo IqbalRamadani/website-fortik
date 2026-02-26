@@ -15,5 +15,5 @@
   <x-about-us></x-about-us>
   <livewire:fornews />
   <x-gallery :sliderPhotos="$sliderPhotos"></x-gallery>
-  <x-faq></x-faq>
+  <livewire:faq-section />
 </x-layout>
