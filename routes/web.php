@@ -6,6 +6,7 @@ use App\Livewire\FornewsIndex;
 use App\Livewire\FornewsShow;
 use App\Livewire\ForsightIndex;
 use App\Livewire\ForsightShow;
+use App\Livewire\StrukturOrganisasi;
 use App\Models\Photo;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
@@ -30,9 +31,11 @@ Route::get('/lambang', function () {
     return view('lambang', ['title' => 'Lambang']);
 });
 
-Route::get('/struktur-organisasi', function () {
-    return view('struktur-organisasi', ['title' => 'Struktur Organisasi']);
-});
+Route::get('/struktur-organisasi', StrukturOrganisasi::class);
+
+// Route::get('/struktur-organisasi', function () {
+//     return view('struktur-organisasi', ['title' => 'Struktur Organisasi']);
+// });
 
 Route::get('/fornews', function () {
     return view('fornews', ['title' => 'ForNews']);
