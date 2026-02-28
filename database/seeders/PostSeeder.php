@@ -17,6 +17,7 @@ class PostSeeder extends Seeder
         $user = User::factory()->create([
             'name'  => 'Admin FORNEWS',
             'email' => 'admin@fornews.test',
+            'password' => bcrypt('password'), // Pastikan password terenkripsi
         ]);
 
         Post::factory(100)->create([
