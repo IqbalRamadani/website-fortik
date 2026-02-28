@@ -41,7 +41,7 @@
                                 <img 
                                     src="{{ asset('storage/' . $photo->image_path) }}" 
                                     loading="lazy" 
-                                    class="w-full h-full object-cover aspect-[4/3] md:aspect-video" 
+                                    class="w-full h-full object-cover aspect-[16/9]" 
                                     alt="Highlight Kegiatan FORTIK"
                                 >
                             </div>
@@ -53,10 +53,10 @@
                     </div>
 
                     {{-- Navigasi dan Pagination (Tetap gunakan class bawaan Swiper) --}}
-                    <div class="swiper-button-next !w-8 !h-8 md:!w-12 md:!h-12 lg:!w-14 lg:!h-14 bg-white/45 hover:bg-gray-900 !text-black hover:!text-white flex items-center justify-center transition-all duration-300 rounded-none !right-2 md:!right-4">
+                    <div class="swiper-button-next !w-8 !h-8 md:!w-12 md:!h-12 lg:!w-14 lg:!h-14 bg-white/45 hover:bg-gray-900 !text-koamaru hover:!text-white flex items-center justify-center transition-all duration-300 rounded-none !right-2 md:!right-4">
                         <span class="text-sm md:text-lg lg:text-xl font-bold">&rang;</span>
                     </div>
-                    <div class="swiper-button-prev !w-8 !h-8 md:!w-12 md:!h-12 lg:!w-14 lg:!h-14 bg-white/45 hover:bg-gray-900 !text-black hover:!text-white flex items-center justify-center transition-all duration-300 rounded-none !left-2 md:!left-4">
+                    <div class="swiper-button-prev !w-8 !h-8 md:!w-12 md:!h-12 lg:!w-14 lg:!h-14 bg-white/45 hover:bg-gray-900 !text-koamaru hover:!text-white flex items-center justify-center transition-all duration-300 rounded-none !left-2 md:!left-4">
                         <span class="text-sm md:text-lg lg:text-xl font-bold">&lang;</span>
                     </div>
                     <div class="swiper-pagination"></div>
