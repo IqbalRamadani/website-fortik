@@ -51,8 +51,13 @@ class User extends Authenticatable implements FilamentUser
 
     public function canAccessPanel(Panel $panel): bool
     {
+        // Jika di lokal, bebaskan akses. 
+        // Jika di production, Shield akan menangani lewat Role.
+        // if (app()->environment('local')) {
+        //     return true;
+        // }
         // Logika baru: Pengguna HANYA bisa masuk jika mereka memiliki peran (role) apa pun.
         // Jika akun dibuat tapi belum diberi peran, mereka tetap ditendang.
-        return $this->hasRole('super_admin') || $this->roles->isNotEmpty();
+        return $this->hasRole('super_admin');
     }
 }
