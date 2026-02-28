@@ -1,4 +1,4 @@
-<nav x-data="{ mobileMenuOpen: false }" class="bg-linear-to-br from-lkoamaru to-koamaru fixed w-full z-20 top-0 start-0 shadow-lg px-6 py-4">
+<nav x-data="{ mobileMenuOpen: false }" class="bg-linear-to-br from-lkoamaru to-koamaru sticky w-full z-20 top-0 start-0 shadow-lg px-6 py-4">
     <div class="flex max-w-2xl md:max-w-3xl lg:max-w-6xl flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo-navbar.webp') }}" class="w-30 md:w-40" alt="Logo Fortik"/>
@@ -58,12 +58,12 @@
                 <li>
                     <x-nav-link href="/forsight" :active="request()->is('forsight')">FORSIGHT</x-nav-link>
                 </li>
+                <li>
+                    <x-nav-link href="/fortik-fair" :active="request()->is('fortik-fair')">FORTIK'S FAIR</x-nav-link>
+                </li>
                 {{-- <li> 
                     <x-nav-link href="/announcement" :active="request()->is('announcement')">Pengumuman</x-nav-link>
                 </li> deactivate announcement link --}} 
-                {{-- <li>
-                    <x-nav-link href="/contact" :active="request()->is('contact')">Kontak</x-nav-link>
-                </li> deactivate contact link --}} 
             </ul>
         </div>
     </div>
