@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Spatie\Permission\Models\Role;
 
 #[Layout('components.layout')]
 class Setup extends Component
@@ -47,6 +48,19 @@ class Setup extends Component
             'email' => $this->email,
             'password' => Hash::make($this->password),
         ]);
+
+        // // Kita gunakan try-catch agar jika role belum ter-generate di DB, sistem tidak crash
+        // try {
+        //     $user->assignRole('super_admin'); 
+        // } catch (\Exception $e) {
+        //     // Jika gagal assign role, biarkan saja dulu atau log error-nya
+        // }
+
+        // Berikan Role Super Admin secara otomatis
+        // Kita cek dulu apakah role-nya ada, jika belum ada kita buatkan.
+        $role = Role::firstOrCreate(['name' => 'super_admin', 'guard_name' => 'web']);
+        
+        $user->assignRole($role);
 
         // Langsung login-kan user tersebut setelah akun dibuat
         Auth::login($user);
