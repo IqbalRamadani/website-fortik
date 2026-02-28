@@ -1,7 +1,7 @@
 <div class="px-6 py-12 bg-white border-none">
     <div class="w-full max-w-6xl mx-auto">
         {{-- header section --}}
-        <h2 class="text-3xl md:text-4xl lg:text-6xl font-extrabold text-center text-koamaru mb-10">FORSIGHT</h2>
+        <h2 class="text-5xl md:text-6xl font-extrabold text-center text-koamaru mb-10">FORSIGHT</h2>
         {{-- grid layout --}}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             @foreach($bulletins as $bulletin)

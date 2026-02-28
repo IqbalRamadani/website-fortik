@@ -1,7 +1,7 @@
 <div class="px-6 py-12 bg-white border-none">
     <div class="w-full max-w-6xl mx-auto">
         <div class="flex justify-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-koamaru tracking-[0.2em] uppercase">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-koamaru">
                 ALBUM
             </h1>
         </div>
