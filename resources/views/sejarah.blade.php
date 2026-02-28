@@ -49,9 +49,9 @@
 @endphp
 
 <x-layout>
-    <div class="px-6 pt-28 md:pt-32 bg-white border-none">
+    <div class="px-6 pt-12 bg-white border-none">
         <div class="w-full max-w-6xl mx-auto">
-            <h2 class="text-4xl font-extrabold text-koamaru mb-12 block lg:hidden">
+            <h2 class="text-4xl font-extrabold text-koamaru mb-8 block lg:hidden">
                 SEJARAH FORTIK
             </h2>
 

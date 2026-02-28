@@ -1,5 +1,5 @@
-<div class="px-6 pt-28 md:pt-32 bg-white border-none">
-    <div class="w-full max-w-6xl mx-auto mb-12">
+<div class="px-6 py-12 bg-white border-none">
+    <div class="w-full max-w-6xl mx-auto">
         {{-- header section --}}
         <h2 class="text-3xl md:text-4xl lg:text-6xl font-extrabold text-center text-koamaru mb-10">FORNEWS</h2>
         {{-- grid layout --}}

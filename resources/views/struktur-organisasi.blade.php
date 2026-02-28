@@ -80,7 +80,7 @@
 @endphp --}}
 
 <x-layout>
-    <div class="px-6 pt-28 md:pt-32 bg-white border-none flex mx-auto h-fit">
+    <div class="px-6 py-12 bg-white border-none flex mx-auto h-fit">
         <div class="w-full max-w-6xl mx-auto">
             
             {{-- @foreach($categories as $category)
