@@ -18,7 +18,7 @@
     @endif
 @endpush
 
-<div class="px-6 pt-28 pb-10 md:pt-32 bg-white border-none">
+<div class="px-6 py-12 bg-white border-none">
     <div class="w-full max-w-6xl mx-auto">
         {{-- Breadcrumb simpel --}}
         <div class="text-sm font-bold text-gray-800 mb-6 uppercase">

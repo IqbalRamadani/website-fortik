@@ -1,4 +1,4 @@
-<div x-data="{ lightboxOpen: false, activeImage: '' }" class="px-6 pt-28 md:pt-32 bg-white border-none">
+<div x-data="{ lightboxOpen: false, activeImage: '' }" class="px-6 py-12 bg-white border-none">
     <div class="w-full max-w-6xl mx-auto mb-12">
         <div class="mb-8">
             <div class="text-sm font-bold text-gray-800 mb-6 uppercase">
