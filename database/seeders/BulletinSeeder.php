@@ -17,6 +17,7 @@ class BulletinSeeder extends Seeder
         $user = User::factory()->create([
             'name'  => 'Admin FORSIGHT',
             'email' => 'admin@forsight.test',
+            'password' => bcrypt('password'), // Pastikan password terenkripsi
         ]);
 
         Bulletin::factory(100)->create([
