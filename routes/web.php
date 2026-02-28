@@ -53,6 +53,10 @@ Route::get('/pengumuman', function () {
     return view('pengumuman', ['title' => 'Pengumuman']);
 });
 
+Route::get('/fortik-fair', function () {
+    return view('fortik-fair', ['title' => 'FORTIK FAIR']);
+});
+
 Route::get('/fornews', FornewsIndex::class)->name('fornews.index');
 Route::get('/fornews/{slug}', FornewsShow::class)->name('fornews.show');
 
