@@ -1,10 +1,10 @@
-<div class="px-6 accordion w-full min-h-auto xl:min-h-[693px] bg-faq-mobile xl:bg-faq bg-contain bg-no-repeat bg-top mb-12 sm:mb-24">
+<div class="px-6 accordion w-full min-h-auto lg:min-h-screen bg-faq-mobile xl:bg-faq bg-contain bg-no-repeat bg-top py-16">
     
     <div x-data="{ activeIndex: null }" class="flex flex-col gap-2 w-full max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-koamaru mb-12 lg:mb-16">FAQ</h2>
         
         @forelse($faqs as $index => $faq)
-            <div class="flex flex-col w-full xl:w-3/4 mb-2 mx-auto">
+            <div class="flex flex-col w-full xl:w-3/4 mb-2">
 
                 <button @click="activeIndex = activeIndex === {{ $index }} ? null : {{ $index }}" 
                         class="flex items-start justify-between gap-4 w-full p-4 text-left text-md font-medium text-white bg-koamaru/90 shadow-lg border border-default hover:text-white hover:bg-koamaru focus:text-white focus:bg-koamaru transition-all">
