@@ -3,15 +3,13 @@
     <div class="w-full max-w-6xl mx-auto">
       
       <section>
-          <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-24">MAKNA LAMBANG</h1>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-16">MAKNA LAMBANG</h1>
 
-          <div class="place-items-center mb-16">
+          <div class="place-items-center md:place-items-start mb-32 flex flex-col md:flex-row gap-16">
               <img src="images/logo-fortik-1b.png" class="w-40 lg:w-60" alt="Logo-FORTIK">
+              <h1 class="text-koamaru text-justify text-xl lg:text-2xl ">      Perkembangan zaman yang disertai dengan kemajuan teknologinya menuntut kita untuk lebih aktif dalam mengelola dan mengolah teknologi dengan sebaik mungkin. Hal inilah yang menjadi perhatian FORTIK untuk dapat meningkatkan serta mengembangkan keterampilan setiap mahasiswa dalam bidang digital, dengan berbagai pelayanan yang ditawarkan mulai dari bentuk kerjasama antar UKM hingga pelayanan pendidikan yang dapat diakses oleh setiap mahasiswanya. FORTIK hadir untuk dapat membangkitkan semangat mahasiswa dalam berteknologi serta menciptakan kampus yang maju dalam dunia digital.</h1>
           </div>
 
-          <div class="mb-32">
-            <h1 class="text-koamaru">Perkembangan zaman yang disertai dengan kemajuan teknologinya menuntut kita untuk lebih aktif dalam mengelola dan mengolah teknologi dengan sebaik mungkin. Hal inilah yang menjadi perhatian FORTIK untuk dapat meningkatkan serta mengembangkan keterampilan setiap mahasiswa dalam bidang digital, dengan berbagai pelayanan yang ditawarkan mulai dari bentuk kerjasama antar UKM hingga pelayanan pendidikan yang dapat diakses oleh setiap mahasiswanya. FORTIK hadir untuk dapat membangkitkan semangat mahasiswa dalam berteknologi serta menciptakan kampus yang maju dalam dunia digital.</h1>
-          </div>
 
           <div class="flex flex-col align-items-center justify-content-center gap-5">
 
@@ -52,7 +50,7 @@
 
                           <div class="grid md:grid-cols-3 gap-20 relative">
                                   <?php foreach ($details as $index => $detail): ?>
-                                      <div class="text-center p-3 lg:p-6">
+                                      <div class="text-center p-3 lg:p-6 shadow-lg">
 
                                           <div class="flex justify-center mb-6">
                                               <img src=<?= $detail["gambar"] ?> alt="" class="w-35">
