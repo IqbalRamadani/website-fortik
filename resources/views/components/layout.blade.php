@@ -20,6 +20,9 @@
             .swiper-button-prev::after {
             content: "" !important;
             }
+            [x-cloak] {
+            display: none !important;
+            }
         </style>
     </head>
     <body>
