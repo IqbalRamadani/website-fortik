@@ -21,7 +21,6 @@ Lakukan fork repositori ini ke akun GitHub masing-masing, lalu clone ke folder l
 
 ```bash
 git clone [https://github.com/](https://github.com/IqbalRamadani/website-fortik.git)
-cd project-arya
 ```
 
 ### 2. Install Dependency Sistem
