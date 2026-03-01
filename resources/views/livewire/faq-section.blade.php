@@ -1,7 +1,7 @@
-<div class="px-6 accordion w-full min-h-auto lg:min-h-screen bg-faq-mobile xl:bg-faq bg-contain bg-no-repeat bg-top py-16">
+<div class="px-6 accordion w-full min-h-auto lg:min-h-screen xl:bg-faq bg-contain bg-no-repeat bg-top py-6 md:py-8">
     
     <div x-data="{ activeIndex: null }" class="flex flex-col gap-2 w-full max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-koamaru mb-12 lg:mb-16">FAQ</h2>
+        <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-koamaru mb-4 lg:mb-8">FAQ</h2>
         
         @forelse($faqs as $index => $faq)
             <div class="flex flex-col w-full xl:w-3/4 mb-2">
