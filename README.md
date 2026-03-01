@@ -80,20 +80,25 @@ php artisan storage:link
 ```
 ### 4. Migrasi Database
 
-Pastikan database `project_arya` (atau nama yang sesuai) sudah dibuat di DBMS server. Lalu eksekusi struktur tabel:
+Pastikan database `project_arya` (atau nama yang sesuai) sudah dibuat di DBMS server. Lalu eksekusi struktur tabel (seeder hanya dijalankan sekali saja di awal):
 
 ```bash
-php artisan migrate --force
+php artisan migrate --force --seed
+```
+### 5. Inisialisasi Database Shield (Role)
+Jalankan perintah di bawah ini untuk generate role Shield di database
+```bash
+php artisan shield:generate --all
 ```
 
-### 5. Kompilasi Aset Frontend
+### 6. Kompilasi Aset Frontend
 
 Bangun aset CSS dan JS statis untuk production:
 ```bash
 npm run build
 ```
 
-### 6. Optimasi Cache Laravel (Wajib)
+### 7. Optimasi Cache Laravel (Wajib)
 Bekukan semua konfigurasi, rute, dan view ke dalam memory server agar aplikasi berjalan maksimal tanpa membaca ulang file berulang kali:
 
 ```bash
@@ -101,12 +106,6 @@ php artisan optimize:clear
 php artisan optimize
 php artisan view:cache
 php artisan event:cache
-```
-
-### 7. Inisialisasi Database Shield (Role)
-Jalankan perintah di bawah ini untuk generate role Shield di database
-```bash
-php artisan shield:generate --all
 ```
 
 ### 👨‍💻 Tim Developer (Kontributor Utama)
