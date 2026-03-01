@@ -1,5 +1,5 @@
 <div x-data="{ lightboxOpen: false, activeImage: '' }" class="px-6 py-12 bg-white border-none">
-    <div class="w-full max-w-6xl mx-auto mb-12">
+    <div class="w-full max-w-6xl mx-auto mb-4">
         <div class="mb-8">
             <div class="text-sm font-bold text-gray-800 mb-6 uppercase">
                 <a href="{{ route('album.index') }}" class="hover:text-lkoamaru">Album</a> 
@@ -9,7 +9,7 @@
             <h1 class="text-3xl font-bold mt-2 text-gray-900">{{ $album->title }}</h1>
         </div>
 
-        <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+        <div class="columns-1 sm:columns-2 lg:columns-4 gap-4 space-y-4">
             @foreach($album->photos as $photo)
                 <div 
                     x-data="{ loaded: false }"
