@@ -12,10 +12,6 @@
             'image' => 'images/banner-3.png',
             'url'   => '/agenda',
         ],
-        [
-            'image' => 'images/banner-webinar.png',
-            'url'   => '/agenda',
-        ],
     ];
 @endphp
 
