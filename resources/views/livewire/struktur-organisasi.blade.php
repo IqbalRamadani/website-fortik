@@ -13,14 +13,8 @@
                                 src="{{ asset('storage/' . $member->image) }}" 
                                 alt="{{ $member->name }}" 
                                 loading="lazy"
-                                class="w-full aspect-[4/6] object-cover hover:scale-105 transition duration-300"
+                                class="w-full object-cover hover:scale-105 transition duration-300"
                             >
-                            
-                            {{-- <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 translate-y-2 group-hover:translate-y-0 transition-transform">
-                                <p class="text-white text-sm font-bold text-center drop-shadow-md">
-                                    {{ $member->name }}
-                                </p>
-                            </div> --}}
                         </div>
                     @endforeach
                 </div>
