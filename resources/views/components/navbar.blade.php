@@ -59,7 +59,7 @@
                     <x-nav-link href="/forsight" :active="request()->is('forsight')">FORSIGHT</x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link href="/fortik-fair" :active="request()->is('fortik-fair')">FORTIK'S FAIR</x-nav-link>
+                    <x-nav-link href="/agenda" :active="request()->is('agenda')">AGENDA</x-nav-link>
                 </li>
                 {{-- <li> 
                     <x-nav-link href="/announcement" :active="request()->is('announcement')">Pengumuman</x-nav-link>
