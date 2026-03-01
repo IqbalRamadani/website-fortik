@@ -33,8 +33,9 @@ class FaqSeeder extends Seeder
 
         $order = 1;
         foreach ($items as $item) {
-            Faq::create([
+            Faq::updateOrCreate([
                 'question' => $item['question'],
+            ], [
                 'answer' => $item['answer'],
                 'sort_order' => $order++
             ]);

@@ -80,8 +80,9 @@ class DivisionSeeder extends Seeder
 
         foreach ($strukturFortik as $divisionName => $members) {
             // Buat Divisi
-            $division = Division::create([
+            $division = Division::updateOrCreate([
                 'name' => $divisionName,
+            ], [
                 'sort_order' => $divisionOrder++
             ]);
 
@@ -89,10 +90,10 @@ class DivisionSeeder extends Seeder
 
             foreach ($members as $memberName) {
                 // Buat nama file unik untuk seolah-olah ini adalah hasil upload Filament
-                $filename = 'struktur-images/dummy-' . Str::random(10) . '.webp';
+                $filename = 'struktur-images/dummy-' . Str::slug($memberName) . '.webp';
                 
                 // Gandakan file gambar fisik ke folder storage
-                if (File::exists($sourceImage)) {
+                if (File::exists($sourceImage) && !File::exists(storage_path('app/public/' . $filename))) {
                     File::copy($sourceImage, storage_path('app/public/' . $filename));
                 }
 
