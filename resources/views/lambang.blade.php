@@ -38,7 +38,7 @@
         ?>
         
       <section>
-          <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-16 mt-16 lg:mt-0">MAKNA LAMBANG</h1>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-16 mt-16 md:mt-10 lg:mt-0">MAKNA LAMBANG</h1>
 
           <div class="place-items-center md:place-items-start mb-32 flex flex-col md:flex-row gap-16">
               <img src="images/logo-fortik-1b.png" class="w-40 lg:w-60" alt="Logo-FORTIK">
