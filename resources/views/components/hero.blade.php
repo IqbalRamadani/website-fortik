@@ -1,11 +1,11 @@
 @php
     $banners = [
         [
-            'image' => 'images/banner-1.png',
+            'image' => 'images/banner-fortik-1.png',
             'url'   => '/agenda',
         ],
         [
-            'image' => 'images/banner-2.png',
+            'image' => 'images/banner-fortik-2.png',
             'url'   => '/agenda',
         ],
         [
