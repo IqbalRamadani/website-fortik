@@ -37,7 +37,7 @@
 <x-layout>
     <div class="px-6 py-12 bg-white border-none">
         <div class="w-full max-w-6xl mx-auto">
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-16 mt-16 md:mt-10 lg:mt-0">MAKNA LAMBANG</h1>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-koamaru mb-12">MAKNA LAMBANG</h1>
 
             <div class="place-items-center md:place-items-start mb-16 flex flex-col md:flex-row gap-16">
                 <img src="images/logo-fortik-1b.webp" class="w-32" alt="Logo-FORTIK">
@@ -46,7 +46,7 @@
             <div class="flex flex-col align-items-center justify-content-center gap-5">
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <?php foreach ($details as $index => $detail): ?>
-                        <div class="text-center p-3 md:p-6 shadow-xl border-slate-300/50 border flex flex-col items-center justify-center">
+                        <div class="text-center p-4 md:p-6 shadow-xl border-slate-300/50 border flex flex-col items-center justify-center">
                             <div class="flex justify-center  mb-6">
                                 <img src=<?= $detail["gambar"] ?> alt="" class="w-35">
                             </div>
