@@ -2,19 +2,19 @@
     $banners = [
         [
             'image' => 'images/banner-1.png',
-            'url'   => 'https://fortik.test/fornews/deserunt-et-enim-dolores-ducimus-nostrum-vL9cu',
+            'url'   => '/agenda',
         ],
         [
             'image' => 'images/banner-2.png',
-            'url'   => 'https://fortik.test/fornews/at-ex-sed-aspernatur-dolorem-voluptatem-oQT4n',
+            'url'   => '/agenda',
         ],
         [
             'image' => 'images/banner-3.png',
-            'url'   => 'https://fortik.test/fornews/consequatur-temporibus-incidunt-recusandae-autem-illo-tempora-XprmU',
+            'url'   => '/agenda',
         ],
         [
             'image' => 'images/banner-webinar.png',
-            'url'   => 'https://fortik.test/fornews/consequatur-temporibus-incidunt-recusandae-autem-illo-tempora-XprmU',
+            'url'   => '/agenda',
         ],
     ];
 @endphp
