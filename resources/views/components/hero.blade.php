@@ -12,6 +12,10 @@
             'image' => 'images/banner-3.png',
             'url'   => 'https://fortik.test/fornews/consequatur-temporibus-incidunt-recusandae-autem-illo-tempora-XprmU',
         ],
+        [
+            'image' => 'images/banner-webinar.png',
+            'url'   => 'https://fortik.test/fornews/consequatur-temporibus-incidunt-recusandae-autem-illo-tempora-XprmU',
+        ],
     ];
 @endphp
 
@@ -30,7 +34,7 @@
             pagination: { el: '.swiper-pagination', clickable: true },
         })
     "
-    class="relative w-full"
+    class="w-full"
 >
     <div x-ref="container" class="swiper w-full">
         <div class="swiper-wrapper">
