@@ -11,7 +11,7 @@
             Berhenti belajar teori pertahanan. Mari bedah anatomi peretasan, manipulasi psikologis, dan eksploitasi data langsung dari sudut pandang penyerang.
         </p>
 
-        <div x-data="countdownTimer()" x-init="startTimer()" class="flex space-x-4 mb-12 font-mono">
+        <div x-data="countdownTimer()" x-init="startTimer()" class="flex space-x-2 mb-12 font-mono">
             <template x-for="(value, unit) in time" :key="unit">
                 <div class="flex flex-col items-center bg-slate-800 border border-slate-700 rounded-lg p-4 w-20 md:w-24">
                     <span class="text-2xl md:text-4xl font-bold text-white" x-text="value"></span>
@@ -26,10 +26,11 @@
                 <h3 class="text-2xl font-bold text-white mb-2">General Ticket</h3>
                 <p class="text-3xl font-extrabold text-white mb-6">Rp 0</p>
                 <ul class="space-y-4 mb-8 flex-1 text-sm">
-                    <li class="flex items-center text-slate-300"><span class="text-emerald-400 mr-2">✔</span> Akses Live Zoom (Terbatas)</li>
+                    <li class="flex items-center text-slate-300"><span class="text-emerald-400 mr-2">✔</span> Akses Live Zoom</li>
                     <li class="flex items-center text-rose-400"><span class="mr-2">✖</span> Tanpa E-Sertifikat</li>
-                    <li class="flex items-center text-rose-400"><span class="mr-2">✖</span> Tanpa Rekaman & Modul PDF</li>
+                    <li class="flex items-center text-rose-400"><span class="mr-2">✖</span> Tanpa Modul Materi PDF & Rekaman</li>
                     <li class="flex items-center text-slate-400 italic"><span class="mr-2 text-rose-500">⚠</span> Wajib share poster ke 3 Grup WA</li>
+                    <li class="flex items-center text-slate-400 italic"><span class="mr-2 text-rose-500">⚠</span> Wajib tag 3 teman di postingan IG</li>
                 </ul>
                 <a href="LINK_GFORM_GRATIS_DISINI" target="_blank" class="w-full py-3 px-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold text-center rounded-lg transition-colors">
                     Daftar Jalur Gratis
@@ -44,11 +45,10 @@
                 <p class="text-3xl font-extrabold text-white mb-1">Rp 25.000</p>
                 <p class="text-sm text-emerald-400 mb-6 font-medium">Investasi seharga segelas kopi.</p>
                 <ul class="space-y-4 mb-8 flex-1 text-sm">
-                    <li class="flex items-center text-white font-medium"><span class="text-emerald-400 mr-2">✔</span> Akses Live Zoom (Pasti Masuk)</li>
-                    <li class="flex items-center text-white"><span class="text-emerald-400 mr-2">✔</span> E-Sertifikat Resmi FORTIK</li>
+                    <li class="flex items-center text-white font-medium"><span class="text-emerald-400 mr-2">✔</span> Akses Live Zoom</li>
+                    <li class="flex items-center text-white"><span class="text-emerald-400 mr-2">✔</span> E-Sertifikat Nasional</li>
                     <li class="flex items-center text-white"><span class="text-emerald-400 mr-2">✔</span> Modul Materi PDF & Rekaman </li>
-                    <li class="flex items-center text-white"><span class="text-emerald-400 mr-2">✔</span> Prioritas Tanya Jawab & Doorprize</li>
-                    <li class="flex items-center text-emerald-400 font-semibold"><span class="text-emerald-400 mr-2">✔</span> Langsung daftar, tanpa syarat share.</li>
+                    <li class="flex items-center text-emerald-400 font-semibold"><span class="text-emerald-400 mr-2">✔</span> Langsung daftar, tanpa syarat share & tag.</li>
                 </ul>
                 <a href="LINK_GFORM_VIP_DISINI" target="_blank" class="w-full py-3 px-4 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-center rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-emerald-500/30">
                     Amankan Tiket VIP
