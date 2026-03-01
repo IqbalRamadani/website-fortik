@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\FornewsIndex;
+use App\Livewire\FornewsShow;
 
 Route::get('/', function () {
     return view('beranda', ['title' => 'Beranda']);
@@ -38,13 +40,6 @@ Route::get('/pengumuman', function () {
     return view('pengumuman', ['title' => 'Pengumuman']);
 });
 
-Route::get('/post-image/{filename}', function ($filename) {
-    $path = storage_path('app/private/post-image/' . $filename);
-
-    if (!file_exists($path)) {
-        abort(404);
-    }
-
-    return response()->file($path);
-})->name('post.image');
+Route::get('/fornews', FornewsIndex::class)->name('fornews.index');
+Route::get('/fornews/{slug}', FornewsShow::class)->name('fornews.show');
 

@@ -27,7 +27,7 @@
                         {{ $post['content_preview'] }}
                     </p>
                     
-                    <a href="/posts/{{ $post['slug'] }}" class="inline-block bg-koamaru text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-lkoamaru transition">
+                    <a href="/fornews/{{ $post['slug'] }}" class="inline-block bg-koamaru text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-lkoamaru transition">
                         Selengkapnya
                     </a>
                 </div>
@@ -58,7 +58,7 @@
                         {{ $post['content_preview'] }}
                     </p>
                     
-                    <a href="/posts/{{ $post['slug'] }}" class="inline-block bg-koamaru text-white px-4 py-1.5 rounded text-xs font-medium hover:bg-opacity-90 transition">
+                    <a href="/fornews/{{ $post['slug'] }}" class="inline-block bg-koamaru text-white px-4 py-1.5 rounded text-xs font-medium hover:bg-opacity-90 transition">
                         Selengkapnya
                     </a>
                 </div>
@@ -67,7 +67,7 @@
         </div>
         
         <div class="flex justify-center mt-6">
-            <button class="bg-white text-koamaru md:mt-4 px-6 py-2 rounded-md text-sm md:text-base font-semibold hover:bg-gray-100 transition">
+            <button class="bg-white text-koamaru md:mt-4 px-6 py-2 rounded-md text-sm md:text-base font-semibold hover:bg-gray-200 hover:cursor-pointer transition" onclick="window.location.href='/fornews'">
                 ForNews Lainnya
             </button>
         </div>
