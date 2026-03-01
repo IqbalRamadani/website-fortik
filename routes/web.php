@@ -34,10 +34,6 @@ Route::get('/lambang', function () {
 
 Route::get('/struktur-organisasi', StrukturOrganisasi::class);
 
-// Route::get('/struktur-organisasi', function () {
-//     return view('struktur-organisasi', ['title' => 'Struktur Organisasi']);
-// });
-
 Route::get('/fornews', function () {
     return view('fornews', ['title' => 'ForNews']);
 });
@@ -49,9 +45,9 @@ Route::get('/forsight', function () {
     return view('forsight', ['title' => 'ForSight']);
 });
 
-Route::get('/pengumuman', function () {
-    return view('pengumuman', ['title' => 'Pengumuman']);
-});
+// Route::get('/pengumuman', function () {
+//     return view('pengumuman', ['title' => 'Pengumuman']);
+// });
 
 Route::get('/agenda', function () {
     return view('agenda', ['title' => 'Agenda']);
