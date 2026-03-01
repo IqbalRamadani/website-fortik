@@ -24,8 +24,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::preventLazyLoading(! app()->isProduction());
 
-        Gate::define('viewPulse', function (?User $user) {
-            return app()->environment('local');
+        Gate::define('viewPulse', function (User $user) {
+            return $user->hasRole('super-admin'); 
         });
     }
 }
