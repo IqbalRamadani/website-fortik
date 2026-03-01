@@ -12,7 +12,8 @@
                             @if($bulletin->image)
                             <img src="{{ asset('storage/' . $bulletin->image) }}" 
                                 alt="{{ $bulletin->title }}" 
-                                class="w-full h-full object-cover">
+                                class="w-full h-full object-cover"
+                                loading="lazy">
                             @else
                             {{-- Fallback jika tidak ada gambar --}}
                                 <div class="w-full h-full flex items-center justify-center bg-supernova text-yellow-800">
