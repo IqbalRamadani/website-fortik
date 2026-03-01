@@ -29,46 +29,53 @@ class DivisionSeeder extends Seeder
             'BADAN PENGURUS HARIAN (BPH)' => [
                 'Ketua Umum', 
                 'Wakil Ketua', 
-                'Sekretaris', 
+                'Sekretaris 1',
+                'Sekretaris 2', 
                 'Bendahara'
             ],
             'DIVISI DESAIN GRAFIS' => [
-                'Ketua Divisi Desain Grafis', 
+                'Ketua Divisi Desain Grafis',
+                'Wakil Ketua Divisi Desain Grafis', 
                 'Anggota Desain Grafis 1', 
                 'Anggota Desain Grafis 2',
                 'Anggota Desain Grafis 3', 
-                'Anggota Desain Grafis   4'
+                'Anggota Desain Grafis 4'
             ],
             'DIVISI VIDEOGRAFI' => [
-                'Ketua Divisi Video', 
-                'Anggota Video 1', 
-                'Anggota Video 2',
-                'Anggota Video 3', 
-                'Anggota Video 4'
+                'Ketua Divisi Videografi',
+                'Wakil Ketua Divisi Videografi',
+                'Anggota Videografi 1', 
+                'Anggota Videografi 2',
+                'Anggota Videografi 3', 
+                'Anggota Videografi 4'
             ],
             'DIVISI CONTENT CREATOR' => [
-                'Ketua Divisi Content Creator', 
+                'Ketua Divisi Content Creator',
+                'Wakil Ketua Divisi Content Creator',
                 'Anggota Content Creator 1', 
                 'Anggota Content Creator 2',
                 'Anggota Content Creator 3', 
                 'Anggota Content Creator 4'
             ],
             'DIVISI PENGEMBANGAN SUMBER DAYA MANUSIA (PSDM)' => [
-                'Ketua Divisi PSDM', 
+                'Ketua Divisi PSDM',
+                'Wakil Ketua Divisi PSDM',
                 'Anggota PSDM 1', 
                 'Anggota PSDM 2',
                 'Anggota PSDM 3', 
                 'Anggota PSDM 4'
             ],
             'DIVISI PUBLIC RELATION' => [
-                'Ketua Divisi Public Relation', 
+                'Ketua Divisi Public Relation',
+                'Wakil Ketua Divisi Public Relation',
                 'Anggota Public Relation 1', 
                 'Anggota Public Relation 2',
                 'Anggota Public Relation 3', 
                 'Anggota Public Relation 4'
             ],
-            'DIVISI SISTEM INFORMASI INFRASTRUKTUR PROGRAMMING (SIIP)' => [
-                'Ketua Divisi SIIP', 
+            'DIVISI SISTEM INFORMASI INFRASTRUKTUR & PROGRAMMING (SIIP)' => [
+                'Ketua Divisi SIIP',
+                'Wakil Ketua Divisi SIIP', 
                 'Anggota SIIP 1', 
                 'Anggota SIIP 2',
                 'Anggota SIIP 3', 
