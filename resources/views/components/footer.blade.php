@@ -112,7 +112,7 @@
         <hr class="mb-8 border-gray-200"/>
         {{-- Bottom --}}
         <div class="text-sm text-left md:text-center text-gray-200">
-            © 2025 Developed by <a href="#" class="hover:text-supernova">Arya Team</a>.
+            © 2025 Developed by Arya Team.
             All Rights Reserved.
         </div>
     </div>
