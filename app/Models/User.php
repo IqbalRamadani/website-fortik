@@ -58,6 +58,6 @@ class User extends Authenticatable implements FilamentUser
         // }
         // Logika baru: Pengguna HANYA bisa masuk jika mereka memiliki peran (role) apa pun.
         // Jika akun dibuat tapi belum diberi peran, mereka tetap ditendang.
-        return $this->hasRole('super_admin');
+        return $this->hasRole('super_admin') || $this->hasAnyRole(['admin', 'admin_forsight', 'admin_fornews']);
     }
 }
