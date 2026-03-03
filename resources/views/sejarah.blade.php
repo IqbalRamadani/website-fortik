@@ -57,7 +57,7 @@
 
             <div class="wrapper flex gap-16 justify-between">
 
-                <img src="sejarah/sejarah-fortik-text.svg"
+                <img src="/images/sejarah-fortik-text.svg"
                     alt="sejarah-fortik"
                     class="hidden lg:block w-20 h-full object-contain">
 
