@@ -10,7 +10,7 @@
                     @foreach($division->members as $member)
                         <div class="overflow-hidden shadow-lg group relative">
                             <img 
-                                src="{{ asset('storage/' . $member->image) }}" 
+                                src="{{ $member->image_url }}" 
                                 alt="{{ $member->name }}" 
                                 loading="lazy"
                                 class="w-full object-cover hover:scale-105 transition duration-300"
