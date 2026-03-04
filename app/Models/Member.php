@@ -23,4 +23,15 @@ class Member extends Model
             }
         });
     }
+
+    public function getImageUrlAttribute()
+{
+    // Cek apakah file benar-benar ada di disk
+    if ($this->image && Storage::disk('public')->exists($this->image)) {
+        return asset('storage/' . $this->image);
+    }
+
+    // Jika file hilang (Error 404/403), berikan gambar default agar UI tidak hancur
+    return asset('images/default-avatar.webp');
+}
 }
