@@ -37,11 +37,11 @@ class DivisionForm
                                     ->maxLength(255),
                                 FileUpload::make('image')
                                     ->label('Foto Profil')
+                                    ->image()
                                     ->disk('public')
                                     ->directory('struktur-images')
                                     ->required()
                                     ->saveUploadedFileUsing(function ($file) {
-                                        // Kompresi WebP Paksa
                                         $manager = new ImageManager(new Driver());
                                         $image = $manager->read($file->getRealPath());
                                         $image->scaleDown(width: 400);
