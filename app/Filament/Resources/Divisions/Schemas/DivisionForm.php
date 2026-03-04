@@ -7,6 +7,7 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Intervention\Image\Drivers\Gd\Driver;
@@ -47,7 +48,11 @@ class DivisionForm
                                         $encoded = $image->toWebp(70);
                                         
                                         $filename = 'struktur-images/' . Str::random(40) . '.webp';
-                                        Storage::disk('public')->put($filename, $encoded->toString());
+                                        $isSaved = Storage::disk('public')->put($filename, $encoded->toString());
+                                        if (!$isSaved || !Storage::disk('public')->exists($filename)) {
+                                            Log::error("Gagal menyimpan gambar: {$filename}");
+                                            throw new \Exception("Gagal menyimpan file ke server.");
+                                        }
                                         return $filename;
                                     }),
                             ])
