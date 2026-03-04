@@ -39,7 +39,7 @@
                         @forelse($sliderPhotos as $photo)
                             <div class="swiper-slide relative">
                                 <img 
-                                    src="{{ asset('storage/' . $photo->image_path) }}" 
+                                    src="{{ $photo->image_url }}" 
                                     loading="lazy" 
                                     class="w-full h-full object-cover aspect-[16/9]" 
                                     alt="Highlight Kegiatan FORTIK"

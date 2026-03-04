@@ -21,7 +21,7 @@
                     
                     <img 
                         x-ref="myImage"
-                        src="{{ asset('storage/' . $photo->image_path) }}" 
+                        src="{{ $photo->image_url }}" 
                         alt="Album Photo" 
                         loading="lazy"
                         @load="loaded = true"

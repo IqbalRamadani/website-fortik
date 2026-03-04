@@ -19,7 +19,7 @@
                         
                         <img 
                             x-ref="myImage"    
-                            src="{{ asset('storage/' . $album->cover_image) }}" 
+                            src="{{ $album->image_url }}" 
                             alt="Cover {{ $album->title }}" 
                             loading="lazy"
                             @load="loaded = true"
