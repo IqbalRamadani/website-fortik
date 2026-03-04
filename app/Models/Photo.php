@@ -35,4 +35,15 @@ class Photo extends Model
             }
         });
     }
+
+    public function getImageUrlAttribute()
+    {
+        // Cek apakah kolom image_path ada dan file-nya eksis secara fisik di disk 'public'
+        if ($this->image_path && \Illuminate\Support\Facades\Storage::disk('public')->exists($this->image_path)) {
+            return asset('storage/' . $this->image_path);
+        }
+
+        // Jika file hilang (Error 404/403), kembalikan gambar placeholder agar UI tetap rapi
+        return asset('images/default-image.webp');
+    }
 }
