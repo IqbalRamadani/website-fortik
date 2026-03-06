@@ -1,22 +1,19 @@
 <div id="agenda" class="w-full max-w-6xl mx-auto px-6 xl:px-0 py-12 bg-white border-none" x-data="{ showFilter: false }">
     <div class="w-full mx-auto">
         {{-- header section --}}
-        <div class="flex-1 text-center md:text-left">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-koamaru">
-                Temukan Lomba dan Pelatihan Terbaik untuk Kamu!
-            </h1>
-            <p class="mt-4 text-lg text-gray-600 mx-auto">
-                Ikuti berbagai lomba dan pelatihan untuk mengasah kemampuanmu. Daftar sekarang dan tunjukkan potensimu!
-            </p>
-            {{-- <div class="mt-8">
-                <a href="#agenda" class="inline-block bg-blue-800 text-white font-semibold px-8 py-3 rounded-md shadow hover:bg-blue-900 transition">
-                    Lihat lomba
-                </a>
-            </div> --}}
+        <div class="flex text-center md:text-left">
+            <div class="">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-koamaru">
+                    Temukan Lomba dan Pelatihan Terbaik untuk Kamu!
+                </h1>
+                <p class="mt-4 text-lg text-gray-600 mx-auto">
+                    Ikuti berbagai lomba dan pelatihan untuk mengasah kemampuanmu. Daftar sekarang dan tunjukkan potensimu!
+                </p>
+            </div>
+            <div class="">
+                <img src="{{ asset('images/fortik-bot-2.webp') }}" alt="Maskot FORTIK" class="w-64 md:w-full max-w-md object-contain drop-shadow-2xl">
+            </div>
         </div>
-        {{-- <div class="flex-1 flex justify-center">
-            <img src="{{ asset('images/fortik-bot-1.webp') }}" alt="Maskot FORTIK" class="w-64 md:w-full max-w-md object-contain drop-shadow-2xl">
-        </div> --}}
         <div class="flex mt-8 justify-between items-center mb-8 border-b pb-4">
             <h2 class="text-2xl md:text-3xl font-bold text-koamaru">Agenda FORTIK</h2>
             <button @click="showFilter = !showFilter" 
