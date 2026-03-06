@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('submissions', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('agenda_id')->constrained('agendas')->cascadeOnDelete();
+            $table->string('nama_lengkap');
+            $table->string('email');
+            $table->string('no_whatsapp');
+            $table->string('instansi');
+            $table->string('bukti_file');
+            $table->string('link_grup');
+            $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
+            $table->unique(['agenda_id', 'email']); // Mencegah spam duplikat
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('submissions');
+    }
+};
