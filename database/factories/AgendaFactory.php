@@ -17,8 +17,8 @@ class AgendaFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => 'Lomba Karya Tulis Tingkat ' . $this->faker->randomElement(['Nasional', 'Provinsi', 'Kampus']) . ' 2025',
-            'level' => 'Nasional',
+            'title' => 'Lomba Karya Tulis Tingkat ' . $this->faker->randomElement(['Nasional', 'Provinsi', 'Kampus']) . ' 2026',
+            'level' => $this->faker->randomElement(['Nasional', 'Provinsi', 'Kampus']),
             'banner_image' => 'https://placehold.co/400x600/6B21A8/FFF?text=Banner+Lomba',
             'start_date' => now()->addDays(rand(1, 10)),
             'end_date' => now()->addDays(rand(11, 30)),
