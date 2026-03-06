@@ -25,7 +25,7 @@ class AgendaFactory extends Factory
             'location' => $this->faker->randomElement(['Online', 'Offline - Jember']),
             'is_free' => true,
             'quota' => $this->faker->numberBetween(50, 200),
-            'link' => $this->faker->url(),
+            'link_grup' => $this->faker->url(),
         ];
     }
 }
