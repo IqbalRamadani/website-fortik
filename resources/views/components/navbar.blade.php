@@ -29,7 +29,7 @@
             class="w-full md:!block md:w-auto md:!h-auto" 
             x-cloak>
             
-            <ul class="flex flex-col font-semibold text-sm lg:text-base p-0 mt-4 bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <ul class="flex flex-col font-semibold text-sm lg:text-base p-0 mt-4 bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-4 lg:mt-0 md:border-0">
                 <li>
                     <x-nav-link href="/" :active="request()->is('/')">BERANDA</x-nav-link>
                 </li>
@@ -70,6 +70,7 @@
                 <li><x-nav-link href="/galeri" :active="request()->is('galeri')">GALERI</x-nav-link></li>
                 <li><x-nav-link href="/forsight" :active="request()->is('forsight')">FORSIGHT</x-nav-link></li>
                 <li><x-nav-link href="/agenda" :active="request()->is('agenda')">AGENDA</x-nav-link></li>
+                <li><x-nav-link href="/cek-status" :active="request()->is('cek-status')">CEK STATUS</x-nav-link></li>
             </ul>
         </div>
     </div>
