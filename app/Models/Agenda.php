@@ -11,10 +11,14 @@ class Agenda extends Model
     use HasFactory;
 
     protected $guarded = [];
-
     protected $casts = [
         'start_date' => 'date',
         'end_date' => 'date',
         'is_free' => 'boolean',
     ];
+
+    public function pendaftarans()
+    {
+        return $this->hasMany(Pendaftaran::class);
+    }
 }
