@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Models\Pendaftaran;
+use App\Models\Submission;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 
@@ -11,7 +11,7 @@ class CekStatus extends Component
 {
     public $email;
     public $no_whatsapp;
-    public $hasilPendaftarans = [];
+    public $hasilSubmissions = [];
     public $sudahDicari = false;
 
     public function cariData()
@@ -21,7 +21,7 @@ class CekStatus extends Component
             'no_whatsapp' => 'required|numeric',
         ]);
 
-        $this->hasilPendaftarans = Pendaftaran::with('agenda')
+        $this->hasilSubmissions = Submission::with('agenda')
             ->where('email', $this->email)
             ->where('no_whatsapp', $this->no_whatsapp)
             ->get();
