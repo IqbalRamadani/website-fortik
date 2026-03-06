@@ -17,8 +17,8 @@ class Agenda extends Model
         'is_free' => 'boolean',
     ];
 
-    public function pendaftarans()
+    public function submissions()
     {
-        return $this->hasMany(Pendaftaran::class);
+        return $this->hasMany(Submission::class);
     }
 }
