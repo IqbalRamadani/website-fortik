@@ -20,24 +20,24 @@
 
         @if($sudahDicari)
             <div class="mt-10 border-t pt-8">
-                @if(count($hasilPendaftarans) > 0)
+                @if(count($hasilSubmissions) > 0)
                     <h3 class="font-bold text-gray-800 mb-4">Riwayat Pendaftaran Anda:</h3>
                     <div class="space-y-4">
-                        @foreach($hasilPendaftarans as $pendaftaran)
-                            <div class="border rounded-lg p-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 {{ $pendaftaran->status === 'approved' ? 'bg-green-50 border-green-200' : 'bg-gray-50' }}">
+                        @foreach($hasilSubmissions as $submission)
+                            <div class="border rounded-lg p-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 {{ $submission->status === 'approved' ? 'bg-green-50 border-green-200' : 'bg-gray-50' }}">
                                 <div>
-                                    <h4 class="font-bold text-sm">{{ $pendaftaran->agenda->title }}</h4>
-                                    <p class="text-xs text-gray-500 mt-1">Tgl Daftar: {{ $pendaftaran->created_at->format('d/m/Y H:i') }}</p>
+                                    <h4 class="font-bold text-sm">{{ $submission->agenda->title }}</h4>
+                                    <p class="text-xs text-gray-500 mt-1">Tgl Daftar: {{ $submission->created_at->format('d/m/Y H:i') }}</p>
                                 </div>
                                 <div class="text-right flex flex-col items-end gap-2">
-                                    @if($pendaftaran->status === 'pending')
+                                    @if($submission->status === 'pending')
                                         <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-bold rounded-full">Menunggu Verifikasi</span>
-                                    @elseif($pendaftaran->status === 'rejected')
+                                    @elseif($submission->status === 'rejected')
                                         <span class="px-3 py-1 bg-red-100 text-red-800 text-xs font-bold rounded-full">Ditolak</span>
-                                    @elseif($pendaftaran->status === 'approved')
+                                    @elseif($submission->status === 'approved')
                                         <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-bold rounded-full">Disetujui</span>
-                                        @if($pendaftaran->agenda->link_grup_wa)
-                                            <a href="{{ $pendaftaran->agenda->link_grup_wa }}" target="_blank" class="text-xs bg-green-600 text-white px-3 py-1.5 rounded hover:bg-green-700 transition flex items-center gap-1">
+                                        @if($submission->agenda->link_grup_wa)
+                                            <a href="{{ $submission->agenda->link_grup_wa }}" target="_blank" class="text-xs bg-green-600 text-white px-3 py-1.5 rounded hover:bg-green-700 transition flex items-center gap-1">
                                                 Gabung Grup WA
                                             </a>
                                         @endif
