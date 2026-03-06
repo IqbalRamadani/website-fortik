@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('agendas', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('level')->default('Nasional'); // Nasional, Internasional, dll
+            $table->string('level')->default('Nasional');
             $table->string('banner_image')->nullable();
             $table->date('start_date');
             $table->date('end_date');
@@ -22,6 +22,7 @@ return new class extends Migration
             $table->boolean('is_free')->default(true);
             $table->decimal('price', 10, 2)->nullable();
             $table->integer('quota')->default(100);
+            $table->string('link_grup')->nullable();
             $table->timestamps();
         });
     }
