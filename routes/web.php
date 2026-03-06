@@ -1,7 +1,10 @@
 <?php
 
+use App\Livewire\AgendaIndex;
 use App\Livewire\AlbumIndex;
 use App\Livewire\AlbumShow;
+use App\Livewire\CekStatus;
+use App\Livewire\FormPendaftaran;
 use App\Livewire\FornewsIndex;
 use App\Livewire\FornewsShow;
 use App\Livewire\ForsightIndex;
@@ -49,9 +52,9 @@ Route::get('/forsight', function () {
 //     return view('pengumuman', ['title' => 'Pengumuman']);
 // });
 
-Route::get('/agenda', function () {
-    return view('agenda', ['title' => 'Agenda']);
-});
+Route::get('/agenda', AgendaIndex::class)->name('agenda');
+Route::get('/agenda/{agenda}/daftar', FormPendaftaran::class)->name('agenda.daftar');
+Route::get('/cek-status', CekStatus::class)->name('cek.status');
 
 Route::get('/fornews', FornewsIndex::class)->name('fornews.index');
 Route::get('/fornews/{slug}', FornewsShow::class)->name('fornews.show');
