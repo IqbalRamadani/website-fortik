@@ -71,6 +71,7 @@
                 <li><x-nav-link href="/forsight" :active="request()->is('forsight')">FORSIGHT</x-nav-link></li>
                 <li><x-nav-link href="/agenda" :active="request()->is('agenda')">AGENDA</x-nav-link></li>
                 <li><x-nav-link href="/cek-status" :active="request()->is('cek-status')">CEK STATUS</x-nav-link></li>
+                <li><x-nav-link href="/webinar" :active="request()->is('webinar')">WEBINAR</x-nav-link></li>
             </ul>
         </div>
     </div>
