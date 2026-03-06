@@ -37,20 +37,16 @@ Route::get('/lambang', function () {
 
 Route::get('/struktur-organisasi', StrukturOrganisasi::class);
 
-Route::get('/fornews', function () {
-    return view('fornews', ['title' => 'ForNews']);
-});
-
-Route::get('/galeri', AlbumIndex::class)->name('album.index');
-Route::get('/galeri/{slug}', AlbumShow::class)->name('album.show');
-
-Route::get('/forsight', function () {
-    return view('forsight', ['title' => 'ForSight']);
+Route::get('/webinar', function () {
+    return view('webinar', ['title' => 'Webinar']);
 });
 
 // Route::get('/pengumuman', function () {
 //     return view('pengumuman', ['title' => 'Pengumuman']);
 // });
+
+Route::get('/galeri', AlbumIndex::class)->name('album.index');
+Route::get('/galeri/{slug}', AlbumShow::class)->name('album.show');
 
 Route::get('/agenda', AgendaIndex::class)->name('agenda');
 Route::get('/agenda/{agenda}/daftar', FormPendaftaran::class)->name('agenda.daftar');
