@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Agenda;
-use App\Models\Pendaftaran;
+use App\Models\Submission;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -37,10 +37,10 @@ class FormPendaftaran extends Component
         $this->validate($rules);
 
         // Proteksi Logika
-        if (Pendaftaran::where('agenda_id', $this->agenda->id)->count() >= $this->agenda->quota) {
+        if (Submission::where('agenda_id', $this->agenda->id)->count() >= $this->agenda->quota) {
             session()->flash('error', 'Maaf, kuota lomba penuh.'); return;
         }
-        if (Pendaftaran::where('agenda_id', $this->agenda->id)->where('email', $this->email)->exists()) {
+        if (Submission::where('agenda_id', $this->agenda->id)->where('email', $this->email)->exists()) {
             session()->flash('error', 'Email ini sudah terdaftar.'); return;
         }
 
@@ -49,7 +49,7 @@ class FormPendaftaran extends Component
         // AUTO-APPROVE LOGIC
         $statusAwal = $this->agenda->is_free ? 'approved' : 'pending';
 
-        Pendaftaran::create([
+        Submission::create([
             'agenda_id' => $this->agenda->id,
             'nama_lengkap' => $this->nama_lengkap,
             'email' => $this->email,
@@ -60,9 +60,9 @@ class FormPendaftaran extends Component
         ]);
 
         if ($statusAwal === 'approved') {
-            session()->flash('success', 'Pendaftaran berhasil disetujui! Silakan cek menu "Cek Status" untuk bergabung ke Grup WhatsApp.');
+            session()->flash('success', 'Submission berhasil disetujui! Silakan cek menu "Cek Status" untuk bergabung ke Grup WhatsApp.');
         } else {
-            session()->flash('success', 'Pendaftaran terkirim! Data sedang diverifikasi. Pantau menu "Cek Status" berkala.');
+            session()->flash('success', 'Submission terkirim! Data sedang diverifikasi. Pantau menu "Cek Status" berkala.');
         }
         
         $this->reset(['nama_lengkap', 'email', 'no_whatsapp', 'instansi', 'bukti_file']);
