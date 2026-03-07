@@ -15,9 +15,13 @@ class AgendasTable
     {
         return $table
             ->columns([
-                ImageColumn::make('banner_image'),
-                TextColumn::make('title')->searchable(),
-                TextColumn::make('start_date')->date(),
+                ImageColumn::make('banner_image')
+                    ->disk('public'),
+                TextColumn::make('title')
+                    ->searchable(),
+                TextColumn::make('start_date')
+                    ->date()
+                    ->sortable(),
                 TextColumn::make('quota'),
             ])
             ->filters([
