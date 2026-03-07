@@ -22,7 +22,7 @@
 
         <div class="grid md:grid-cols-2 gap-8 w-full max-w-4xl text-left">
             
-            <div class="relative flex flex-col p-8 rounded-2xl bg-slate-800 border-2 border-slate-700 hover:border-slate-500 transition-colors">
+            <div class="relative flex flex-col p-8 rounded-2xl bg-slate-800 border-2 border-slate-700 hover:border-slate-500 transform md:-translate-x-0 hover:scale-[1.02] transition-all">
                 <h3 class="text-2xl font-bold text-white mb-2">General Ticket</h3>
                 <p class="text-3xl font-extrabold text-white mb-6">Rp 0</p>
                 <ul class="space-y-4 mb-8 flex-1 text-sm">
