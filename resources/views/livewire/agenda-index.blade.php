@@ -1,7 +1,8 @@
 <div id="agenda" class="w-full max-w-6xl mx-auto px-6 xl:px-0 py-12 bg-white border-none" x-data="{ showFilter: false }">
     <div class="w-full mx-auto">
         {{-- header section --}}
-        <div class="flex flex-row text-center md:text-left">
+        
+        <div class="flex flex-row text-center lg:text-left">
             <div class="">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-koamaru">
                     Temukan Lomba dan Pelatihan Terbaik untuk Kamu!
@@ -10,18 +11,24 @@
                     Ikuti berbagai lomba dan pelatihan untuk mengasah kemampuanmu. Daftar sekarang dan tunjukkan potensimu!
                 </p>
             </div>
-            <div class="hidden md:flex">
-                <img src="{{ asset('images/fortik-bot-3.webp') }}" alt="Maskot FORTIK" class="w-64 md:w-full max-w-2xl object-contain drop-shadow-2xl">
+            <div class="hidden lg:flex items-center justify-center">
+                <img src="{{ asset('images/fortik-bot-2.webp') }}" alt="Maskot FORTIK" class="w-full max-w-3xl object-contain drop-shadow-2xl">
             </div>
         </div>
         <div class="flex mt-8 justify-between items-center mb-8 border-b pb-4">
             <h2 class="text-2xl md:text-3xl font-bold text-koamaru">Agenda FORTIK</h2>
-            <button @click="showFilter = !showFilter" 
-                    :class="{ 'bg-blue-900': showFilter, 'bg-[#1e3a8a]': !showFilter }"
-                    class="flex items-center gap-2 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-900 transition focus:outline-none">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
-                <span x-text="showFilter ? 'Tutup Filter' : 'Filter'"></span>
-            </button>
+            <div class="flex flex-row gap-2 md:gap-4">
+                <a href="{{ route('cek.status') }}" class="text-white bg-blue-900 px-4 py-2 rounded-md text-sm font-semibold hover:bg-koamaru transition focus:outline-none">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Cek Status</span>
+                </a>
+                <button @click="showFilter = !showFilter" 
+                        :class="{ 'bg-koamaru': showFilter, 'bg-blue-900': !showFilter }"
+                        class="flex items-center gap-2 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-koamaru transition focus:outline-none">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
+                    <span x-text="showFilter ? 'Tutup Filter' : 'Filter'"></span>
+                </button>
+            </div>
         </div>
         <div x-show="showFilter" 
             x-transition:enter="transition ease-out duration-200"
