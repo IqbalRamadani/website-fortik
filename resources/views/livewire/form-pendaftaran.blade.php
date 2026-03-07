@@ -46,10 +46,12 @@
         </div>
 
         <div class="mt-8 bg-gray-50 p-5 rounded-lg border border-gray-200">
+            
             <label class="block text-sm font-semibold text-gray-800 mb-2">
                 @if($agenda->is_free)
                     Bukti Share Postingan (Min. 3 Grup) <span class="text-red-500">*</span>
                 @else
+                    <img src="{{ $agenda->qris }}" alt="qris" class="w-48 mb-4">
                     Bukti Pembayaran (Rp {{ number_format($agenda->price, 0, ',', '.') }}) <span class="text-red-500">*</span>
                 @endif
             </label>
