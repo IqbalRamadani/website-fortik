@@ -1,7 +1,7 @@
 <div id="agenda" class="w-full max-w-6xl mx-auto px-6 xl:px-0 py-12 bg-white border-none" x-data="{ showFilter: false }">
     <div class="w-full mx-auto">
         {{-- header section --}}
-        <div class="flex text-center md:text-left">
+        <div class="flex flex-row text-center md:text-left">
             <div class="">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-koamaru">
                     Temukan Lomba dan Pelatihan Terbaik untuk Kamu!
@@ -10,8 +10,8 @@
                     Ikuti berbagai lomba dan pelatihan untuk mengasah kemampuanmu. Daftar sekarang dan tunjukkan potensimu!
                 </p>
             </div>
-            <div class="">
-                <img src="{{ asset('images/fortik-bot-2.webp') }}" alt="Maskot FORTIK" class="w-64 md:w-full max-w-md object-contain drop-shadow-2xl">
+            <div class="hidden md:flex">
+                <img src="{{ asset('images/fortik-bot-3.webp') }}" alt="Maskot FORTIK" class="w-64 md:w-full max-w-2xl object-contain drop-shadow-2xl">
             </div>
         </div>
         <div class="flex mt-8 justify-between items-center mb-8 border-b pb-4">
