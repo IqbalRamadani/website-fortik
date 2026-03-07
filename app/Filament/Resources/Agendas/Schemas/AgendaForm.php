@@ -33,6 +33,10 @@ class AgendaForm
                     ->default(true),
                 TextInput::make('price')
                     ->numeric(),
+                FileUpload::make('qris')
+                    ->image()
+                    ->disk('public')
+                    ->directory('agenda-qris'),
                 TextInput::make('quota')
                     ->numeric()
                     ->required(),
