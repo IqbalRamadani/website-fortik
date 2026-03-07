@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('location')->default('Online');
             $table->boolean('is_free')->default(true);
             $table->decimal('price', 10, 2)->nullable();
+            $table->string('qris')->nullable();
             $table->integer('quota')->default(100);
             $table->string('link_grup')->nullable();
             $table->timestamps();
