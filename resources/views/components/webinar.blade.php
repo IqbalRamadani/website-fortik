@@ -32,7 +32,7 @@
                     <li class="flex items-center text-slate-400 italic"><span class="mr-2 text-rose-500">⚠</span> Wajib share poster ke 3 Grup WA</li>
                     <li class="flex items-center text-slate-400 italic"><span class="mr-2 text-rose-500">⚠</span> Wajib tag 3 teman di postingan IG</li>
                 </ul>
-                <a href="LINK_GFORM_GRATIS_DISINI" target="_blank" class="w-full py-3 px-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold text-center rounded-lg transition-colors">
+                <a href="https://forms.gle/Uj1ZjCc41mHmf5ZQA" target="_blank" class="w-full py-3 px-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold text-center rounded-lg transition-colors">
                     Daftar Jalur Gratis
                 </a>
             </div>
@@ -50,37 +50,36 @@
                     <li class="flex items-center text-white"><span class="text-emerald-400 mr-2">✔</span> Modul Materi PDF & Rekaman </li>
                     <li class="flex items-center text-emerald-400 font-semibold"><span class="text-emerald-400 mr-2">✔</span> Langsung daftar, tanpa syarat share & tag.</li>
                 </ul>
-                <a href="LINK_GFORM_VIP_DISINI" target="_blank" class="w-full py-3 px-4 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-center rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-emerald-500/30">
+                <a href="https://forms.gle/uNST9nGkXEttxo2A7" target="_blank" class="w-full py-3 px-4 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-center rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-emerald-500/30">
                     Amankan Tiket VIP
                 </a>
             </div>
         </div>
-  </div>
+</div>
 
-  <script>
-    
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('countdownTimer', () => ({
-                // Set tanggal eksekusi: 26 April 2026, 09:00:00 WIB
-                targetDate: new Date('2026-04-26T09:00:00+07:00').getTime(),
-                time: { Hari: '00', Jam: '00', Menit: '00', Detik: '00' },
-                
-                startTimer() {
-                    setInterval(() => {
-                        const now = new Date().getTime();
-                        const distance = this.targetDate - now;
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('countdownTimer', () => ({
+            // Set tanggal eksekusi: 26 April 2026, 09:00:00 WIB
+            targetDate: new Date('2026-04-26T09:00:00+07:00').getTime(),
+            time: { Hari: '00', Jam: '00', Menit: '00', Detik: '00' },
+            
+            startTimer() {
+                setInterval(() => {
+                    const now = new Date().getTime();
+                    const distance = this.targetDate - now;
 
-                        if (distance < 0) {
-                            this.time = { Hari: '00', Jam: '00', Menit: '00', Detik: '00' };
-                            return;
-                        }
+                    if (distance < 0) {
+                        this.time = { Hari: '00', Jam: '00', Menit: '00', Detik: '00' };
+                        return;
+                    }
 
-                        this.time.Hari = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
-                        this.time.Jam = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
-                        this.time.Menit = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-                        this.time.Detik = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
-                    }, 1000);
-                }
-            }));
-        });
-    </script>
+                    this.time.Hari = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+                    this.time.Jam = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+                    this.time.Menit = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                    this.time.Detik = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+                }, 1000);
+            }
+        }));
+    });
+</script>
