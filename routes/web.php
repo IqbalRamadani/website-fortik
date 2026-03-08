@@ -48,9 +48,9 @@ Route::get('/webinar', function () {
 Route::get('/galeri', AlbumIndex::class)->name('album.index');
 Route::get('/galeri/{slug}', AlbumShow::class)->name('album.show');
 
-Route::get('/agenda', AgendaIndex::class)->name('agenda');
-Route::get('/agenda/{agenda}/daftar', FormPendaftaran::class)->name('agenda.daftar');
-Route::get('/cek-status', CekStatus::class)->name('cek.status');
+// Route::get('/agenda', AgendaIndex::class)->name('agenda');
+// Route::get('/agenda/{agenda}/daftar', FormPendaftaran::class)->name('agenda.daftar');
+// Route::get('/cek-status', CekStatus::class)->name('cek.status');
 
 Route::get('/fornews', FornewsIndex::class)->name('fornews.index');
 Route::get('/fornews/{slug}', FornewsShow::class)->name('fornews.show');
