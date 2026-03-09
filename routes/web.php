@@ -1,27 +1,20 @@
 <?php
 
-use App\Livewire\AgendaIndex;
+use App\Http\Controllers\HomeController;
 use App\Livewire\AlbumIndex;
 use App\Livewire\AlbumShow;
-use App\Livewire\CekStatus;
-use App\Livewire\FormPendaftaran;
+// use App\Livewire\AgendaIndex;
+// use App\Livewire\CekStatus;
+// use App\Livewire\FormPendaftaran;
 use App\Livewire\FornewsIndex;
 use App\Livewire\FornewsShow;
 use App\Livewire\ForsightIndex;
 use App\Livewire\ForsightShow;
 use App\Livewire\Setup;
 use App\Livewire\StrukturOrganisasi;
-use App\Models\Photo;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    $sliderPhotos = Cache::remember('beranda.slider_photos', 86400, function () {
-        return Photo::latest()->take(4)->get();
-    });
-
-    return view('beranda', compact('sliderPhotos'))->with('title', 'Beranda');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/sejarah', function () {
     return view('sejarah', ['title' => 'Sejarah']);
