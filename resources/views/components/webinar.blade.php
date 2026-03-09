@@ -7,6 +7,10 @@
             Jika Aku Seorang <span class="text-rose-500">Scammer</span>,<br> Siapa Targetku?
         </h1>
         
+        <p class="text-lg md:text-xl max-w-2xl text-slate-400 mb-4">
+            Bersama <strong>Satrya Mahardhika</strong> - Cybersecurity Analyst
+        </p>
+
         <p class="text-lg md:text-xl max-w-2xl text-slate-400 mb-10">
             Berhenti belajar teori pertahanan. Mari bedah anatomi peretasan, manipulasi psikologis, dan eksploitasi data langsung dari sudut pandang penyerang.
         </p>
