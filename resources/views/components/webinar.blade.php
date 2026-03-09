@@ -11,7 +11,7 @@
             Bersama
         </p>
         <p class="text-lg md:text-xl max-w-2xl text-white mb-6">
-            <strong>Satrya Mahardhika</strong> - Cybersecurity Analyst
+            <strong>Satrya Mahardhika</strong> - Certified Ethical Hacker
         </p>
 
         <p class="text-lg md:text-xl max-w-2xl text-slate-400 mb-10">
