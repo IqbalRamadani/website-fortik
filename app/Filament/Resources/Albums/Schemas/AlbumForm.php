@@ -72,7 +72,7 @@ class AlbumForm
                                         }
                                         return $filename;
                                     })
-                                    ->required(),
+                                    ->required()
                             ])
                             ->maxItems(12) // Validasi mutlak maksimal 12 foto
                             ->grid(3)
