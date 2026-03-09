@@ -6,9 +6,12 @@
         <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
             Jika Aku Seorang <span class="text-rose-500">Scammer</span>,<br> Siapa Targetku?
         </h1>
-        
-        <p class="text-lg md:text-xl max-w-2xl text-slate-400 mb-4">
-            Bersama <strong>Satrya Mahardhika</strong> - Cybersecurity Analyst
+
+        <p class="text-lg md:text-xl max-w-2xl text-slate-400 mb-2 md:mb-4">
+            Bersama
+        </p>
+        <p class="text-lg md:text-xl max-w-2xl text-white mb-6">
+            <strong>Satrya Mahardhika</strong> - Cybersecurity Analyst
         </p>
 
         <p class="text-lg md:text-xl max-w-2xl text-slate-400 mb-10">
