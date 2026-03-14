@@ -4,9 +4,10 @@ namespace App\Filament\Resources\Agendas\Schemas;
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Schema;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Schema;
 
 class AgendaForm
 {
@@ -17,16 +18,24 @@ class AgendaForm
                 TextInput::make('title')
                     ->placeholder('Judul acara')
                     ->required(),
-                TextInput::make('level')
+                Select::make('level')
                     ->required()
-                    ->placeholder('Nasional / Regional / Lokal'),
+                    ->options([
+                        'nasional' => 'Nasional',
+                        'provinsi' => 'Provinsi',
+                        'kabupaten' => 'Kabupaten',
+                        'lokal' => 'Lokal',
+                    ]),
                 FileUpload::make('banner_image')
                     ->image()
                     ->disk('public')
+                    ->maxSize(512)
                     ->directory('agenda-banners'),
                 DatePicker::make('start_date')
+                    ->helperText('Tanggal mulai pendaftaran acara')
                     ->required(),
                 DatePicker::make('end_date')
+                    ->helperText('Tanggal selesai pendaftaran acara')
                     ->required(),
                 TextInput::make('location')
                     ->placeholder('Contoh: Online / Aula Kampus')
