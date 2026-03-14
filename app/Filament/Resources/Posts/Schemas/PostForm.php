@@ -20,11 +20,13 @@ class PostForm
             ->components([
                 TextInput::make('title')
                     ->required()
+                    ->placeholder('Judul berita')
                     ->maxLength(255)
                     ->live(onBlur: true)
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                 TextInput::make('slug')
                     ->required()
+                    ->placeholder('Slug akan otomatis terisi berdasarkan judul')
                     ->unique(ignoreRecord: true)
                     ->maxLength(255),
                 Select::make('user_id')
@@ -33,11 +35,12 @@ class PostForm
                     ->default(fn () => Auth::id())
                     ->required(),
                 DatePicker::make('published_at')
-                    ->label('Tanggal Terbit')
+                    ->placeholder('Tanggal publikasi')
                     ->helperText('Biarkan kosong jika ingin menyimpan sebagai Draft.')
                     ->native(false),
                 RichEditor::make('content')
                     ->required()
+                    ->placeholder('Konten berita')
                     ->columnSpanFull(),
                 FileUpload::make('image')
                     ->image()
