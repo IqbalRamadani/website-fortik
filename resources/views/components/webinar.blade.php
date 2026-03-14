@@ -39,7 +39,7 @@
                     <li class="flex items-center text-slate-400 italic"><span class="mr-2 text-rose-500">⚠</span> Wajib share poster ke 3 Grup WA</li>
                     <li class="flex items-center text-slate-400 italic"><span class="mr-2 text-rose-500">⚠</span> Wajib tag 3 teman di postingan IG</li>
                 </ul>
-                <a href="https://forms.gle/Uj1ZjCc41mHmf5ZQA" target="_blank" class="w-full py-3 px-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold text-center rounded-lg transition-colors">
+                <a href="https://forms.gle/Uj1ZjCc41mHmf5ZQA" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold text-center rounded-lg transition-colors">
                     Daftar Jalur Gratis
                 </a>
             </div>
@@ -57,7 +57,7 @@
                     <li class="flex items-center text-white"><span class="text-emerald-400 mr-2">✔</span> Modul Materi PDF & Rekaman </li>
                     <li class="flex items-center text-emerald-400 font-semibold"><span class="text-emerald-400 mr-2">✔</span> Langsung daftar, tanpa syarat share & tag.</li>
                 </ul>
-                <a href="https://forms.gle/uNST9nGkXEttxo2A7" target="_blank" class="w-full py-3 px-4 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-center rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-emerald-500/30">
+                <a href="https://forms.gle/uNST9nGkXEttxo2A7" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-center rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-emerald-500/30">
                     Amankan Tiket VIP
                 </a>
             </div>

@@ -58,6 +58,7 @@
                             <li>
                                 <a href="{{ $contact['url'] }}"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 class="flex items-center gap-2 hover:text-supernova">
                                 <i class="fa-brands fa-whatsapp"></i>
                                 <span>{{ $contact['label'] }}</span>
@@ -81,6 +82,7 @@
                         <li>
                             <a href="https://maps.app.goo.gl/vYkj8RWJRFSfWZuSA"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="underline hover:text-supernova">
                             View On Map
                             </a>
@@ -98,6 +100,7 @@
                             <li>
                                 <a href="{{ $social['url'] }}"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 class="flex items-center gap-2 hover:text-supernova">
                                 <i class="fa-brands {{ $social['icon'] }}"></i>
                                 <span>{{ $social['label'] }}</span>
