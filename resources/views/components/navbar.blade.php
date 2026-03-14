@@ -1,5 +1,5 @@
 <nav x-data="{ mobileMenuOpen: false, isMobile: window.innerWidth < 768 }" @resize.window="isMobile = window.innerWidth < 768" class="bg-linear-to-br from-lkoamaru to-koamaru sticky w-full z-20 top-0 start-0 shadow-lg px-6 py-4">
-    <div class="flex max-w-2xl md:max-w-3xl lg:max-w-6xl flex-wrap items-center justify-between mx-auto">
+    <div class="flex max-w-2xl md:max-w-3xl lg:max-w-6xl flex-wrap items-center justify-between mx-auto gap-y-4">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo-navbar.webp') }}" class="w-30 md:w-35" alt="Logo Fortik"/>
         </a>
@@ -29,7 +29,7 @@
             class="w-full md:!block md:w-auto md:!h-auto" 
             x-cloak>
             
-            <ul class="flex flex-col font-semibold text-sm lg:text-base mt-4 lg:mt-0 p-0 bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0">
+            <ul class="flex flex-col font-semibold text-sm lg:text-base p-0 bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0">
                 <li>
                     <x-nav-link href="/" :active="request()->is('/')">BERANDA</x-nav-link>
                 </li>
