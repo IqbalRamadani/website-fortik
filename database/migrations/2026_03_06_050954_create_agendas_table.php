@@ -23,7 +23,7 @@ return new class extends Migration
             $table->decimal('price', 10, 2)->nullable();
             $table->string('qris')->nullable();
             $table->integer('quota')->default(100);
-            $table->string('link_grup')->nullable();
+            $table->string('link')->nullable();
             $table->timestamps();
         });
     }

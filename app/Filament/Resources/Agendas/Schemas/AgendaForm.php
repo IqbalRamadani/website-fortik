@@ -40,7 +40,7 @@ class AgendaForm
                 TextInput::make('quota')
                     ->numeric()
                     ->required(),
-                TextInput::make('link_grup')
+                TextInput::make('link')
                     ->url(),
             ]);
     }
