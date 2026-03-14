@@ -52,3 +52,7 @@ Route::get('/forsight', ForsightIndex::class)->name('forsight.index');
 Route::get('/forsight/{slug}', ForsightShow::class)->name('forsight.show');
 
 Route::get('/setup', Setup::class)->name('setup');
+
+// Route::get('/ip', function () {
+// return request()->server('REMOTE_ADDR');
+// });
