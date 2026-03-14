@@ -3,7 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Livewire\AlbumIndex;
 use App\Livewire\AlbumShow;
-// use App\Livewire\AgendaIndex;
+use App\Livewire\AgendaIndex;
 // use App\Livewire\CekStatus;
 // use App\Livewire\FormPendaftaran;
 use App\Livewire\FornewsIndex;
@@ -41,7 +41,7 @@ Route::get('/webinar', function () {
 Route::get('/galeri', AlbumIndex::class)->name('album.index');
 Route::get('/galeri/{slug}', AlbumShow::class)->name('album.show');
 
-// Route::get('/agenda', AgendaIndex::class)->name('agenda');
+Route::get('/agenda', AgendaIndex::class)->name('agenda');
 // Route::get('/agenda/{agenda}/daftar', FormPendaftaran::class)->name('agenda.daftar');
 // Route::get('/cek-status', CekStatus::class)->name('cek.status');
 
