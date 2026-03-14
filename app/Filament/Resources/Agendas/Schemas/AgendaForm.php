@@ -15,10 +15,11 @@ class AgendaForm
         return $schema
             ->components([
                 TextInput::make('title')
+                    ->placeholder('Judul acara')
                     ->required(),
                 TextInput::make('level')
                     ->required()
-                    ->default('Nasional'),
+                    ->placeholder('Nasional / Regional / Lokal'),
                 FileUpload::make('banner_image')
                     ->image()
                     ->disk('public')
@@ -28,20 +29,26 @@ class AgendaForm
                 DatePicker::make('end_date')
                     ->required(),
                 TextInput::make('location')
+                    ->placeholder('Contoh: Online / Aula Kampus')
                     ->required(),
                 Toggle::make('is_free')
                     ->default(true),
                 TextInput::make('price')
+                    ->placeholder('Isi jika bukan acara gratis, contoh: 100000')
                     ->numeric(),
                 FileUpload::make('qris')
+                    ->label('QRIS (jika acara berbayar)')
                     ->image()
                     ->disk('public')
                     ->directory('agenda-qris'),
                 TextInput::make('quota')
+                    ->placeholder('Contoh: 100')
                     ->numeric()
                     ->required(),
                 TextInput::make('link')
-                    ->url(),
+                    ->placeholder('Contoh: https://example.com')
+                    ->url()
+                    ->required(),
             ]);
     }
 }
