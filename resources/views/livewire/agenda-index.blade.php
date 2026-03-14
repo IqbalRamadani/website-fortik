@@ -18,10 +18,10 @@
         <div class="flex mt-8 justify-between items-center mb-8 border-b pb-4">
             <h2 class="text-2xl md:text-3xl font-bold text-koamaru">Agenda FORTIK</h2>
             <div class="flex flex-row gap-2 md:gap-4">
-                <a href="{{ route('cek.status') }}" class="text-white bg-blue-900 px-4 py-2 rounded-md text-sm font-semibold hover:bg-koamaru transition focus:outline-none">
+                {{-- <a href="{{ route('cek.status') }}" class="text-white bg-blue-900 px-4 py-2 rounded-md text-sm font-semibold hover:bg-koamaru transition focus:outline-none">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <span>Cek Status</span>
-                </a>
+                </a> --}}
                 <button @click="showFilter = !showFilter" 
                         :class="{ 'bg-koamaru': showFilter, 'bg-blue-900': !showFilter }"
                         class="flex items-center gap-2 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-koamaru transition focus:outline-none">
@@ -118,7 +118,7 @@
                             <span>{{ $agenda->quota }} Peserta</span>
                         </div>
                         <div class="mt-auto mb-1 mr-2 text-right">
-                            <a href="{{ $agenda->link }}" target="_blank" wire:navigate
+                            <a href="{{ $agenda->link }}" target="_blank" rel="noopener noreferrer"
                                 class="inline-block bg-koamaru text-white text-xs md:text-sm font-medium px-4 py-2 rounded hover:text-supernova transition delay-120 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
                                 Daftar
                             </a>
