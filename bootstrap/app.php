@@ -12,10 +12,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        $middleware->trustProxies(at: [
-        '127.0.0.1',
-        '202.57.29.246'
-        ]);
+        $proxies = env('TRUSTED_PROXIES');
+
+        if ($proxies) {
+            $middleware->trustProxies(at: explode(',', $proxies));
+        }
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
