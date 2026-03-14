@@ -29,7 +29,7 @@
             class="w-full md:!block md:w-auto md:!h-auto" 
             x-cloak>
             
-            <ul class="flex flex-col font-semibold text-sm lg:text-base p-0 bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0">
+            <ul class="flex flex-col font-semibold text-sm lg:text-base mt-4 lg:mt-0 p-0 bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0">
                 <li>
                     <x-nav-link href="/" :active="request()->is('/')">BERANDA</x-nav-link>
                 </li>
@@ -69,7 +69,7 @@
                 <li><x-nav-link href="/fornews" :active="request()->is('fornews')">FORNEWS</x-nav-link></li>
                 <li><x-nav-link href="/galeri" :active="request()->is('galeri')">GALERI</x-nav-link></li>
                 <li><x-nav-link href="/forsight" :active="request()->is('forsight')">FORSIGHT</x-nav-link></li>
-                {{-- <li><x-nav-link href="/agenda" :active="request()->is('agenda')">AGENDA</x-nav-link></li> // Agenda ditunda perilisan --}}
+                <li><x-nav-link href="/agenda" :active="request()->is('agenda')">AGENDA</x-nav-link></li>
                 <li><x-nav-link href="/webinar" :active="request()->is('webinar')">WEBINAR</x-nav-link></li>
             </ul>
         </div>
