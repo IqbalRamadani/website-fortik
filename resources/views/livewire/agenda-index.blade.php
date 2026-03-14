@@ -118,7 +118,7 @@
                             <span>{{ $agenda->quota }} Peserta</span>
                         </div>
                         <div class="mt-auto mb-1 mr-2 text-right">
-                            <a href="{{ route('agenda.daftar', $agenda->id) }}" wire:navigate
+                            <a href="{{ $agenda->link }}" target="_blank" wire:navigate
                                 class="inline-block bg-koamaru text-white text-xs md:text-sm font-medium px-4 py-2 rounded hover:text-supernova transition delay-120 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
                                 Daftar
                             </a>
