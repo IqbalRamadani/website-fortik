@@ -1,18 +1,19 @@
 <div id="agenda" class="w-full max-w-6xl mx-auto px-6 xl:px-0 py-12 bg-white border-none" x-data="{ showFilter: false }">
     <div class="w-full mx-auto">
         {{-- header section --}}
-        
-        <div class="flex flex-row text-center lg:text-left">
-            <div class="justify-center flex flex-col text-center md:text-left">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl max-w-2xl font-extrabold leading-tight text-koamaru">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-8">
+            <div class="text-center md:text-left md:col-span-7">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-koamaru">
                     Temukan Lomba dan Pelatihan Terbaikmu di Sini!
                 </h1>
-                <p class="mt-4 text-lg text-gray-600 mx-auto">
+                <p class="mt-4 text-lg text-gray-600 mx-auto md:mx-0 max-w-xl">
                     Ikuti berbagai lomba dan pelatihan untuk mengasah kemampuanmu. Daftar sekarang dan tunjukkan potensimu!
                 </p>
             </div>
-            <div class="hidden md:block md:flex items-center justify-center">
-                <img src="{{ asset('images/fortik-bot-4.webp') }}" alt="Maskot FORTIK" class="w-full max-w-md object-contain drop-shadow-2xl">
+            <div class="hidden md:block md:col-span-5">
+                <img src="{{ asset('images/fortik-bot-4.webp') }}" 
+                    alt="Maskot FORTIK" 
+                    class="w-full max-w-sm mx-auto h-auto object-contain drop-shadow-2xl">
             </div>
         </div>
         <div class="flex mt-8 justify-between items-center mb-8 border-b pb-4">
