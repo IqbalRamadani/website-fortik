@@ -11,7 +11,7 @@
                     Ikuti berbagai lomba dan pelatihan untuk mengasah kemampuanmu. Daftar sekarang dan tunjukkan potensimu!
                 </p>
             </div>
-            <div class="hidden md:flex items-center justify-center">
+            <div class="hidden md:block md:flex items-center justify-center">
                 <img src="{{ asset('images/fortik-bot-4.webp') }}" alt="Maskot FORTIK" class="w-full max-w-md object-contain drop-shadow-2xl">
             </div>
         </div>
