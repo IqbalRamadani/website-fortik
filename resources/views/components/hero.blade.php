@@ -1,12 +1,12 @@
 @php
     $banners = [
         [
-            'image' => 'images/banner-dummy-1.png',
+            'image' => 'images/banner-dummy-2.png',
             'url'   => '/',
         ],
         [
-            'image' => 'images/banner-dummy-2.png',
-            'url'   => '/',
+            'image' => 'images/banner-hero-webinar.png',
+            'url'   => '/webinar',
         ],
         [
             'image' => 'images/banner-dummy-3.png',
