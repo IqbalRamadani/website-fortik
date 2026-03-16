@@ -5,12 +5,8 @@
             'url'   => '/',
         ],
         [
-            'image' => 'images/banner-hero-webinar.png',
+            'image' => 'images/hero-webinar.png',
             'url'   => '/webinar',
-        ],
-        [
-            'image' => 'images/banner-dummy-3.png',
-            'url'   => '/',
         ],
     ];
 @endphp
