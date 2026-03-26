@@ -56,7 +56,8 @@
                             <option value="">Semua Tingkat</option>
                             <option value="Nasional">Nasional</option>
                             <option value="Provinsi">Provinsi</option>
-                            <option value="Kampus">Internal Kampus</option>
+                            <option value="Kabupaten">Kabupaten</option>
+                            <option value="Lokal">Lokal</option>
                         </select>
                     </div>
 
