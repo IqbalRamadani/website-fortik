@@ -96,7 +96,7 @@
                 </div>
                 
                 <div class="p-4 flex flex-col flex-grow">
-                    <h3 class="font-bold text-sm text-gray-900 mb-3 leading-tight line-clamp-2">
+                    <h3 class="font-bold text-sm text-gray-900 mb-3 leading-tight">
                         {{ $agenda->title }}
                     </h3>
                     
