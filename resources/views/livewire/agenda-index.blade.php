@@ -74,7 +74,7 @@
                 @if($search || $level || $filter_is_free !== '')
                     <div class="mt-4 flex items-center justify-between border-t pt-4">
                         <p class="text-xs text-gray-500">Menampilkan hasil pencarian yang difilter...</p>
-                        <button wire:click="$set('search', ''); $set('level', ''); $set('filter_is_free', '');" 
+                        <button wire:click="resetFilters" 
                             class="text-xs font-semibold text-red-600 hover:text-red-800 flex items-center gap-1">
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg>
                             Reset Filter
