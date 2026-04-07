@@ -118,7 +118,7 @@
                             <svg class="w-3.5 h-3.5 text-koamaru" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
                             <span>{{ $agenda->quota }} Peserta</span>
                         </div>
-                        <div class="mt-auto mb-1 mr-2 text-right">
+                        <div class="flex items-center justify-end mb-2">
                             <a href="{{ $agenda->link }}" target="_blank" rel="noopener noreferrer"
                                 class="inline-block bg-koamaru text-white text-xs md:text-sm font-medium px-4 py-2 rounded hover:text-supernova transition delay-120 duration-300 ease-in-out hover:-translate-x-0 hover:scale-105">
                                 Daftar
