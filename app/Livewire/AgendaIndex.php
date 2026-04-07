@@ -21,6 +21,13 @@ class AgendaIndex extends Component
     public function updatedLevel() { $this->resetPage(); }
     public function updatedFilterIsFree() { $this->resetPage(); }
 
+    public function resetFilters()
+    {
+        $this->reset(['search', 'level', 'filter_is_free']);
+
+        $this->resetPage();
+    }
+
     public function render()
     {
         $agendas = Agenda::query()
