@@ -34,7 +34,7 @@
     ];
 @endphp
 
-<footer class="relative bottom-0 bg-linear-to-br from-lkoamaru to-koamaru px-6 py-8">
+<footer class="relative bottom-0 bg-linear-to-br from-lkoamaru to-koamaru px-6 py-8 z-20">
     <div class="mx-auto w-full max-w-6xl">
         {{-- TOP AREA --}}
         <div class="flex flex-col md:gap-10 md:flex-row md:justify-between mb-8">
