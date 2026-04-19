@@ -23,7 +23,7 @@
                         </div>
                         {{-- card content --}}
                         <div class="mt-2 flex flex-col flex-grow">
-                            <h2 class="text-xl font-bold text-blue-900 mb-2 leading-tight">
+                            <h2 class="text-lg font-bold text-blue-900 mb-2 leading-tight">
                                 <a href="{{ route('fornews.show', $post['slug']) }}" class="hover:underline">
                                     {{ $post['title'] }}
                                 </a>
