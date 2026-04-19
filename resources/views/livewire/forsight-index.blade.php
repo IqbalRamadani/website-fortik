@@ -23,7 +23,7 @@
                         </div>
                         {{-- card content --}}
                         <div class="mt-2 flex flex-col flex-grow">
-                            <h2 class="text-xl font-bold text-blue-900 mb-2 leading-tight line-clamp-2">
+                            <h2 class="text-xl font-bold text-blue-900 mb-2 leading-tight">
                                 <a href="{{ route('forsight.show', $bulletin->slug) }}" class="hover:underline">
                                     {{ $bulletin->title }}
                                 </a>
