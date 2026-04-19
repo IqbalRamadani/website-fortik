@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="mt-2 px-2 flex flex-col flex-grow">
-                        <h3 class="text-koamaru font-bold text-sm md:text-lg mb-2 leading-tight">
+                        <h3 class="text-koamaru font-bold text-sm md:text-base mb-2 leading-tight">
                             <a href="{{ route('fornews.show', $post['slug']) }}" class="hover:underline">
                                 {{ $post['title'] }}
                             </a>
