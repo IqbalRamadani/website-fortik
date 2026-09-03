@@ -115,7 +115,7 @@
         <hr class="mb-8 border-gray-200"/>
         {{-- Bottom --}}
         <div class="text-sm text-left md:text-center text-gray-200">
-            © 2025 Developed by Arya Team.
+            © 2025 Developed by <a href="https://porto-arya-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" class="underline hover:text-supernova">Arya Team</a>.
             All Rights Reserved.
         </div>
     </div>
