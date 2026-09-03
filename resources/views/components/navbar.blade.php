@@ -70,7 +70,7 @@
                 <li><x-nav-link href="/galeri" :active="request()->is('galeri')">GALERI</x-nav-link></li>
                 <li><x-nav-link href="/forsight" :active="request()->is('forsight')">FORSIGHT</x-nav-link></li>
                 <li><x-nav-link href="/agenda" :active="request()->is('agenda')">AGENDA</x-nav-link></li>
-                <li><x-nav-link href="/webinar" :active="request()->is('webinar')">WEBINAR</x-nav-link></li>
+                {{-- <li><x-nav-link href="/webinar" :active="request()->is('webinar')">WEBINAR</x-nav-link></li> --}}
             </ul>
         </div>
     </div>
